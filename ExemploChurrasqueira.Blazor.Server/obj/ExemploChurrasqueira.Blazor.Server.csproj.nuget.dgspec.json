@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj": {}
+    "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj": {
+    "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj",
+        "projectUniqueName": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj",
         "projectName": "ExemploChurrasqueira.Blazor.Server",
-        "projectPath": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj",
+        "projectPath": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj",
         "packagesPath": "C:\\Users\\estagio.analise\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\obj\\",
+        "outputPath": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages",
@@ -35,8 +35,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj": {
-                "projectPath": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj"
+              "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj": {
+                "projectPath": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj"
               }
             }
           }
@@ -139,14 +139,14 @@
         }
       }
     },
-    "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj": {
+    "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj",
+        "projectUniqueName": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj",
         "projectName": "ExemploChurrasqueira.Module",
-        "projectPath": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj",
+        "projectPath": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj",
         "packagesPath": "C:\\Users\\estagio.analise\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\obj\\",
+        "outputPath": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages",

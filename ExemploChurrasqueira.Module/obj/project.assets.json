@@ -5682,11 +5682,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj",
+      "projectUniqueName": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj",
       "projectName": "ExemploChurrasqueira.Module",
-      "projectPath": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj",
+      "projectPath": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj",
       "packagesPath": "C:\\Users\\estagio.analise\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\obj\\",
+      "outputPath": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages",

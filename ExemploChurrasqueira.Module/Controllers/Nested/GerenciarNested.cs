@@ -20,6 +20,7 @@ namespace ExemploChurrasqueira.Module.Controllers.Nested {
     // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/clsDevExpressExpressAppViewControllertopic.aspx.
     public partial class GerenciarNested : ViewController {
         private SimpleAction deleteAction;
+        private SimpleAction conluidoAction;
         // Use CodeRush to create Controllers and Actions with a few keystrokes.
         // https://docs.devexpress.com/CodeRushForRoslyn/403133/
         public GerenciarNested() { 
@@ -34,7 +35,11 @@ namespace ExemploChurrasqueira.Module.Controllers.Nested {
                 SelectionDependencyType = SelectionDependencyType.RequireSingleObject
             };
             deleteAction.Execute += DeleteAction_Execute;
+            
+
         }
+        
+
         private void DeleteAction_Execute(object sender, SimpleActionExecuteEventArgs e)
         {
             var objectSpace = View.ObjectSpace;
@@ -50,6 +55,8 @@ namespace ExemploChurrasqueira.Module.Controllers.Nested {
                 View.Refresh();
             }
         }
+
+
         protected override void OnActivated() {
             base.OnActivated(); 
             // Perform various tasks depending on the target View.

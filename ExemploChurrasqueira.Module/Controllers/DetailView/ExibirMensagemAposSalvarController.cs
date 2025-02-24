@@ -54,6 +54,10 @@ namespace ExemploChurrasqueira.Module.Controllers.DetailView {
         {
             if (jsRuntime != null && View.CurrentObject is ReservaChurrasqueiraData reservaLocal)
             {
+                if (reservaLocal.IsDeleted)
+                {
+                    return;
+                }
                 await Task.Delay(600);
                 await jsRuntime.InvokeVoidAsync("Swal.fire", new
                 {
@@ -64,6 +68,7 @@ namespace ExemploChurrasqueira.Module.Controllers.DetailView {
                 await jsRuntime.InvokeVoidAsync("open", $"ReservaChurrasqueiraData_ListView", "_self");
             }
         }
+
 
     }
 }

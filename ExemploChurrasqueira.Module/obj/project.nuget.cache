@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5svEHO0mqXI=",
+  "dgSpecHash": "HkyQIvgQtfM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj",
+  "projectFilePath": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages\\devexpress.aspnetcore.common\\24.1.7\\devexpress.aspnetcore.common.24.1.7.nupkg.sha512",
     "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages\\devexpress.aspnetcore.core\\24.1.7\\devexpress.aspnetcore.core.24.1.7.nupkg.sha512",

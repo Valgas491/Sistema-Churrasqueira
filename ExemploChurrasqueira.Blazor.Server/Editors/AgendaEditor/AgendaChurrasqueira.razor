@@ -167,7 +167,6 @@ ondblclick="@OnDoubleClick">
                 reservaLocal.Churrasqueira = newObjectSpace.FindObject<Churrasqueira>(
                     CriteriaOperator.Parse("Nome == ?", nomeChurrasqueira)
                 );
-                reservaLocal.Socio = null;
                 reservaLocal.DataReserva_Churrasqueira = dataSelecionada;
                 reservaLocal.QtdPessoas = 1;
                 reservaLocal.IsManutencao = false;

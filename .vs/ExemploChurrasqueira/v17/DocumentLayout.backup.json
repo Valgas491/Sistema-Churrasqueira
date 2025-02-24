@@ -1,191 +1,195 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\",
+  "WorkspaceRootPath": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\listview\\popupnotescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\controllers\\listview\\popupnotescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\nested\\gerenciarnested.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\controllers\\nested\\gerenciarnested.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\listview\\reservachurrasqueiradisponiveislistview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\controllers\\listview\\reservachurrasqueiradisponiveislistview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\listview\\ingressoreportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\controllers\\listview\\ingressoreportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\listview\\gerenciarlistview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\controllers\\listview\\gerenciarlistview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\editors\\agendaeditor\\agendachurrasqueira.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\editors\\agendaeditor\\agendachurrasqueira.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.module\\businessobjects\\per\\gerenciarchurrasqueira.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\businessobjects\\per\\gerenciarchurrasqueira.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\detailview\\exibirmensagemapossalvarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\detailview\\exibirmensagemapossalvarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\controllers\\detailview\\exibirmensagemapossalvarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\editors\\agendaeditor\\agendainputmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\editors\\agendaeditor\\agendainputmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\editors\\agendaeditor\\agendapropertyeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\editors\\agendaeditor\\agendapropertyeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\detailview\\agendacontrollerdetailview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\controllers\\detailview\\agendacontrollerdetailview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\detailview\\verificardisponibilidadecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\detailview\\verificardisponibilidadecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\controllers\\detailview\\verificardisponibilidadecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.module\\businessobjects\\per\\reservachurrasqueiradata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\editors\\agendaeditor\\agendachurrasqueira.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\editors\\agendaeditor\\agendachurrasqueira.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\businessobjects\\per\\reservachurrasqueiradata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\businessobjects\\per\\reservachurrasqueiradata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.module\\businessobjects\\per\\churrasqueira.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\businessobjects\\per\\churrasqueira.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\listview\\reservachurrasqueiradisponiveislistview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\controllers\\listview\\reservachurrasqueiradisponiveislistview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.module\\businessobjects\\per\\associado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\businessobjects\\per\\associado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\model.xafml||{4DD02038-D78C-4AD3-8B8D-13FC109B2DCD}",
+      "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\model.xafml||{4DD02038-D78C-4AD3-8B8D-13FC109B2DCD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.module\\exemplochurrasqueira.module.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\exemplochurrasqueira.module.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\detailview\\agendacontrollerdetailview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\controllers\\detailview\\agendacontrollerdetailview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\editors\\agendaeditor\\agendainputmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\editors\\agendaeditor\\agendainputmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.module\\businessobjects\\per\\reservaschedulermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\businessobjects\\per\\reservaschedulermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.module\\module.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\module.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\listview\\churrasqueiralistview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\controllers\\listview\\churrasqueiralistview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\editors\\agendaeditor\\agendainputadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\editors\\agendaeditor\\agendainputadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\exemplochurrasqueira.blazor.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\exemplochurrasqueira.blazor.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\detailview\\gerenciarchurrsqueiradetailview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\controllers\\detailview\\gerenciarchurrsqueiradetailview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\detailview\\churrasqueiradetailview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\detailview\\churrasqueiradetailview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\controllers\\detailview\\churrasqueiradetailview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.module\\model.designeddiffs.xafml||{4DD02038-D78C-4AD3-8B8D-13FC109B2DCD}",
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\nested\\gerenciarnested.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\controllers\\nested\\gerenciarnested.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\businessobjects\\per\\gerenciarchurrasqueira.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\businessobjects\\per\\gerenciarchurrasqueira.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\listview\\popupnotescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\controllers\\listview\\popupnotescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\listview\\ingressoreportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\controllers\\listview\\ingressoreportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\listview\\gerenciarlistview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\controllers\\listview\\gerenciarlistview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\editors\\agendaeditor\\agendapropertyeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\editors\\agendaeditor\\agendapropertyeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\businessobjects\\per\\churrasqueira.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\businessobjects\\per\\churrasqueira.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\businessobjects\\per\\associado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\businessobjects\\per\\associado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\exemplochurrasqueira.module.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\exemplochurrasqueira.module.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\businessobjects\\per\\reservaschedulermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\businessobjects\\per\\reservaschedulermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\module.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\module.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\listview\\churrasqueiralistview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\controllers\\listview\\churrasqueiralistview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\editors\\agendaeditor\\agendainputadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\editors\\agendaeditor\\agendainputadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\exemplochurrasqueira.blazor.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\exemplochurrasqueira.blazor.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\detailview\\gerenciarchurrsqueiradetailview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\controllers\\detailview\\gerenciarchurrsqueiradetailview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\model.designeddiffs.xafml||{4DD02038-D78C-4AD3-8B8D-13FC109B2DCD}",
       "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\model.designeddiffs.xafml||{4DD02038-D78C-4AD3-8B8D-13FC109B2DCD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\listview\\churrasqueriasdisponiveislistview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\listview\\churrasqueriasdisponiveislistview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\controllers\\listview\\churrasqueriasdisponiveislistview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\listview\\churrasqueiradisponivel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\listview\\churrasqueiradisponivel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\controllers\\listview\\churrasqueiradisponivel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.module\\businessobjects\\per\\ingressoreport.cs||{95027D70-C6B4-4736-8A48-AD3582187321}",
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\businessobjects\\per\\ingressoreport.cs||{95027D70-C6B4-4736-8A48-AD3582187321}",
       "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\businessobjects\\per\\ingressoreport.cs||{95027D70-C6B4-4736-8A48-AD3582187321}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.module\\helper\\toasthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\helper\\toasthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\helper\\toasthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\controllers\\navigationwindowcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\controllers\\navigationwindowcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\controllers\\navigationwindowcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\blazormodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\blazormodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\blazormodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\services\\xpodatastoreprovideraccessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\services\\xpodatastoreprovideraccessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\services\\xpodatastoreprovideraccessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.module\\businessobjects\\per\\parametros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\businessobjects\\per\\parametros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\businessobjects\\per\\parametros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.module\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.module\\helper\\modulehelperxaf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\helper\\modulehelperxaf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\helper\\modulehelperxaf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\listview\\churrasqueiradisponivel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\listview\\churrasqueiradisponivel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\controllers\\listview\\churrasqueiradisponivel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\estagio.analise\\Downloads\\Churrasuqeira-main\\Churrasuqeira-main\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\blazorapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\blazorapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\blazorapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\documents\\exemplochurrasqueira\\exemplochurrasqueira.module\\helper\\notify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\helper\\notify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\helper\\notify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -196,7 +200,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 206,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -248,128 +252,130 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GerenciarNested.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\Nested\\GerenciarNested.cs",
-              "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Controllers\\Nested\\GerenciarNested.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\Nested\\GerenciarNested.cs",
-              "RelativeToolTip": "ExemploChurrasqueira.Module\\Controllers\\Nested\\GerenciarNested.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACcAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "ReservaChurrasqueiraData.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\ReservaChurrasqueiraData.cs",
+              "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\BusinessObjects\\Per\\ReservaChurrasqueiraData.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\ReservaChurrasqueiraData.cs",
+              "RelativeToolTip": "ExemploChurrasqueira.Module\\BusinessObjects\\Per\\ReservaChurrasqueiraData.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAuwDIAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T12:34:55.729Z",
+              "WhenOpened": "2025-01-09T12:05:38.576Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AgendaChurrasqueira.razor",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Editors\\AgendaEditor\\AgendaChurrasqueira.razor",
+              "RelativeDocumentMoniker": "ExemploChurrasqueira.Blazor.Server\\Editors\\AgendaEditor\\AgendaChurrasqueira.razor",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Editors\\AgendaEditor\\AgendaChurrasqueira.razor",
+              "RelativeToolTip": "ExemploChurrasqueira.Blazor.Server\\Editors\\AgendaEditor\\AgendaChurrasqueira.razor",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAAK0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-12T17:30:47.701Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PopupNotesController.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\PopupNotesController.cs",
-              "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Controllers\\ListView\\PopupNotesController.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\PopupNotesController.cs",
-              "RelativeToolTip": "ExemploChurrasqueira.Module\\Controllers\\ListView\\PopupNotesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAANAAAAAAAAAA==",
+              "Title": "ExibirMensagemAposSalvarController.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\DetailView\\ExibirMensagemAposSalvarController.cs",
+              "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Controllers\\DetailView\\ExibirMensagemAposSalvarController.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\DetailView\\ExibirMensagemAposSalvarController.cs",
+              "RelativeToolTip": "ExemploChurrasqueira.Module\\Controllers\\DetailView\\ExibirMensagemAposSalvarController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAwEIAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T14:04:59.96Z",
+              "WhenOpened": "2025-02-21T13:39:46.527Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AgendaChurrasqueira.razor",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Editors\\AgendaEditor\\AgendaChurrasqueira.razor",
-              "RelativeDocumentMoniker": "ExemploChurrasqueira.Blazor.Server\\Editors\\AgendaEditor\\AgendaChurrasqueira.razor",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Editors\\AgendaEditor\\AgendaChurrasqueira.razor",
-              "RelativeToolTip": "ExemploChurrasqueira.Blazor.Server\\Editors\\AgendaEditor\\AgendaChurrasqueira.razor",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAAAK4AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-12T17:30:47.701Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ReservaChurrasqueiraDisponiveisListView.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\ReservaChurrasqueiraDisponiveisListView.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\ReservaChurrasqueiraDisponiveisListView.cs",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Controllers\\ListView\\ReservaChurrasqueiraDisponiveisListView.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\ReservaChurrasqueiraDisponiveisListView.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\ReservaChurrasqueiraDisponiveisListView.cs",
               "RelativeToolTip": "ExemploChurrasqueira.Module\\Controllers\\ListView\\ReservaChurrasqueiraDisponiveisListView.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAIwDoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-19T13:43:50.016Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "AgendaInputModule.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Editors\\AgendaEditor\\AgendaInputModule.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Editors\\AgendaEditor\\AgendaInputModule.cs",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Blazor.Server\\Editors\\AgendaEditor\\AgendaInputModule.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Editors\\AgendaEditor\\AgendaInputModule.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Editors\\AgendaEditor\\AgendaInputModule.cs",
               "RelativeToolTip": "ExemploChurrasqueira.Blazor.Server\\Editors\\AgendaEditor\\AgendaInputModule.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T13:47:53.277Z"
+              "WhenOpened": "2025-02-18T13:47:53.277Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "GerenciarChurrasqueira.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\GerenciarChurrasqueira.cs",
-              "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\BusinessObjects\\Per\\GerenciarChurrasqueira.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\GerenciarChurrasqueira.cs",
-              "RelativeToolTip": "ExemploChurrasqueira.Module\\BusinessObjects\\Per\\GerenciarChurrasqueira.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAgwHEAAAAzAAAAAAAAAA==",
+              "Title": "AgendaControllerDetailView.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\DetailView\\AgendaControllerDetailView.cs",
+              "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Controllers\\DetailView\\AgendaControllerDetailView.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\DetailView\\AgendaControllerDetailView.cs",
+              "RelativeToolTip": "ExemploChurrasqueira.Module\\Controllers\\DetailView\\AgendaControllerDetailView.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwCIAAAB+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T12:04:06.148Z",
+              "WhenOpened": "2025-02-18T15:46:54.328Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IngressoReportController.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\IngressoReportController.cs",
-              "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Controllers\\ListView\\IngressoReportController.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\IngressoReportController.cs",
-              "RelativeToolTip": "ExemploChurrasqueira.Module\\Controllers\\ListView\\IngressoReportController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwC4AAAAtAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "VerificarDisponibilidadeController.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\DetailView\\VerificarDisponibilidadeController.cs",
+              "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Controllers\\DetailView\\VerificarDisponibilidadeController.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\DetailView\\VerificarDisponibilidadeController.cs",
+              "RelativeToolTip": "ExemploChurrasqueira.Module\\Controllers\\DetailView\\VerificarDisponibilidadeController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAwDsAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T12:37:51.818Z",
+              "WhenOpened": "2025-02-21T13:19:27.554Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GerenciarListVIew.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\GerenciarListVIew.cs",
-              "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Controllers\\ListView\\GerenciarListVIew.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\GerenciarListVIew.cs",
-              "RelativeToolTip": "ExemploChurrasqueira.Module\\Controllers\\ListView\\GerenciarListVIew.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAQwCYAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Model.xafml",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Model.xafml",
+              "RelativeDocumentMoniker": "ExemploChurrasqueira.Blazor.Server\\Model.xafml",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Model.xafml",
+              "RelativeToolTip": "ExemploChurrasqueira.Blazor.Server\\Model.xafml",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALTSURBVDhPpZNbSFRRFIb/fS6eOaM52jgy1lhqmdpINyIogih7qB566KGCxMaXQrAeeqoIKhGCgkCQoh6KwoKaqMxCNIioTBCyi6Y1FU05jtNlbI7j3M5tt0eHwOqpPticzd5r/XutxX/wX1BKM7t/h2S\u002BM6B0RzHik9ughT0gYgiS4wwkvosQr5oJ\u002BcUMAXpxb4mxXtlKXL4DnKbOh84q5NkFxyMeyHl4n3Me/VFqvKon7ZHpDCZAWzZJyMqtQVypx2R0rW5L2M0VSVFcIoDMIkh9A4YGVDzTVYSXWie4HOljnlBwRSQWb73c7if09IbHiEXXwtCZHAeYbMGEVjCOH9UC7o/H4V8ugBbL4DUDVKNIT06WrQHZnN1KAo2LaZEzG5yQrtWEHlUwPGbiibwOI2vqEJk9iFnl55DnGIMo57JHRPACRWgwhQFvvJ/07qo07VaOOAstCCopPDLdeOneg4nSmnSL4A22zE\u002BQbedhX9gBSU7C16Vi6G4CZop/QPo81TFeT1nVRAw3XB6EtjRBtvAgiamCpkh3li47EW6DHjsIX2cKECkKC5xXOSJZA4auQ\u002BA5xFUNYd8wzHEFosiGL7A4K9PRo3jffRVv73UjFeXBZQGGqWKuY947zlZWsYfLznsDU4MtGUZyPIixwV4oo37Wq8kEn6P/UhM\u002B99xhM5iEoWnQVQNlrsq2Mlf52SkfDJ/YXWL4X5y5FS3d/KCyARJT5wQJekLBSF8HqK6BmlY43CHkz3k\u002BkRNZdFxf5Wjxbvcav4w0dqo2\u002B7ZaVXtdXXaWpwaxWKyIjLxmFfSB8AIzpobV6wo7F1QFDzXXXX\u002BZSfvTynWtT/d\u002B//7tpMFJuYmvH/BlqIedEjjy829t2rhy35EGz\u002Bh05DRp18zgcuOac\u002B5ix1Y5ixtKplQQAs1dseBwUbV95\u002B/Jaf76M6XZf6G3PPjB18wrH29eaz12LXP8G8BPoRwphdwLay4AAAAASUVORK5CYII=",
+              "WhenOpened": "2025-02-24T13:54:41.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ChurrasqueiraDetailView.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\DetailView\\ChurrasqueiraDetailView.cs",
+              "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Controllers\\DetailView\\ChurrasqueiraDetailView.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\DetailView\\ChurrasqueiraDetailView.cs",
+              "RelativeToolTip": "ExemploChurrasqueira.Module\\Controllers\\DetailView\\ChurrasqueiraDetailView.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAQwCYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T12:14:13.754Z",
+              "WhenOpened": "2025-01-09T12:07:11.211Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AgendaPropertyEditor.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Editors\\AgendaEditor\\AgendaPropertyEditor.cs",
-              "RelativeDocumentMoniker": "ExemploChurrasqueira.Blazor.Server\\Editors\\AgendaEditor\\AgendaPropertyEditor.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Editors\\AgendaEditor\\AgendaPropertyEditor.cs",
-              "RelativeToolTip": "ExemploChurrasqueira.Blazor.Server\\Editors\\AgendaEditor\\AgendaPropertyEditor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAB4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T13:45:38.793Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "_Host.cshtml",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Pages\\_Host.cshtml",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Pages\\_Host.cshtml",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Blazor.Server\\Pages\\_Host.cshtml",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Pages\\_Host.cshtml",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Pages\\_Host.cshtml",
               "RelativeToolTip": "ExemploChurrasqueira.Blazor.Server\\Pages\\_Host.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -377,60 +383,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "ExemploChurrasqueira.Blazor.Server\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "ExemploChurrasqueira.Blazor.Server\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-14T11:36:41.102Z",
-              "EditorCaption": ""
+              "DocumentIndex": 15,
+              "Title": "AgendaPropertyEditor.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Editors\\AgendaEditor\\AgendaPropertyEditor.cs",
+              "RelativeDocumentMoniker": "ExemploChurrasqueira.Blazor.Server\\Editors\\AgendaEditor\\AgendaPropertyEditor.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Editors\\AgendaEditor\\AgendaPropertyEditor.cs",
+              "RelativeToolTip": "ExemploChurrasqueira.Blazor.Server\\Editors\\AgendaEditor\\AgendaPropertyEditor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAB4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T13:45:38.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GerenciarListVIew.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\GerenciarListVIew.cs",
+              "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Controllers\\ListView\\GerenciarListVIew.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\GerenciarListVIew.cs",
+              "RelativeToolTip": "ExemploChurrasqueira.Module\\Controllers\\ListView\\GerenciarListVIew.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwCYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T12:14:13.754Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "AgendaControllerDetailView.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\DetailView\\AgendaControllerDetailView.cs",
-              "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Controllers\\DetailView\\AgendaControllerDetailView.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\DetailView\\AgendaControllerDetailView.cs",
-              "RelativeToolTip": "ExemploChurrasqueira.Module\\Controllers\\DetailView\\AgendaControllerDetailView.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAkwCIAAAB+AAAAAAAAAA==",
+              "Title": "IngressoReportController.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\IngressoReportController.cs",
+              "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Controllers\\ListView\\IngressoReportController.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\IngressoReportController.cs",
+              "RelativeToolTip": "ExemploChurrasqueira.Module\\Controllers\\ListView\\IngressoReportController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwC4AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T15:46:54.328Z"
+              "WhenOpened": "2025-02-03T12:37:51.818Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ExibirMensagemAposSalvarController.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\DetailView\\ExibirMensagemAposSalvarController.cs",
-              "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Controllers\\DetailView\\ExibirMensagemAposSalvarController.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\DetailView\\ExibirMensagemAposSalvarController.cs",
-              "RelativeToolTip": "ExemploChurrasqueira.Module\\Controllers\\DetailView\\ExibirMensagemAposSalvarController.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAYwDgAAAAkAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "GerenciarChurrasqueira.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\GerenciarChurrasqueira.cs",
+              "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\BusinessObjects\\Per\\GerenciarChurrasqueira.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\GerenciarChurrasqueira.cs",
+              "RelativeToolTip": "ExemploChurrasqueira.Module\\BusinessObjects\\Per\\GerenciarChurrasqueira.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAA1wFkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T13:39:46.527Z"
+              "WhenOpened": "2025-01-24T12:04:06.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GerenciarNested.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\Nested\\GerenciarNested.cs",
+              "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Controllers\\Nested\\GerenciarNested.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\Nested\\GerenciarNested.cs",
+              "RelativeToolTip": "ExemploChurrasqueira.Module\\Controllers\\Nested\\GerenciarNested.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T12:34:55.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PopupNotesController.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\PopupNotesController.cs",
+              "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Controllers\\ListView\\PopupNotesController.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\PopupNotesController.cs",
+              "RelativeToolTip": "ExemploChurrasqueira.Module\\Controllers\\ListView\\PopupNotesController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T14:04:59.96Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "ReservaChurrasqueiraData.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\ReservaChurrasqueiraData.cs",
-              "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\BusinessObjects\\Per\\ReservaChurrasqueiraData.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\ReservaChurrasqueiraData.cs",
-              "RelativeToolTip": "ExemploChurrasqueira.Module\\BusinessObjects\\Per\\ReservaChurrasqueiraData.cs",
-              "ViewState": "AgIAAJoAAAAAAAAAAAAuwMAAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T12:05:38.576Z"
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "ExemploChurrasqueira.Blazor.Server\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "ExemploChurrasqueira.Blazor.Server\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-14T11:36:41.102Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Associado.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\Associado.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\Associado.cs",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\BusinessObjects\\Per\\Associado.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\Associado.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\Associado.cs",
               "RelativeToolTip": "ExemploChurrasqueira.Module\\BusinessObjects\\Per\\Associado.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -438,23 +482,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "VerificarDisponibilidadeController.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\DetailView\\VerificarDisponibilidadeController.cs",
-              "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Controllers\\DetailView\\VerificarDisponibilidadeController.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\DetailView\\VerificarDisponibilidadeController.cs",
-              "RelativeToolTip": "ExemploChurrasqueira.Module\\Controllers\\DetailView\\VerificarDisponibilidadeController.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAAwDMAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T13:19:27.554Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "ExemploChurrasqueira.Module.csproj",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj",
               "RelativeToolTip": "ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -462,11 +494,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Startup.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Startup.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Startup.cs",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Blazor.Server\\Startup.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Startup.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Startup.cs",
               "RelativeToolTip": "ExemploChurrasqueira.Blazor.Server\\Startup.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwBsAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -474,11 +506,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Churrasqueira.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\Churrasqueira.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\Churrasqueira.cs",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\BusinessObjects\\Per\\Churrasqueira.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\Churrasqueira.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\Churrasqueira.cs",
               "RelativeToolTip": "ExemploChurrasqueira.Module\\BusinessObjects\\Per\\Churrasqueira.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAAUwEsAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -486,11 +518,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Program.cs",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Blazor.Server\\Program.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Program.cs",
               "RelativeToolTip": "ExemploChurrasqueira.Blazor.Server\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -498,11 +530,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "Module.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Module.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Module.cs",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Module.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Module.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Module.cs",
               "RelativeToolTip": "ExemploChurrasqueira.Module\\Module.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAewDsAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -510,11 +542,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "AgendaInputAdapter.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Editors\\AgendaEditor\\AgendaInputAdapter.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Editors\\AgendaEditor\\AgendaInputAdapter.cs",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Blazor.Server\\Editors\\AgendaEditor\\AgendaInputAdapter.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Editors\\AgendaEditor\\AgendaInputAdapter.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Editors\\AgendaEditor\\AgendaInputAdapter.cs",
               "RelativeToolTip": "ExemploChurrasqueira.Blazor.Server\\Editors\\AgendaEditor\\AgendaInputAdapter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -522,11 +554,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "ReservaSchedulerModel.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\ReservaSchedulerModel.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\ReservaSchedulerModel.cs",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\BusinessObjects\\Per\\ReservaSchedulerModel.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\ReservaSchedulerModel.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\ReservaSchedulerModel.cs",
               "RelativeToolTip": "ExemploChurrasqueira.Module\\BusinessObjects\\Per\\ReservaSchedulerModel.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAADwvzYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -534,11 +566,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "ChurrasqueiraListView.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\ChurrasqueiraListView.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\ChurrasqueiraListView.cs",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Controllers\\ListView\\ChurrasqueiraListView.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\ChurrasqueiraListView.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\ChurrasqueiraListView.cs",
               "RelativeToolTip": "ExemploChurrasqueira.Module\\Controllers\\ListView\\ChurrasqueiraListView.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAxwDQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -546,11 +578,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "ExemploChurrasqueira.Blazor.Server.csproj",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj",
               "RelativeToolTip": "ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj",
               "ViewState": "AgIAAAcAAAAAAAAAAABBwAIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -558,11 +590,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "GerenciarChurrsqueiraDetailView.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\DetailView\\GerenciarChurrsqueiraDetailView.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\DetailView\\GerenciarChurrsqueiraDetailView.cs",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Controllers\\DetailView\\GerenciarChurrsqueiraDetailView.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\DetailView\\GerenciarChurrsqueiraDetailView.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\DetailView\\GerenciarChurrsqueiraDetailView.cs",
               "RelativeToolTip": "ExemploChurrasqueira.Module\\Controllers\\DetailView\\GerenciarChurrsqueiraDetailView.cs",
               "ViewState": "AgIAAFsAAAAAAAAAAAAcwHUAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -570,34 +602,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "ChurrasqueiraDetailView.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\DetailView\\ChurrasqueiraDetailView.cs",
-              "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Controllers\\DetailView\\ChurrasqueiraDetailView.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\DetailView\\ChurrasqueiraDetailView.cs",
-              "RelativeToolTip": "ExemploChurrasqueira.Module\\Controllers\\DetailView\\ChurrasqueiraDetailView.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwCYAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T12:07:11.211Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "Model.DesignedDiffs.xafml",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Model.DesignedDiffs.xafml",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Model.DesignedDiffs.xafml",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Model.DesignedDiffs.xafml",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Model.DesignedDiffs.xafml",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Model.DesignedDiffs.xafml",
               "RelativeToolTip": "ExemploChurrasqueira.Module\\Model.DesignedDiffs.xafml",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALTSURBVDhPpZNbSFRRFIb/fS6eOaM52jgy1lhqmdpINyIogih7qB566KGCxMaXQrAeeqoIKhGCgkCQoh6KwoKaqMxCNIioTBCyi6Y1FU05jtNlbI7j3M5tt0eHwOqpPticzd5r/XutxX/wX1BKM7t/h2S\u002BM6B0RzHik9ughT0gYgiS4wwkvosQr5oJ\u002BcUMAXpxb4mxXtlKXL4DnKbOh84q5NkFxyMeyHl4n3Me/VFqvKon7ZHpDCZAWzZJyMqtQVypx2R0rW5L2M0VSVFcIoDMIkh9A4YGVDzTVYSXWie4HOljnlBwRSQWb73c7if09IbHiEXXwtCZHAeYbMGEVjCOH9UC7o/H4V8ugBbL4DUDVKNIT06WrQHZnN1KAo2LaZEzG5yQrtWEHlUwPGbiibwOI2vqEJk9iFnl55DnGIMo57JHRPACRWgwhQFvvJ/07qo07VaOOAstCCopPDLdeOneg4nSmnSL4A22zE\u002BQbedhX9gBSU7C16Vi6G4CZop/QPo81TFeT1nVRAw3XB6EtjRBtvAgiamCpkh3li47EW6DHjsIX2cKECkKC5xXOSJZA4auQ\u002BA5xFUNYd8wzHEFosiGL7A4K9PRo3jffRVv73UjFeXBZQGGqWKuY947zlZWsYfLznsDU4MtGUZyPIixwV4oo37Wq8kEn6P/UhM\u002B99xhM5iEoWnQVQNlrsq2Mlf52SkfDJ/YXWL4X5y5FS3d/KCyARJT5wQJekLBSF8HqK6BmlY43CHkz3k\u002BkRNZdFxf5Wjxbvcav4w0dqo2\u002B7ZaVXtdXXaWpwaxWKyIjLxmFfSB8AIzpobV6wo7F1QFDzXXXX\u002BZSfvTynWtT/d\u002B//7tpMFJuYmvH/BlqIedEjjy829t2rhy35EGz\u002Bh05DRp18zgcuOac\u002B5ix1Y5ixtKplQQAs1dseBwUbV95\u002B/Jaf76M6XZf6G3PPjB18wrH29eaz12LXP8G8BPoRwphdwLay4AAAAASUVORK5CYII=",
               "WhenOpened": "2025-02-19T17:19:28.083Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "ChurrasqueriasDisponiveisListView.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\ChurrasqueriasDisponiveisListView.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\ChurrasqueriasDisponiveisListView.cs",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Controllers\\ListView\\ChurrasqueriasDisponiveisListView.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\ChurrasqueriasDisponiveisListView.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\ChurrasqueriasDisponiveisListView.cs",
               "RelativeToolTip": "ExemploChurrasqueira.Module\\Controllers\\ListView\\ChurrasqueriasDisponiveisListView.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAcwDMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -605,11 +625,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "ChurrasqueiraDisponivel.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\ChurrasqueiraDisponivel.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\ChurrasqueiraDisponivel.cs",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Controllers\\ListView\\ChurrasqueiraDisponivel.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\ChurrasqueiraDisponivel.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\ChurrasqueiraDisponivel.cs",
               "RelativeToolTip": "ExemploChurrasqueira.Module\\Controllers\\ListView\\ChurrasqueiraDisponivel.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAowBwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -617,11 +637,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "App.razor",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\App.razor",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\App.razor",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Blazor.Server\\App.razor",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\App.razor",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\App.razor",
               "RelativeToolTip": "ExemploChurrasqueira.Blazor.Server\\App.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -629,11 +649,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "_Imports.razor",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\_Imports.razor",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Blazor.Server\\_Imports.razor",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\_Imports.razor",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\_Imports.razor",
               "RelativeToolTip": "ExemploChurrasqueira.Blazor.Server\\_Imports.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -641,11 +661,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "ToastHelper.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Helper\\ToastHelper.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Helper\\ToastHelper.cs",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Helper\\ToastHelper.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Helper\\ToastHelper.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Helper\\ToastHelper.cs",
               "RelativeToolTip": "ExemploChurrasqueira.Module\\Helper\\ToastHelper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -653,11 +673,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "IngressoReport.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\IngressoReport.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\IngressoReport.cs",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\BusinessObjects\\Per\\IngressoReport.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\IngressoReport.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\IngressoReport.cs",
               "RelativeToolTip": "ExemploChurrasqueira.Module\\BusinessObjects\\Per\\IngressoReport.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAIBZwKIAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -665,11 +685,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Properties\\launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Blazor.Server\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Properties\\launchSettings.json",
               "RelativeToolTip": "ExemploChurrasqueira.Blazor.Server\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -677,11 +697,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "NavigationWindowController.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Controllers\\NavigationWindowController.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Controllers\\NavigationWindowController.cs",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Blazor.Server\\Controllers\\NavigationWindowController.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Controllers\\NavigationWindowController.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Controllers\\NavigationWindowController.cs",
               "RelativeToolTip": "ExemploChurrasqueira.Blazor.Server\\Controllers\\NavigationWindowController.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAgwC8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -689,11 +709,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "BlazorModule.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\BlazorModule.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\BlazorModule.cs",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Blazor.Server\\BlazorModule.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\BlazorModule.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\BlazorModule.cs",
               "RelativeToolTip": "ExemploChurrasqueira.Blazor.Server\\BlazorModule.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -701,11 +721,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "XpoDataStoreProviderAccessor.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Services\\XpoDataStoreProviderAccessor.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Services\\XpoDataStoreProviderAccessor.cs",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Blazor.Server\\Services\\XpoDataStoreProviderAccessor.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Services\\XpoDataStoreProviderAccessor.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Services\\XpoDataStoreProviderAccessor.cs",
               "RelativeToolTip": "ExemploChurrasqueira.Blazor.Server\\Services\\XpoDataStoreProviderAccessor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -713,11 +733,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "Parametros.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\Parametros.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\Parametros.cs",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\BusinessObjects\\Per\\Parametros.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\Parametros.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\Parametros.cs",
               "RelativeToolTip": "ExemploChurrasqueira.Module\\BusinessObjects\\Per\\Parametros.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -725,11 +745,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\appsettings.json",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Blazor.Server\\appsettings.json",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\appsettings.json",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\appsettings.json",
               "RelativeToolTip": "ExemploChurrasqueira.Blazor.Server\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -737,11 +757,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\appsettings.json",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\appsettings.json",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\appsettings.json",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\appsettings.json",
               "RelativeToolTip": "ExemploChurrasqueira.Module\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -749,11 +769,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "ModuleHelperXaf.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Helper\\ModuleHelperXaf.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Helper\\ModuleHelperXaf.cs",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Helper\\ModuleHelperXaf.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Helper\\ModuleHelperXaf.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Helper\\ModuleHelperXaf.cs",
               "RelativeToolTip": "ExemploChurrasqueira.Module\\Helper\\ModuleHelperXaf.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAkwCIAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -761,22 +781,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "Microsoft.NET.Sdk.DefaultItems.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.targets",
               "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.101\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.Sdk.DefaultItems.targets",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
               "WhenOpened": "2025-02-03T13:39:37.709Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "ChurrasqueiraDisponivel.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\ChurrasqueiraDisponivel.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\ChurrasqueiraDisponivel.Designer.cs",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Controllers\\ListView\\ChurrasqueiraDisponivel.Designer.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\ChurrasqueiraDisponivel.Designer.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\ChurrasqueiraDisponivel.Designer.cs",
               "RelativeToolTip": "ExemploChurrasqueira.Module\\Controllers\\ListView\\ChurrasqueiraDisponivel.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -784,11 +804,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "BlazorApplication.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\BlazorApplication.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\BlazorApplication.cs",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Blazor.Server\\BlazorApplication.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\BlazorApplication.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\BlazorApplication.cs",
               "RelativeToolTip": "ExemploChurrasqueira.Blazor.Server\\BlazorApplication.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -796,11 +816,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "Notify.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Helper\\Notify.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Helper\\Notify.cs",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Helper\\Notify.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Helper\\Notify.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Helper\\Notify.cs",
               "RelativeToolTip": "ExemploChurrasqueira.Module\\Helper\\Notify.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -808,12 +828,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\estagio.analise\\Downloads\\Churrasuqeira-main\\Churrasuqeira-main\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\appsettings.json",
-              "RelativeDocumentMoniker": "..\\..\\Downloads\\Churrasuqeira-main\\Churrasuqeira-main\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Churrasuqeira-main\\Churrasuqeira-main\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\appsettings.json",
               "ToolTip": "C:\\Users\\estagio.analise\\Downloads\\Churrasuqeira-main\\Churrasuqeira-main\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\appsettings.json",
-              "RelativeToolTip": "..\\..\\Downloads\\Churrasuqeira-main\\Churrasuqeira-main\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\appsettings.json",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Churrasuqeira-main\\Churrasuqeira-main\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-01-09T12:30:02.533Z"

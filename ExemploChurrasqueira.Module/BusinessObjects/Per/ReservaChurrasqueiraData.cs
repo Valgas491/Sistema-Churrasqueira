@@ -49,7 +49,7 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
 
         [NonPersistent]
         [XafDisplayName("Socio")]
-        [RuleRequiredField(DefaultContexts.Save)]
+        [RuleRequiredField]
         [VisibleInListView(false)]
         public Socio Socio
         {

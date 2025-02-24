@@ -1,27 +1,27 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\wwwroot\\images\\Logo.svg",
+      "Id": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\wwwroot\\images\\Logo.svg",
       "PackagePath": "staticwebassets\\images\\Logo.svg"
     },
     {
-      "Id": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\wwwroot\\images\\SplashScreen.svg",
+      "Id": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\wwwroot\\images\\SplashScreen.svg",
       "PackagePath": "staticwebassets\\images\\SplashScreen.svg"
     },
     {
-      "Id": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\wwwroot\\images\\backIngresso.png",
+      "Id": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\wwwroot\\images\\backIngresso.png",
       "PackagePath": "staticwebassets\\images\\backIngresso.png"
     },
     {
-      "Id": "C:\\Users\\estagio.analise\\Documents\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\wwwroot\\javascript\\dx.all.js",
+      "Id": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\wwwroot\\javascript\\dx.all.js",
       "PackagePath": "staticwebassets\\javascript\\dx.all.js"
     },
     {
