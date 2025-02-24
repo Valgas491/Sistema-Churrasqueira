@@ -1,0 +1,181 @@
+﻿@page "/Agenda"
+@using DevExpress.Data.Filtering
+@using DevExpress.ExpressApp
+@using System.Dynamic
+@using DevExpress.ExpressApp.Editors
+@using ExemploChurrasqueira.Module.BusinessObjects.Per
+@using Microsoft.JSInterop
+@using ExemploChurrasqueira.Module.Helper
+
+@inject IObjectSpaceFactory ObjectSpaceFactory
+@inject NavigationManager Navigation
+@inject IJSRuntime JsRuntime
+
+<DxScheduler    StartDate="@DateTime.Today"
+DataStorage="@DataStorage"
+CssClass="mw-1100"
+AllowCreateAppointment="false"
+AllowEditAppointment="false"
+AllowDeleteAppointment="false"
+SelectedAppointmentChanged="(e) => SelectionChanged(e)"
+ondblclick="@OnDoubleClick">
+    <DxSchedulerMonthView />
+</DxScheduler>
+
+@code {
+    [Parameter]
+    public AgendaInputModel ComponentModel { get; set; }
+    public static RenderFragment Create(AgendaInputModel componentModel) =>
+    @<AgendaChurrasqueira ComponentModel=@componentModel />
+    ;
+
+    private static DevExpress.ExpressApp.IObjectSpace objectSpace;
+    private DxSchedulerAppointmentItem SelectedAppointment { get; set; }
+    DxSchedulerDataStorage DataStorage = new DxSchedulerDataStorage();
+    private bool _shouldRender = true;
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        ConfigurarStorage();
+        CarregarReservas();
+    }
+
+    private void ConfigurarStorage()
+    {
+        DataStorage.AppointmentMappings = new DxSchedulerAppointmentMappings()
+            {
+                Start = "Start",
+                End = "End",
+                Subject = "Subject",
+                Description = "Description",
+                LabelId = "LabelId"
+            };
+    }
+
+    private void CarregarReservas()
+    {
+        objectSpace = ObjectSpaceFactory.CreateObjectSpace<ReservaChurrasqueiraData>();
+        var todasChurrasqueiras = objectSpace.GetObjects<Churrasqueira>().ToList();
+        var reservas = objectSpace.GetObjects<ReservaChurrasqueiraData>();
+
+        List<dynamic> eventos = new List<dynamic>();
+        int ano = DateTime.Today.Year;
+        foreach (var reserva in reservas)
+        {
+            if (reserva.DataReserva_Churrasqueira > DateTime.MinValue)
+            {
+                dynamic item = new ExpandoObject();
+                item.Start = reserva.DataReserva_Churrasqueira;
+                item.End = reserva.DataReserva_Churrasqueira;
+                item.Subject = $"{reserva.Churrasqueira.Nome} - {(reserva.IsManutencao ? "Manutenção" : "Reservada")}";
+                item.Description = reserva.IsManutencao ? $"Reservado para Manutenção" : $"Reservado para: {reserva.Associado}";
+                item.LabelId = reserva.IsManutencao ? 1 : 5;
+                eventos.Add(item);
+            }
+        }
+        for (int mes = 1; mes <= 12; mes++)
+        {
+            DateTime primeiroDiaMes = new DateTime(ano, mes, 1);
+            DateTime ultimoDiaMes = new DateTime(ano, mes, DateTime.DaysInMonth(ano, mes));
+
+            for (DateTime dataAtual = primeiroDiaMes; dataAtual <= ultimoDiaMes; dataAtual = dataAtual.AddDays(1))
+            {
+                var churrasqueirasReservadas = reservas
+                    .Where(r => r.DataReserva_Churrasqueira.Date == dataAtual.Date)
+                    .Select(r => r.Churrasqueira.Nome)
+                    .ToList();
+
+                foreach (var churrasqueira in todasChurrasqueiras)
+                {
+                    if (!churrasqueirasReservadas.Contains(churrasqueira.Nome))
+                    {
+                        dynamic item = new ExpandoObject();
+                        item.Start = dataAtual;
+                        item.End = dataAtual;
+                        item.Subject = $"{churrasqueira.Nome} - Disponível";
+                        item.Description = "Churrasqueira disponível para reserva";
+                        item.LabelId = 8;
+                        eventos.Add(item);
+                    }
+                }
+            }
+        }
+        DataStorage.AppointmentsSource = eventos;
+        _shouldRender = true;
+        StateHasChanged();
+    }
+
+
+    protected override bool ShouldRender()
+    {
+        return _shouldRender;
+    }
+    void SelectionChanged(DxSchedulerAppointmentItem e)
+    {
+        _shouldRender = false;
+
+        if (e != null)
+            SelectedAppointment = e;
+
+    }
+    public static ReservaChurrasqueiraData AppointmentToReserva(IObjectSpace objectSpace, DxSchedulerAppointmentItem appointmentItem)
+    {
+        string nomeChurrasqueira = appointmentItem.Subject.Split(" - ")[0];
+        DateTime start = appointmentItem.Start.Date.AddHours(appointmentItem.Start.Hour);
+        string opcao = appointmentItem.Subject.Split(" - ")[1];
+        if(opcao == "Reservada")
+        {
+            var reserva = objectSpace.FindObject<ReservaChurrasqueiraData>
+            (
+                 CriteriaOperator.FromLambda<ReservaChurrasqueiraData>
+                 (
+                     x => x.Churrasqueira.Nome == nomeChurrasqueira
+                     && x.DataReserva_Churrasqueira.Year == start.Year
+                     && x.DataReserva_Churrasqueira.Month == start.Month
+                     && x.DataReserva_Churrasqueira.Day == start.Day
+                     && x.DataReserva_Churrasqueira.Hour == start.Hour
+                 )
+            );
+            return reserva;
+        }
+        else
+        {
+            return null;
+        }
+
+    }
+    async void OnDoubleClick()
+    {
+        if (SelectedAppointment != null)
+        {
+            string nomeChurrasqueira = SelectedAppointment.Subject.Split(" - ")[0];
+            DateTime dataSelecionada = SelectedAppointment.Start;
+
+            using IObjectSpace newObjectSpace = ObjectSpaceFactory.CreateObjectSpace<ReservaChurrasqueiraData>();
+            var reservaLocal = newObjectSpace.FindObject<ReservaChurrasqueiraData>(
+                CriteriaOperator.FromLambda<ReservaChurrasqueiraData>(
+                    x => x.Churrasqueira.Nome == nomeChurrasqueira &&
+                         x.DataReserva_Churrasqueira.Year == dataSelecionada.Year &&
+                         x.DataReserva_Churrasqueira.Month == dataSelecionada.Month &&
+                         x.DataReserva_Churrasqueira.Day == dataSelecionada.Day
+                )
+            );
+
+            if (reservaLocal == null)
+            {
+                reservaLocal = newObjectSpace.CreateObject<ReservaChurrasqueiraData>();
+                reservaLocal.Churrasqueira = newObjectSpace.FindObject<Churrasqueira>(
+                    CriteriaOperator.Parse("Nome == ?", nomeChurrasqueira)
+                );
+                reservaLocal.Socio = null;
+                reservaLocal.DataReserva_Churrasqueira = dataSelecionada;
+                reservaLocal.QtdPessoas = 1;
+                reservaLocal.IsManutencao = false;
+                reservaLocal.Valor = 51;
+                newObjectSpace.CommitChanges();
+            }
+            await JsRuntime.InvokeVoidAsync("open", $"/ReservaChurrasqueiraData_DetailView/{reservaLocal.Oid}", "_self");
+        }
+    }
+
+}

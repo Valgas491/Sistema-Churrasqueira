@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="ExemploChurrasqueira.Module.BusinessObjects.Per.Churrasqueira" DefaultDetailViewImage="Action_New" DefaultListViewImage="Action_New" ImageName="Action_New" />
+  </BOModel>
+  <NavigationItems NavigationStyle="Accordion" />
+  <Options UIType="TabbedMDI" RestoreTabbedMdiLayout="False" ShowTabImage="True" />
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="24.1.7.0" IsNewNode="True" />
+  </SchemaModules>
+</Application>

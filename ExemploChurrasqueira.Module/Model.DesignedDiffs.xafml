@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="ExemploChurrasqueira">
+  <BOModel>
+    <Class Name="ExemploChurrasqueira.Module.BusinessObjects.Per.ReservaChurrasqueiraData">
+      <OwnMembers>
+        <Member Name="DataReserva_Churrasqueira" DisplayFormat="" EditMask="" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <NavigationItems NavigationStyle="NavBar" GenerateRelatedReportsGroup="False">
+    <Items>
+      <Item Id="Reports" Visible="False" />
+    </Items>
+  </NavigationItems>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="24.1.7.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="GerenciarChurrasqueira_ListView" ImageName="Action_ColumnChooser" />
+    <DetailView Id="NewReportWizardParameters_DetailView" EnableCaptionColon="True" />
+    <DetailView Id="ReservaChurrasqueiraData_DetailView">
+      <Items>
+        <PropertyEditor Id="DataReserva_Churrasqueira" EditMask="dd/MM/yyyy" />
+      </Items>
+    </DetailView>
+    <ListView Id="ReservaChurrasqueiraData_ListView" IsGroupPanelVisible="False">
+      <Columns>
+        <ColumnInfo Id="DataReserva_Churrasqueira" PropertyEditorType="DevExpress.ExpressApp.Editors.DetailPropertyEditor" EditMask="" DisplayFormat="" />
+        <ColumnInfo Id="Socio" SortOrder="Ascending" Width="400" SortIndex="0" />
+      </Columns>
+    </ListView>
+    <ListView Id="ReservaChurrasqueiraData_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Socio" Width="340" SortOrder="Ascending" SortIndex="0" />
+        <ColumnInfo Id="DataReserva_Churrasqueira" EditMask="dd/MM/yyyy" />
+      </Columns>
+    </ListView>
+    <DetailView Id="ReservaSchedulerModel_DetailView" EnableCaptionColon="True" CustomizationEnabled="True" Caption="Agenda" EnableLayoutGroupImages="True" AllowDelete="True" AllowEdit="True" FreezeLayout="True">
+      <Layout IsNewNode="True" Removed="True">
+        <LayoutGroup Id="Main" Index="0" ShowCaption="False" IsNewNode="True">
+          <LayoutGroup Id="ListaReservas_Group" Index="0" Direction="Horizontal" ShowCaption="True" IsNewNode="True">
+            <LayoutItem Id="ListaReservas" ViewItem="ListaReservas" ShowCaption="" Index="0" IsNewNode="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

@@ -1,0 +1,15 @@
+C:\Users\estagio.analise\source\repos\Churrasqueira-AgoraVai\ExemploChurrasqueira\ExemploChurrasqueira.Module\bin\Debug\net9.0-windows\ExemploChurrasqueira.Module.deps.json
+C:\Users\estagio.analise\source\repos\Churrasqueira-AgoraVai\ExemploChurrasqueira\ExemploChurrasqueira.Module\bin\Debug\net9.0-windows\ExemploChurrasqueira.Module.dll
+C:\Users\estagio.analise\source\repos\Churrasqueira-AgoraVai\ExemploChurrasqueira\ExemploChurrasqueira.Module\bin\Debug\net9.0-windows\ExemploChurrasqueira.Module.pdb
+C:\Users\estagio.analise\source\repos\Churrasqueira-AgoraVai\ExemploChurrasqueira\ExemploChurrasqueira.Module\obj\Debug\net9.0-windows\ExemploChurrasqueira.Module.csproj.AssemblyReference.cache
+C:\Users\estagio.analise\source\repos\Churrasqueira-AgoraVai\ExemploChurrasqueira\ExemploChurrasqueira.Module\obj\Debug\net9.0-windows\ExemploChurrasqueira.Module.BusinessObjects.Per.IngressoReport.resources
+C:\Users\estagio.analise\source\repos\Churrasqueira-AgoraVai\ExemploChurrasqueira\ExemploChurrasqueira.Module\obj\Debug\net9.0-windows\ExemploChurrasqueira.Module.csproj.GenerateResource.cache
+C:\Users\estagio.analise\source\repos\Churrasqueira-AgoraVai\ExemploChurrasqueira\ExemploChurrasqueira.Module\obj\Debug\net9.0-windows\ExemploChurrasqueira.Module.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\estagio.analise\source\repos\Churrasqueira-AgoraVai\ExemploChurrasqueira\ExemploChurrasqueira.Module\obj\Debug\net9.0-windows\ExemploChurrasqueira.Module.AssemblyInfoInputs.cache
+C:\Users\estagio.analise\source\repos\Churrasqueira-AgoraVai\ExemploChurrasqueira\ExemploChurrasqueira.Module\obj\Debug\net9.0-windows\ExemploChurrasqueira.Module.AssemblyInfo.cs
+C:\Users\estagio.analise\source\repos\Churrasqueira-AgoraVai\ExemploChurrasqueira\ExemploChurrasqueira.Module\obj\Debug\net9.0-windows\ExemploChurrasqueira.Module.csproj.CoreCompileInputs.cache
+C:\Users\estagio.analise\source\repos\Churrasqueira-AgoraVai\ExemploChurrasqueira\ExemploChurrasqueira.Module\obj\Debug\net9.0-windows\ExemploChurrasqueira.Module.sourcelink.json
+C:\Users\estagio.analise\source\repos\Churrasqueira-AgoraVai\ExemploChurrasqueira\ExemploChurrasqueira.Module\obj\Debug\net9.0-windows\ExemploChurrasqueira.Module.dll
+C:\Users\estagio.analise\source\repos\Churrasqueira-AgoraVai\ExemploChurrasqueira\ExemploChurrasqueira.Module\obj\Debug\net9.0-windows\refint\ExemploChurrasqueira.Module.dll
+C:\Users\estagio.analise\source\repos\Churrasqueira-AgoraVai\ExemploChurrasqueira\ExemploChurrasqueira.Module\obj\Debug\net9.0-windows\ExemploChurrasqueira.Module.pdb
+C:\Users\estagio.analise\source\repos\Churrasqueira-AgoraVai\ExemploChurrasqueira\ExemploChurrasqueira.Module\obj\Debug\net9.0-windows\ref\ExemploChurrasqueira.Module.dll

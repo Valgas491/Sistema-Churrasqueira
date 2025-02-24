@@ -1,0 +1,8 @@
+C:\Users\estagio.analise\source\repos\Churrasqueira-AgoraVai\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\wwwroot\images\Logo.svg
+C:\Users\estagio.analise\source\repos\Churrasqueira-AgoraVai\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\wwwroot\images\SplashScreen.svg
+C:\Users\estagio.analise\source\repos\Churrasqueira-AgoraVai\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\wwwroot\css\site.css
+C:\Users\estagio.analise\source\repos\Churrasqueira-AgoraVai\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\wwwroot\favicon.ico
+wwwroot\css\site.css
+wwwroot\favicon.ico
+wwwroot\images\Logo.svg
+wwwroot\images\SplashScreen.svg

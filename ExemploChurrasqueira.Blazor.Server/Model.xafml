@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="SaveAndClose" CustomCSSClassName="SaveAndCloseCss" ImageName="Grid_Save" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="ExemploChurrasqueira.Module.BusinessObjects.Per.Churrasqueira" DefaultDetailViewImage="Action_New" DefaultListViewImage="Action_New" ImageName="Action_New" />
+    <Class Name="ExemploChurrasqueira.Module.BusinessObjects.Per.ReservaChurrasqueiraData">
+      <OwnMembers>
+        <Member Name="DataReserva_Churrasqueira" DisplayFormat="{0:dd/MM/yyyy}" EditMask="dd/MM/yyyy" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <NavigationItems NavigationStyle="Accordion" ShowImages="True" StartupNavigationItem="AgendaNavigation">
+    <Items>
+      <Item Id="Default" Caption="Churrasqueira">
+        <Items>
+          <Item Id="AgendaNavigation" ImageName="BO_Scheduler" Caption="Agenda Reserva" ViewId="ReservaSchedulerModel_DetailView" Index="0" IsNewNode="True" Removed="True" />
+          <Item Id="ReservaChurrasqueiraData_ListView" ImageName="Action_CreateDashboard" Index="1" />
+          <Item Id="Churrasqueira_ListView" Index="2" />
+          <Item Id="ReservaSchedulerModel_ListView" Removed="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options UIType="SingleWindowSDI" RestoreTabbedMdiLayout="False" ShowTabImage="False" ListViewEnableColumnChooser="True" LookupSmallCollectionItemCount="25" />
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="24.1.7.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="GerenciarChurrasqueira_ListView" AutoExpandAllGroups="False" />
+    <DetailView Id="ReservaChurrasqueiraData_DetailView">
+      <Items>
+        <PropertyEditor Id="DataReserva_Churrasqueira" DisplayFormat="{0:dd/MM/yyyy}" />
+      </Items>
+    </DetailView>
+    <ListView Id="ReservaChurrasqueiraData_ListView">
+      <Columns>
+        <ColumnInfo Id="DataReserva_Churrasqueira" DisplayFormat="{0:dd/MM/yyyy}" EditMask="dd/MM/yyyy" SortIndex="0" SortOrder="Ascending" />
+        <ColumnInfo Id="Socio" SortIndex="-1" SortOrder="None" />
+      </Columns>
+    </ListView>
+    <DetailView Id="ReservaSchedulerModel_DetailView" AllowDelete="False" AllowEdit="False" AllowNew="False" EnableCaptionColon="False" Caption="Agenda Reserva" EnableLayoutGroupImages="True" FreezeLayout="False" ImageName="BO_Scheduler" DefaultFocusedItem="ListaReservas">
+      <Items>
+        <PropertyEditor Id="ListaReservas" PropertyEditorType="ExemploChurrasqueira.Blazor.Server.Editors.AgendaEditor.AgendaPropertyEditor" PropertyName="ListaReservas" View="ReservaSchedulerModel_ListaReservas_ListView" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="ListaReservas_Group" ShowCaption="True" Caption="    " Direction="Horizontal" VerticalAlign="NotSet" ImageName="">
+            <LayoutItem Id="ListaReservas" ShowCaption="False" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="ReservaSchedulerModel_ListaReservas_ListView" EnableColumnChooser="True" PageSize="20" ShowSelectionColumn="True" />
+  </Views>
+</Application>
