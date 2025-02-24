@@ -53,11 +53,10 @@ namespace ExemploChurrasqueira.Module.Controllers.DetailView
         {
             Frame.GetController<ExportController>()?.ExportAction?.Active.SetItemValue("DetailView", desabilitar);
             Frame.GetController<RefreshController>()?.RefreshAction?.Active.SetItemValue("DetailView", desabilitar);
-            Frame.GetController<ModificationsController>()?.SaveAction?.Active.SetItemValue("DetailView", desabilitar);
             Frame.GetController<ModificationsController>()?.SaveAndNewAction?.Active.SetItemValue("DetailView", desabilitar);
             Frame.GetController<RecordsNavigationController>()?.PreviousObjectAction?.Active.SetItemValue("DetailView", desabilitar);
             Frame.GetController<RecordsNavigationController>()?.NextObjectAction?.Active.SetItemValue("DetailView", desabilitar);
-            var saveAction = Frame.GetController<ModificationsController>()?.SaveAndCloseAction;
+            var saveAction = Frame.GetController<ModificationsController>()?.SaveAction;
             if (desabilitar == false)
             {
                 if (saveAction != null)

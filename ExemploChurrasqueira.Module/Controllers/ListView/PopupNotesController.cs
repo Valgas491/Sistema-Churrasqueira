@@ -11,7 +11,6 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
     // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/clsDevExpressExpressAppViewControllertopic.aspx.
     public partial class PopupNotesController : ViewController
     {
-        private SimpleAction deleteAction;
         // Use CodeRush to create Controllers and Actions with a few keystrokes.
         // https://docs.devexpress.com/CodeRushForRoslyn/403133/
         public PopupNotesController()

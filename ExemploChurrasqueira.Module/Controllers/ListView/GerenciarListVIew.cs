@@ -1,19 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using DevExpress.Data.Filtering;
-using DevExpress.ExpressApp;
-using DevExpress.ExpressApp.Actions;
-using DevExpress.ExpressApp.Editors;
-using DevExpress.ExpressApp.Layout;
-using DevExpress.ExpressApp.Model.NodeGenerators;
-using DevExpress.ExpressApp.SystemModule;
-using DevExpress.ExpressApp.Templates;
-using DevExpress.ExpressApp.Utils;
-using DevExpress.Persistent.Base;
-using DevExpress.Persistent.Validation;
+﻿using DevExpress.ExpressApp;
 using ExemploChurrasqueira.Module.BusinessObjects.Per;
+using ExemploChurrasqueira.Module.Helper;
+using Microsoft.JSInterop;
 
 namespace ExemploChurrasqueira.Module.Controllers.ListView
 {
@@ -22,6 +10,7 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
     {
         // Use CodeRush to create Controllers and Actions with a few keystrokes.
         // https://docs.devexpress.com/CodeRushForRoslyn/403133/
+        private IJSRuntime jsRuntime;
         public GerenciarListVIew()
         {
             InitializeComponent();
@@ -31,8 +20,37 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
         {
             base.OnActivated();
             // Perform various tasks depending on the target View.
-            
+            jsRuntime = Application.ServiceProvider.GetService(typeof(IJSRuntime)) as IJSRuntime;
+            //if (ObjectSpace != null)
+            //{
+            //    ObjectSpace.Committed += ObjectSpace_Committed;
+            //}
+
         }
+        public async Task ObjectSpace_Committed()
+        {
+            await Task.Delay(600);
+
+            var result = await jsRuntime.InvokeAsync<object>("Swal.fire", new
+            {
+                title = "Deseja salvar as alterações?",
+                showDenyButton = true,
+                showCancelButton = true,
+                confirmButtonText = "Salvar",
+                denyButtonText = "Não salvar"
+            });
+
+            if (result != null && result.ToString() == "confirmed")
+            {
+                ToastHelper.Toast("Alterações foram salvas.", InformationType.Warning);
+            }
+            else
+            {
+                await jsRuntime.InvokeVoidAsync("open", $"ReservaChurrasqueiraData_ListView", "_self");
+            }
+        }
+
+
         protected override void OnFrameAssigned()
         {
             base.OnFrameAssigned();
@@ -47,6 +65,10 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
         {
             // Unsubscribe from previously subscribed events and release other references and resources.
             base.OnDeactivated();
+            //if (ObjectSpace != null)
+            //{
+            //    ObjectSpace.Committed -= ObjectSpace_Committed;
+            //}
         }
     }
 }

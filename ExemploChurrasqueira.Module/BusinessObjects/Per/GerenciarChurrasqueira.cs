@@ -8,6 +8,9 @@ using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Persistent.Validation;
 using DevExpress.Xpo;
+using DevExpress.XtraCharts;
+using ExemploChurrasqueira.Module.Helper;
+using ExemploChurrasqueira.Module.Controllers.ListView;
 
 namespace ExemploChurrasqueira.Module.BusinessObjects.Per
 {
@@ -33,7 +36,7 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
 
         [ModelDefault("DisplayFormat", "{0:dd/MM/yyyy}")]
         [ModelDefault("EditMask", "dd/MM/yyyy")]
-        [ModelDefault("Caption", "Data Da Manutenção")]
+        [ModelDefault("Caption", "Data Início Da Manutenção")]
         [RuleRequiredField(DefaultContexts.Save)]
         public DateTime DataManutencao
         {
@@ -78,19 +81,6 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
             get => status;
             set => SetPropertyValue(nameof(Status), ref status, value);
         }
-
-        // Método para alterar o status para manutenção
-        [Action(Caption = "Concluído", ImageName = "Action_MarkCompleted")]
-        public void Concluido()
-        {
-            if (DateTime.Now < DataManutencao.AddDays((double)QtdDias))
-            {
-                ExcluirMaintance2();
-            }
-            Session.RollbackTransaction();
-            Status = TaskStatus.Completed;
-        }
-
         // Enum para o status
         public enum TaskStatus
         {
@@ -110,23 +100,20 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
         {
             base.OnSaving();
 
-
-            // Caso o status não seja alterado para Completed, segue o fluxo normal de manutenção
             if (Churrasqueira != null && DataManutencao > DateTime.MinValue && QtdDias > 0)
             {
                 try
                 {
-                    // Itera sobre cada dia no período de manutenção
                     for (ulong i = 0; i < QtdDias; i++)
                     {
                         DateTime dataReservaAtual = DataManutencao.AddDays(i);
 
-                        // Busca uma reserva existente para a data atual
-                        var reservaManutencao = Session.FindObject<ReservaChurrasqueiraData>(
-                            CriteriaOperator.Parse("Churrasqueira.Oid = ? AND dataReserva_Churrasqueira = ? AND QtdPessoas = -1",
+                        // Verifica se a reserva já existe
+                        var reservaExistente = Session.FindObject<ReservaChurrasqueiraData>(
+                            CriteriaOperator.Parse("Churrasqueira.Oid = ? AND dataReserva_Churrasqueira = ? AND IsManutencao = true",
                             Churrasqueira.Oid, dataReservaAtual));
 
-                        if (reservaManutencao == null) // Cria nova reserva de manutenção
+                        if (reservaExistente == null) // Apenas cria se não existir
                         {
                             var novaReserva = new ReservaChurrasqueiraData(Session)
                             {
@@ -138,14 +125,14 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
                                 Valor = 0
                             };
 
-                            // Adiciona a reserva na sessão (sem chamar Save diretamente)
                             Session.Save(novaReserva);
                         }
                         else
                         {
-                            reservaManutencao.GerenciarChurrasqueira = this;
-                            reservaManutencao.IsManutencao = true;
-                            Session.Save(reservaManutencao);
+                            // Atualiza a reserva existente, se necessário
+                            reservaExistente.GerenciarChurrasqueira = this;
+                            reservaExistente.IsManutencao = true;
+                            Session.Save(reservaExistente);
                         }
                     }
                 }
@@ -160,30 +147,31 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
                 throw new UserFriendlyException("Você deve selecionar uma Data, uma Churrasqueira e informar a quantidade de dias.");
             }
         }
+
         protected override void OnDeleting()
         {
             base.OnDeleting();
             ExcluirMaintance();
         }
 
-        public void ExcluirMaintance2()
-        {
-            var reservasAssociadas = new XPCollection<ReservaChurrasqueiraData>(Session,
-                CriteriaOperator.Parse("GerenciarChurrasqueira.Oid = ? AND IsManutencao = true", Oid));
+        //public void ExcluirMaintance2()
+        //{
+        //    var reservasAssociadas = new XPCollection<ReservaChurrasqueiraData>(Session,
+        //        CriteriaOperator.Parse("GerenciarChurrasqueira.Oid = ? AND IsManutencao = true", Oid));
 
-            var reservasParaExcluir = new List<ReservaChurrasqueiraData>();
+        //    var reservasParaExcluir = new List<ReservaChurrasqueiraData>();
 
-            foreach (var reserva in reservasAssociadas)
-            {
-                reservasParaExcluir.Add(reserva);
-            }
+        //    foreach (var reserva in reservasAssociadas)
+        //    {
+        //        reservasParaExcluir.Add(reserva);
+        //    }
 
-            foreach (var reserva in reservasParaExcluir)
-            {
-                reserva.Delete();
-            }
+        //    foreach (var reserva in reservasParaExcluir)
+        //    {
+        //        reserva.Delete();
+        //    }
            
-        }
+        //}
 
         public void ExcluirMaintance()
         {

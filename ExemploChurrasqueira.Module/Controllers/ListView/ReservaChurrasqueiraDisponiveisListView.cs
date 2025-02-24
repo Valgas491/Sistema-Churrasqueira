@@ -1,8 +1,10 @@
 ﻿using DevExpress.Data.Filtering;
+using DevExpress.DocumentServices.ServiceModel.DataContracts;
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Actions;
 using DevExpress.ExpressApp.SystemModule;
 using DevExpress.XtraPrinting;
+using DevExpress.XtraRichEdit.Utils;
 using ExemploChurrasqueira.Module.BusinessObjects.Per;
 
 namespace ExemploChurrasqueira.Module.Controllers.ListView
@@ -28,6 +30,7 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
             }
             
             Filtros();
+            MaintanceDelete();
         }
         protected override void OnViewControlsCreated()
         {
@@ -46,13 +49,24 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
         }
         private void Filtros()
         {
-
-
+            
             // Desativa a visualização das reservas passadas
             ((DevExpress.ExpressApp.ListView)View).CollectionSource.Criteria["DataFilter"] =
                 CriteriaOperator.Parse("DataReserva_Churrasqueira >= ?", DateTime.Today);
 
 
+        }
+        private void MaintanceDelete()
+        {
+            var reservasManutencaoConcluidas = ObjectSpace.GetObjects<ReservaChurrasqueiraData>()
+                .Where(r => r.IsManutencao == true && r.GerenciarChurrasqueira.Status.Equals(GerenciarChurrasqueira.TaskStatus.Completed))
+                .ToList();
+
+            foreach (var reserva in reservasManutencaoConcluidas)
+            {
+                ObjectSpace.Delete(reserva);
+            }
+            ObjectSpace.CommitChanges();
         }
     }
 }

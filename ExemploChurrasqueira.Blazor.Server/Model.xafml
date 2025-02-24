@@ -30,7 +30,12 @@
     <SchemaModule Name="SystemModule" Version="24.1.7.0" IsNewNode="True" />
   </SchemaModules>
   <Views>
-    <ListView Id="GerenciarChurrasqueira_ListView" AutoExpandAllGroups="False" />
+    <ListView Id="GerenciarChurrasqueira_ListView" AutoExpandAllGroups="False">
+      <Columns>
+        <ColumnInfo Id="DataManutencao" Width="160" MinWidth="0" MaxLength="0" />
+        <ColumnInfo Id="QtdDias" MinWidth="0" Width="180" />
+      </Columns>
+    </ListView>
     <DetailView Id="ReservaChurrasqueiraData_DetailView">
       <Items>
         <PropertyEditor Id="DataReserva_Churrasqueira" DisplayFormat="{0:dd/MM/yyyy}" />
