@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\model.xafml||{4DD02038-D78C-4AD3-8B8D-13FC109B2DCD}",
-      "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\model.xafml||{4DD02038-D78C-4AD3-8B8D-13FC109B2DCD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\businessobjects\\per\\gerenciarchurrasqueira.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\businessobjects\\per\\gerenciarchurrasqueira.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\nested\\gerenciarnested.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\controllers\\nested\\gerenciarnested.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\listview\\reservachurrasqueiradisponiveislistview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\controllers\\listview\\reservachurrasqueiradisponiveislistview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\nested\\gerenciarnested.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\controllers\\nested\\gerenciarnested.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\businessobjects\\per\\gerenciarchurrasqueira.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\businessobjects\\per\\gerenciarchurrasqueira.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.blazor.server\\model.xafml||{4DD02038-D78C-4AD3-8B8D-13FC109B2DCD}",
+      "RelativeMoniker": "D:0:0:{54937265-81B6-4B83-8984-444CA210FE51}|ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj|solutionrelative:exemplochurrasqueira.blazor.server\\model.xafml||{4DD02038-D78C-4AD3-8B8D-13FC109B2DCD}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\businessobjects\\per\\reservachurrasqueiradata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -196,8 +196,67 @@
       "DocumentGroups": [
         {
           "DockedWidth": 206,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GerenciarChurrasqueira.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\GerenciarChurrasqueira.cs",
+              "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\BusinessObjects\\Per\\GerenciarChurrasqueira.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\GerenciarChurrasqueira.cs",
+              "RelativeToolTip": "ExemploChurrasqueira.Module\\BusinessObjects\\Per\\GerenciarChurrasqueira.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAUwFIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T12:04:06.148Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReservaChurrasqueiraDisponiveisListView.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\ReservaChurrasqueiraDisponiveisListView.cs",
+              "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Controllers\\ListView\\ReservaChurrasqueiraDisponiveisListView.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\ReservaChurrasqueiraDisponiveisListView.cs",
+              "RelativeToolTip": "ExemploChurrasqueira.Module\\Controllers\\ListView\\ReservaChurrasqueiraDisponiveisListView.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAIwDgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T13:43:50.016Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GerenciarNested.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\Nested\\GerenciarNested.cs",
+              "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Controllers\\Nested\\GerenciarNested.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\Nested\\GerenciarNested.cs",
+              "RelativeToolTip": "ExemploChurrasqueira.Module\\Controllers\\Nested\\GerenciarNested.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAswAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T12:34:55.729Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReservaChurrasqueiraData.cs",
+              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\ReservaChurrasqueiraData.cs",
+              "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\BusinessObjects\\Per\\ReservaChurrasqueiraData.cs",
+              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\ReservaChurrasqueiraData.cs",
+              "RelativeToolTip": "ExemploChurrasqueira.Module\\BusinessObjects\\Per\\ReservaChurrasqueiraData.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAswIAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T12:05:38.576Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:2:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
@@ -248,62 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GerenciarChurrasqueira.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\GerenciarChurrasqueira.cs",
-              "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\BusinessObjects\\Per\\GerenciarChurrasqueira.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\GerenciarChurrasqueira.cs",
-              "RelativeToolTip": "ExemploChurrasqueira.Module\\BusinessObjects\\Per\\GerenciarChurrasqueira.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAwCYAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T12:04:06.148Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ReservaChurrasqueiraDisponiveisListView.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\ReservaChurrasqueiraDisponiveisListView.cs",
-              "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Controllers\\ListView\\ReservaChurrasqueiraDisponiveisListView.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\ReservaChurrasqueiraDisponiveisListView.cs",
-              "RelativeToolTip": "ExemploChurrasqueira.Module\\Controllers\\ListView\\ReservaChurrasqueiraDisponiveisListView.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwDcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T13:43:50.016Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "GerenciarNested.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\Nested\\GerenciarNested.cs",
-              "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Controllers\\Nested\\GerenciarNested.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\Nested\\GerenciarNested.cs",
-              "RelativeToolTip": "ExemploChurrasqueira.Module\\Controllers\\Nested\\GerenciarNested.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAswDwAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-24T12:34:55.729Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ReservaChurrasqueiraData.cs",
-              "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\ReservaChurrasqueiraData.cs",
-              "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\BusinessObjects\\Per\\ReservaChurrasqueiraData.cs",
-              "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\BusinessObjects\\Per\\ReservaChurrasqueiraData.cs",
-              "RelativeToolTip": "ExemploChurrasqueira.Module\\BusinessObjects\\Per\\ReservaChurrasqueiraData.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAswIAAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T12:05:38.576Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Model.xafml",
               "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\Model.xafml",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Blazor.Server\\Model.xafml",
