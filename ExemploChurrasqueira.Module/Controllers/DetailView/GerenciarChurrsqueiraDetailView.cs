@@ -1,13 +1,16 @@
 ﻿using DevExpress.Data.Filtering;
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Editors;
+using DevExpress.ExpressApp.SystemModule;
 using ExemploChurrasqueira.Module.BusinessObjects.Per;
+using Microsoft.JSInterop;
 
 namespace ExemploChurrasqueira.Module.Controllers.DetailView
 {
     // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/clsDevExpressExpressAppViewControllertopic.aspx.
     public partial class GerenciarChurrsqueiraDetailView : ObjectViewController<DevExpress.ExpressApp.DetailView, GerenciarChurrasqueira>
     {
+        private IJSRuntime jsRuntime;
         // Use CodeRush to create Controllers and Actions with a few keystrokes.
         // https://docs.devexpress.com/CodeRushForRoslyn/403133/
         public GerenciarChurrsqueiraDetailView()
@@ -17,10 +20,20 @@ namespace ExemploChurrasqueira.Module.Controllers.DetailView
         }
         protected override void OnActivated()
         {
+            jsRuntime = Application.ServiceProvider.GetService(typeof(IJSRuntime)) as IJSRuntime;
             base.OnActivated();
-            // Perform various tasks depending on the target View.
             AoAlterarData();
+            var saveACtion = Frame.GetController<ModificationsController>()?.SaveAction;
+            saveACtion.Execute += SaveACtion_Execute;
+            var saveACtionNew = Frame.GetController<ModificationsController>()?.SaveAndNewAction;
+            saveACtionNew?.Active.SetItemValue("DetailView", false);
         }
+
+        private async void SaveACtion_Execute(object sender, DevExpress.ExpressApp.Actions.SimpleActionExecuteEventArgs e)
+        {
+            await jsRuntime.InvokeVoidAsync("open", "/ReservaChurrasqueiraData_ListView", "_self");
+        }
+
         protected override void OnViewControlsCreated()
         {
             base.OnViewControlsCreated();

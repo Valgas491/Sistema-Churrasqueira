@@ -11,6 +11,8 @@ using DevExpress.Xpo;
 using DevExpress.XtraCharts;
 using ExemploChurrasqueira.Module.Helper;
 using ExemploChurrasqueira.Module.Controllers.ListView;
+using DevExpress.ExpressApp.SystemModule;
+using DevExpress.ExpressApp.Blazor.SystemModule;
 
 namespace ExemploChurrasqueira.Module.BusinessObjects.Per
 {
@@ -32,7 +34,7 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
         Churrasqueira churrasqueira;
         DateTime dataManutencao;
         ulong qtdDias;
-
+        private TaskStatus status;
 
         [ModelDefault("DisplayFormat", "{0:dd/MM/yyyy}")]
         [ModelDefault("EditMask", "dd/MM/yyyy")]
@@ -73,9 +75,6 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
                 return GetCollection<ReservaChurrasqueiraData>(nameof(reservaChurrasqueiras));
             }
         }
-
-        // Status para controle da churrasqueira
-        private TaskStatus status;
         public TaskStatus Status
         {
             get => status;
@@ -99,7 +98,19 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
         protected override void OnSaving()
         {
             base.OnSaving();
+            GerarReservaMaintance();
+            
+            
+        }
 
+        protected override void OnDeleting()
+        {
+            base.OnDeleting();
+            ExcluirMaintance();
+        }
+
+        private void GerarReservaMaintance()
+        {
             if (Churrasqueira != null && DataManutencao > DateTime.MinValue && QtdDias > 0)
             {
                 try
@@ -147,31 +158,6 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
                 throw new UserFriendlyException("Você deve selecionar uma Data, uma Churrasqueira e informar a quantidade de dias.");
             }
         }
-
-        protected override void OnDeleting()
-        {
-            base.OnDeleting();
-            ExcluirMaintance();
-        }
-
-        //public void ExcluirMaintance2()
-        //{
-        //    var reservasAssociadas = new XPCollection<ReservaChurrasqueiraData>(Session,
-        //        CriteriaOperator.Parse("GerenciarChurrasqueira.Oid = ? AND IsManutencao = true", Oid));
-
-        //    var reservasParaExcluir = new List<ReservaChurrasqueiraData>();
-
-        //    foreach (var reserva in reservasAssociadas)
-        //    {
-        //        reservasParaExcluir.Add(reserva);
-        //    }
-
-        //    foreach (var reserva in reservasParaExcluir)
-        //    {
-        //        reserva.Delete();
-        //    }
-           
-        //}
 
         public void ExcluirMaintance()
         {

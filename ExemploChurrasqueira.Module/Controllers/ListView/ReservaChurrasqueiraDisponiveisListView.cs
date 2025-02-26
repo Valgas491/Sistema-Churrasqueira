@@ -59,7 +59,7 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
         private void MaintanceDelete()
         {
             var reservasManutencaoConcluidas = ObjectSpace.GetObjects<ReservaChurrasqueiraData>()
-                .Where(r => r.IsManutencao == true && r.GerenciarChurrasqueira.Status.Equals(GerenciarChurrasqueira.TaskStatus.Completed))
+                .Where(r => r.IsManutencao == true && r.GerenciarChurrasqueira.Status.Equals(GerenciarChurrasqueira.TaskStatus.Completed)&& r.DataReserva_Churrasqueira > DateTime.Today)
                 .ToList();
 
             foreach (var reserva in reservasManutencaoConcluidas)

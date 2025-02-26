@@ -3,7 +3,6 @@ using System.IO;
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Actions;
 using DevExpress.Persistent.Base;
-using DevExpress.XtraReports.UI;
 using ExemploChurrasqueira.Module.BusinessObjects.Per;
 using ExemploChurrasqueira.Module.Helper;
 
@@ -38,14 +37,21 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
                 Application.ShowViewStrategy.ShowMessage(msg);
                 return;
             }
-            IngressoReport report = new IngressoReport();
-            report.DataSource = eventos;
-            report.CreateDocument();
-            string caminhoArquivo = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), $"IngressoDeChurrasqueira_{DateTime.Now:yyyyMMddHHmmss}.pdf");
-            report.ExportToPdf(caminhoArquivo);
-            MessageOptions msgDownload = ToastHelper.Toast($"Ingressos gerados com sucesso Na Pasta: Documentos\nIngressoDeChurrasqueira_{DateTime.Now:yyyyMMddHHmmss}.pdf", InformationType.Success);
-            Application.ShowViewStrategy.ShowMessage(msgDownload);
-            Process.Start(new ProcessStartInfo(caminhoArquivo) { UseShellExecute = true });
+
+            foreach (var evento in eventos)
+            {
+                IngressoReport report = new IngressoReport();
+                report.DataSource = new List<ReservaChurrasqueiraData> { evento }; 
+                report.CreateDocument();
+
+                string caminhoArquivo = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
+                    $"IngressoDeChurrasqueira_{evento.Oid}_{DateTime.Now:yyyyMMddHHmmss}.pdf");
+                report.ExportToPdf(caminhoArquivo);
+                MessageOptions msgDownload = ToastHelper.Toast($"Ingresso gerado: Na Pasta Documentos", InformationType.Success);
+                Application.ShowViewStrategy.ShowMessage(msgDownload);
+                Process.Start(new ProcessStartInfo(caminhoArquivo) { UseShellExecute = true });
+            }
+
         }
 
 
