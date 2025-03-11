@@ -1,4 +1,5 @@
-﻿using DevExpress.Data.Filtering;
+﻿using System.Text.Json;
+using DevExpress.Data.Filtering;
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Editors;
 using DevExpress.ExpressApp.SystemModule;
@@ -24,13 +25,18 @@ namespace ExemploChurrasqueira.Module.Controllers.DetailView
             base.OnActivated();
             AoAlterarData();
             var saveACtion = Frame.GetController<ModificationsController>()?.SaveAction;
-            saveACtion.Execute += SaveACtion_Execute;
+            if (saveACtion != null)
+            {
+                saveACtion.Execute += async (s, e) => await SaveACtion_Execute(s, e);
+            }
+            
             var saveACtionNew = Frame.GetController<ModificationsController>()?.SaveAndNewAction;
             saveACtionNew?.Active.SetItemValue("DetailView", false);
         }
 
-        private async void SaveACtion_Execute(object sender, DevExpress.ExpressApp.Actions.SimpleActionExecuteEventArgs e)
+        private async Task SaveACtion_Execute(object sender, DevExpress.ExpressApp.Actions.SimpleActionExecuteEventArgs e)
         {
+            await Task.Delay(100);
             await jsRuntime.InvokeVoidAsync("open", "/ReservaChurrasqueiraData_ListView", "_self");
         }
 
@@ -43,6 +49,7 @@ namespace ExemploChurrasqueira.Module.Controllers.DetailView
         {
             // Unsubscribe from previously subscribed events and release other references and resources.
             base.OnDeactivated();
+
         }
         private void AoAlterarData()
         {
@@ -58,10 +65,7 @@ namespace ExemploChurrasqueira.Module.Controllers.DetailView
 
                 date.ControlValueChanged += (sender, evento) =>
                 {
-                    // Atualiza o valor no objeto
                     date.WriteValue();
-
-                    // Obtém o valor atualizado da data
                     var novaData = date.PropertyValue as DateTime?;
                     if (!novaData.HasValue)
                     {
@@ -69,16 +73,13 @@ namespace ExemploChurrasqueira.Module.Controllers.DetailView
                         return;
                     }
 
-                    // Obtém o objeto atual
                     var gerenciarChurrasqueira = View.CurrentObject as GerenciarChurrasqueira;
                     var objectSpace = View.ObjectSpace;
 
-                    // Verifica churrasqueiras disponíveis
                     var churrasqueirasDisponiveis = ObterChurrasqueirasDisponiveis(objectSpace, novaData.Value);
 
                     if (churrasqueirasDisponiveis.Any())
                     {
-                        // Atualiza a lista transitória
                         gerenciarChurrasqueira.ChurrasqueirasDisponiveis.Clear();
                         gerenciarChurrasqueira.ChurrasqueirasDisponiveis.AddRange(churrasqueirasDisponiveis);
                         MostrarToast($"{churrasqueirasDisponiveis.Count} churrasqueira(s) disponível(is).", InformationType.Success);
@@ -88,7 +89,6 @@ namespace ExemploChurrasqueira.Module.Controllers.DetailView
                         MostrarToast("Nenhuma churrasqueira disponível na data selecionada.", InformationType.Warning);
                     }
 
-                    // Atualiza a interface
                     View.Refresh();
                 };
             }
@@ -96,16 +96,14 @@ namespace ExemploChurrasqueira.Module.Controllers.DetailView
 
         private List<Churrasqueira> ObterChurrasqueirasDisponiveis(IObjectSpace objectSpace, DateTime dataReserva_Churrasqueira)
         {
-            // Busca churrasqueiras já reservadas ou em manutenção para a data fornecida
+
             var churrasqueirasIndisponiveis = objectSpace.GetObjects<ReservaChurrasqueiraData>(
                 CriteriaOperator.Parse("(DataReserva_Churrasqueira = ? AND IsManutencao = false) OR (DataReserva_Churrasqueira = ? AND IsManutencao = true)",
                 dataReserva_Churrasqueira, dataReserva_Churrasqueira))
                 .Select(r => r.Churrasqueira).Distinct().ToList();
 
-            // Busca todas as churrasqueiras
             var todasChurrasqueiras = objectSpace.GetObjects<Churrasqueira>();
 
-            // Filtra as disponíveis
             var churrasqueirasDisponiveis = todasChurrasqueiras
                 .Where(c => !churrasqueirasIndisponiveis.Contains(c))
                 .ToList();
@@ -117,7 +115,17 @@ namespace ExemploChurrasqueira.Module.Controllers.DetailView
         {
 
             var showViewStrategy = Application.ShowViewStrategy as ShowViewStrategyBase;
-            showViewStrategy?.ShowMessage(mensagem, tipo); // Tipos: "success", "error", "warning", "info"
+            showViewStrategy?.ShowMessage(mensagem, tipo);
+        }
+
+        public async void ExisteReserva(DateTime dataReservaAtual)
+        {
+            await jsRuntime.InvokeVoidAsync("Swal.fire", new
+            {
+                title = $"Na Data: {dataReservaAtual},existe uma reserva de associado.",
+                icon = "success",
+                confirmButtonText = "OK"
+            });
         }
 
     }

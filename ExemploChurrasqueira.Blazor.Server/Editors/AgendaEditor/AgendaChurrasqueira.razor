@@ -16,10 +16,19 @@ DataStorage="@DataStorage"
 CssClass="mw-1100"
 AllowCreateAppointment="false"
 AllowEditAppointment="false"
+AllowDragAppointment="false"
 AllowDeleteAppointment="false"
 SelectedAppointmentChanged="(e) => SelectionChanged(e)"
 ondblclick="@OnDoubleClick">
-    <DxSchedulerMonthView />
+    <Views>
+        <DxSchedulerMonthView>
+
+        </DxSchedulerMonthView>
+        <DxSchedulerWeekView></DxSchedulerWeekView>
+    </Views>
+    <AppointmentTooltipHeaderTemplate>
+        <div class="tooltip-text-header" style="text-align:center;align-items:center;margin-left:auto;margin-right:auto">Dados da Reserva</div>
+    </AppointmentTooltipHeaderTemplate>
 </DxScheduler>
 
 @code {
@@ -49,7 +58,7 @@ ondblclick="@OnDoubleClick">
                 Subject = "Subject",
                 Description = "Description",
                 LabelId = "LabelId"
-            };
+        };
     }
 
     private void CarregarReservas()
@@ -146,7 +155,8 @@ ondblclick="@OnDoubleClick">
     }
     async void OnDoubleClick()
     {
-        if (SelectedAppointment != null)
+        string stipo = SelectedAppointment.Subject.Split(" - ")[1];
+        if (SelectedAppointment != null && stipo != "Manutenção")
         {
             string nomeChurrasqueira = SelectedAppointment.Subject.Split(" - ")[0];
             DateTime dataSelecionada = SelectedAppointment.Start;
@@ -174,6 +184,16 @@ ondblclick="@OnDoubleClick">
                 newObjectSpace.CommitChanges();
             }
             await JsRuntime.InvokeVoidAsync("open", $"/ReservaChurrasqueiraData_DetailView/{reservaLocal.Oid}", "_self");
+        }
+        else
+        {
+            await JsRuntime.InvokeVoidAsync("Swal.fire", new
+            {
+                title = "Não é possível acessar uma reserva de manutenção.",
+                icon = "error",
+                confirmButtonText = "OK"
+            });
+            return;
         }
     }
 

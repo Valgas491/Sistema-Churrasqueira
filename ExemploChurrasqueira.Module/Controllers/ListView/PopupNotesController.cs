@@ -1,11 +1,16 @@
-﻿using System.Text.Json;
+﻿using System.Text;
+using System.Text.Json;
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Actions;
+using DevExpress.ExpressApp.Blazor;
+using DevExpress.ExpressApp.Blazor.SystemModule;
 using DevExpress.ExpressApp.SystemModule;
-using DevExpress.ExpressApp.Templates.ActionControls;
 using DevExpress.Persistent.Base;
-using DevExpress.XtraBars.Docking2010.Views.WindowsUI;
+using DevExpress.XtraExport;
+using DevExpress.XtraPrinting;
 using ExemploChurrasqueira.Module.BusinessObjects.Per;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 using Microsoft.JSInterop;
 
 namespace ExemploChurrasqueira.Module.Controllers.ListView
@@ -39,6 +44,7 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
         {
             base.OnActivated();
             // Perform various tasks depending on the target View.
+            
         }
         protected override void OnViewControlsCreated()
         {
@@ -75,7 +81,44 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
             //Refer to the https://docs.devexpress.com/eXpressAppFramework/112815 help article to see how to reorder Actions within the PopupActions container.
             statusAction.Execute += StatusAction_Execute;
 
+            SimpleAction exportAction = new SimpleAction(
+                this, "Exportar", DevExpress.Persistent.Base.PredefinedCategory.PopupActions)
+            {
+                Caption = "Exportar",
+                ImageName = "Action_Export"
+            };
+            //Refer to the https://docs.devexpress.com/eXpressAppFramework/112815 help article to see how to reorder Actions within the PopupActions container.
+            exportAction.Execute += ExportAction_Execute;
+            Actions.Add(exportAction);
         }
+
+        private async void ExportAction_Execute(object sender, SimpleActionExecuteEventArgs e)
+        {
+            var selectedObjects = e.SelectedObjects.Cast<GerenciarChurrasqueira>().ToList();
+
+            if (!selectedObjects.Any())
+            {
+                return;
+            }
+            var exportData = selectedObjects.Select(c => new
+            {
+                c.QtdDias,
+                c.DataManutencao,
+                c.Churrasqueira.Nome
+            }).ToList();
+            var csvData = new StringBuilder();
+            csvData.AppendLine("Nome, QtdDias, DataManutencao");
+            foreach (var item in exportData)
+            {
+                csvData.AppendLine($"{item.Nome}, {item.QtdDias}, {item.DataManutencao:yyyy-MM-dd}");
+            }
+            string fileName = $"Churrasqueiras_{DateTime.Now:yyyyMMddHHmmss}.csv";
+            var jsRuntime = ((BlazorApplication)Application).ServiceProvider.GetRequiredService<IJSRuntime>();
+            await jsRuntime.InvokeVoidAsync("saveAsFile", fileName, Convert.ToBase64String(Encoding.UTF8.GetBytes(csvData.ToString())));
+        }
+
+
+
         private async void StatusAction_Execute(object sender, SimpleActionExecuteEventArgs e)
         {
             var objectSpace = View.ObjectSpace;
@@ -85,12 +128,12 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
             {
                 foreach (var item in selectObjects)
                 {
-                    if (item.Status == GerenciarChurrasqueira.TaskStatus.Maintance && item.DataManutencao > DateTime.Today)
+                    if (item.Status == GerenciarChurrasqueira.TaskStatus.Maintance && item.DataManutencao.AddDays(item.QtdDias) > DateTime.Today)
                     {
                         var result = await jsRuntime.InvokeAsync<JsonElement>("Swal.fire", new
                         {
                             title = "Confirmação",
-                            text = "Deseja realmente marcar como concluído?",
+                            text = "Deseja realmente marcar como concluído, antes do prazo?",
                             icon = "warning",
                             showCancelButton = true,
                             confirmButtonText = "Sim, concluir!",
@@ -130,6 +173,7 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
                             confirmButtonText = "OK"
                         });
                         objectSpace.CommitChanges();
+                        await jsRuntime.InvokeVoidAsync("open", "/ReservaChurrasqueiraData_ListView", "_self");
                     }
                 }
             }
@@ -154,6 +198,7 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
                 });
                 objectSpace.CommitChanges();
                 View.Refresh();
+                await jsRuntime.InvokeVoidAsync("open", "/ReservaChurrasqueiraData_ListView", "_self");
             }
         }
         protected override void OnActivated()

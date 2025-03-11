@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 using DevExpress.Data.Filtering;
 using DevExpress.ExpressApp;
+using DevExpress.ExpressApp.DC;
 using DevExpress.ExpressApp.Model;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
@@ -35,6 +36,7 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
         }
 
         [RuleRange(0, long.MaxValue)]
+        [XafDisplayName("Quantidade Máxima de Pessoas")]
         public long QtdComportada
         {
             get => qtdComportada;
@@ -44,6 +46,7 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
 
         [ModelDefault("AllowEdit", "False")]
         [VisibleInListView(false)]
+        [XafDisplayName("Valor")]
          public decimal Preco
         {
             get => preco;

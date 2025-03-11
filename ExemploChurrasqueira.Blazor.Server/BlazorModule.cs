@@ -1,6 +1,5 @@
 ﻿using System.ComponentModel;
 using DevExpress.ExpressApp;
-using DevExpress.ExpressApp.Editors;
 using DevExpress.ExpressApp.Updating;
 
 
@@ -16,7 +15,7 @@ public sealed class ExemploChurrasqueiraBlazorModule : ModuleBase {
     }
     public override void Setup(XafApplication application) {
         base.Setup(application);
-            
+
     }
     
 

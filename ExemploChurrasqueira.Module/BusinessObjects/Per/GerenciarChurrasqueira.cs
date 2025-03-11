@@ -3,16 +3,10 @@ using DevExpress.Data.Filtering;
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.DC;
 using DevExpress.ExpressApp.Model;
-using DevExpress.ExpressApp.Xpo;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Persistent.Validation;
 using DevExpress.Xpo;
-using DevExpress.XtraCharts;
-using ExemploChurrasqueira.Module.Helper;
-using ExemploChurrasqueira.Module.Controllers.ListView;
-using DevExpress.ExpressApp.SystemModule;
-using DevExpress.ExpressApp.Blazor.SystemModule;
 
 namespace ExemploChurrasqueira.Module.BusinessObjects.Per
 {
@@ -35,6 +29,7 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
         DateTime dataManutencao;
         ulong qtdDias;
         private TaskStatus status;
+
 
         [ModelDefault("DisplayFormat", "{0:dd/MM/yyyy}")]
         [ModelDefault("EditMask", "dd/MM/yyyy")]
@@ -80,7 +75,7 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
             get => status;
             set => SetPropertyValue(nameof(Status), ref status, value);
         }
-        // Enum para o status
+        
         public enum TaskStatus
         {
             [ImageName("State_Validation_Invalid")]
@@ -119,12 +114,26 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
                     {
                         DateTime dataReservaAtual = DataManutencao.AddDays(i);
 
-                        // Verifica se a reserva já existe
-                        var reservaExistente = Session.FindObject<ReservaChurrasqueiraData>(
+
+                        var reservaExistenteManutencao = Session.FindObject<ReservaChurrasqueiraData>(
                             CriteriaOperator.Parse("Churrasqueira.Oid = ? AND dataReserva_Churrasqueira = ? AND IsManutencao = true",
                             Churrasqueira.Oid, dataReservaAtual));
+                        var reservaExistenteAssociado = Session.FindObject<ReservaChurrasqueiraData>(
+                            CriteriaOperator.Parse("Churrasqueira.Oid = ? AND dataReserva_Churrasqueira = ? AND IsManutencao = false",
+                            Churrasqueira.Oid, dataReservaAtual));
 
-                        if (reservaExistente == null) // Apenas cria se não existir
+
+                        if (reservaExistenteAssociado != null) 
+                        {
+                            //Pensar um Jeito de Alerta a Data Conflitante.
+                        }
+                        else if(reservaExistenteManutencao != null)
+                        {
+                            reservaExistenteManutencao.GerenciarChurrasqueira = this;
+                            reservaExistenteManutencao.IsManutencao = true;
+                            Session.Save(reservaExistenteManutencao);
+                        }
+                        else if (reservaExistenteManutencao == null)
                         {
                             var novaReserva = new ReservaChurrasqueiraData(Session)
                             {
@@ -137,13 +146,6 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
                             };
 
                             Session.Save(novaReserva);
-                        }
-                        else
-                        {
-                            // Atualiza a reserva existente, se necessário
-                            reservaExistente.GerenciarChurrasqueira = this;
-                            reservaExistente.IsManutencao = true;
-                            Session.Save(reservaExistente);
                         }
                     }
                 }

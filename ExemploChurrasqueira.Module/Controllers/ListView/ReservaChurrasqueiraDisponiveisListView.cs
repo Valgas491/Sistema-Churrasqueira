@@ -2,10 +2,13 @@
 using DevExpress.DocumentServices.ServiceModel.DataContracts;
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Actions;
+using DevExpress.ExpressApp.Blazor;
 using DevExpress.ExpressApp.SystemModule;
+using DevExpress.ExpressApp.Utils;
 using DevExpress.XtraPrinting;
 using DevExpress.XtraRichEdit.Utils;
 using ExemploChurrasqueira.Module.BusinessObjects.Per;
+using Microsoft.JSInterop;
 
 namespace ExemploChurrasqueira.Module.Controllers.ListView
 {
@@ -53,9 +56,10 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
             // Desativa a visualização das reservas passadas
             ((DevExpress.ExpressApp.ListView)View).CollectionSource.Criteria["DataFilter"] =
                 CriteriaOperator.Parse("DataReserva_Churrasqueira >= ?", DateTime.Today);
-
+           
 
         }
+        
         private void MaintanceDelete()
         {
             var reservasManutencaoConcluidas = ObjectSpace.GetObjects<ReservaChurrasqueiraData>()

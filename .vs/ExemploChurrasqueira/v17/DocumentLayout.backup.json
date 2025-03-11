@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\detailview\\gerenciarchurrsqueiradetailview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\controllers\\detailview\\gerenciarchurrsqueiradetailview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\listview\\popupnotescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\controllers\\listview\\popupnotescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\detailview\\gerenciarchurrsqueiradetailview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|solutionrelative:exemplochurrasqueira.module\\controllers\\detailview\\gerenciarchurrsqueiradetailview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{63CF403A-B343-4A25-8634-A239E4E87FC2}|ExemploChurrasqueira.Module\\ExemploChurrasqueira.Module.csproj|c:\\users\\estagio.analise\\source\\repos\\exemplochurrasqueira\\exemplochurrasqueira.module\\controllers\\listview\\churrasqueiradisponivel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -188,7 +188,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 206,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -240,26 +240,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GerenciarChurrsqueiraDetailView.cs",
               "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\DetailView\\GerenciarChurrsqueiraDetailView.cs",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Controllers\\DetailView\\GerenciarChurrsqueiraDetailView.cs",
               "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\DetailView\\GerenciarChurrsqueiraDetailView.cs",
               "RelativeToolTip": "ExemploChurrasqueira.Module\\Controllers\\DetailView\\GerenciarChurrsqueiraDetailView.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-26T16:53:43.944Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "PopupNotesController.cs",
               "DocumentMoniker": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\PopupNotesController.cs",
               "RelativeDocumentMoniker": "ExemploChurrasqueira.Module\\Controllers\\ListView\\PopupNotesController.cs",
               "ToolTip": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Module\\Controllers\\ListView\\PopupNotesController.cs",
               "RelativeToolTip": "ExemploChurrasqueira.Module\\Controllers\\ListView\\PopupNotesController.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAA2wDUAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAUwIAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-23T14:04:59.96Z",
               "EditorCaption": ""
