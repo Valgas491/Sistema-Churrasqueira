@@ -77,7 +77,19 @@ public class Startup
             app.UseHsts();
         }
         app.UseHttpsRedirection();
-        app.UseRequestLocalization();
+        // Definir a cultura padrão para pt-BR
+        var cultureInfo = new System.Globalization.CultureInfo("pt-BR");
+        System.Globalization.CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+        System.Globalization.CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
+
+        var supportedCultures = new[] { cultureInfo };
+        var localizationOptions = new RequestLocalizationOptions
+        {
+            DefaultRequestCulture = new Microsoft.AspNetCore.Localization.RequestCulture(cultureInfo),
+            SupportedCultures = supportedCultures,
+            SupportedUICultures = supportedCultures
+        };
+        app.UseRequestLocalization(localizationOptions);
         app.UseStaticFiles();
         app.UseRouting();
         app.UseXaf();

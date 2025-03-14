@@ -626,3 +626,4 @@ C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\obj\Debug\net8.0-windows\ExemploChurrasqueira.Blazor.Server.pdb
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\obj\Debug\net8.0-windows\ExemploChurrasqueira.Blazor.Server.genruntimeconfig.cache
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\obj\Debug\net8.0-windows\ref\ExemploChurrasqueira.Blazor.Server.dll
+C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\Model_pt-BR.xafml

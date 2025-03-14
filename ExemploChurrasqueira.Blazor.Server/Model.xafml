@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Application>
+<Application PreferredLanguage="pt-BR">
   <ActionDesign>
     <Actions>
       <Action Id="SaveAndClose" CustomCSSClassName="SaveAndCloseCss" ImageName="Grid_Save" />

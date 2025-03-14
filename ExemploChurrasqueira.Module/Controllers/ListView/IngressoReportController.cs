@@ -41,7 +41,7 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
             foreach (var evento in eventos)
             {
                 IngressoReport report = new IngressoReport();
-                report.DataSource = new List<ReservaChurrasqueiraData> { evento }; 
+                report.DataSource = new List<ReservaChurrasqueiraData> { evento };
                 report.CreateDocument();
 
                 string caminhoArquivo = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),

@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using DevExpress.DocumentView;
 using DevExpress.XtraPrinting;
 using DevExpress.XtraPrinting.BarCode;
 using DevExpress.XtraReports.UI;
@@ -26,7 +27,9 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
 
         private void CriarDetalhes()
         {
-            DetailBand detailBand = new DetailBand { HeightF = 260 };
+            DetailBand detailBand = new DetailBand { HeightF = 100 };
+            BottomMarginBand bottomMargin = new BottomMarginBand { HeightF =  500};
+            
             this.Bands.Add(detailBand);
             AdicionarBordas(detailBand);
             AdicionarLogos(detailBand);
@@ -34,6 +37,14 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
             AdicionarCodigoQR(detailBand);
             AdicionarCamposDeTexto(detailBand);
             AdicionarImagemDeFundo(detailBand);
+           
+            this.Bands.Add(bottomMargin);
+            AdicionarBordas2(bottomMargin);
+            AdicionarLogos2(bottomMargin);
+            AdicionarTitulo2(bottomMargin);
+            AdicionarCodigoQR2(bottomMargin);
+            AdicionarCamposDeTexto2(bottomMargin);
+            AdicionarImagemDeFundo2(bottomMargin);
         }
 
         private void AdicionarBordas(DetailBand detailBand)
@@ -46,6 +57,14 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
                 BorderColor = Color.Black
             };
             detailBand.Controls.Add(borderPanel);
+            XRPanel borderAssinaturaSocio = new XRPanel
+            {
+                BoundsF = new RectangleF(160, 60, 250, 260),
+                BorderWidth = 2,
+                Borders = BorderSide.Bottom,
+                BorderColor = Color.Black
+            };
+            detailBand.Controls.Add(borderAssinaturaSocio);
         }
 
         private void AdicionarLogos(DetailBand detailBand)
@@ -77,6 +96,14 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
                 BorderColor = Color.AliceBlue
             };
             detailBand.Controls.Add(titleLabel);
+            XRLabel titleAssinatura = new XRLabel
+            {
+                Text = "Assinatura Sócio",
+                Font = new Font("Work Sans", 16F, FontStyle.Bold),
+                BoundsF = new RectangleF(215, 330, 400, 30),
+                BorderColor = Color.AliceBlue
+            };
+            detailBand.Controls.Add(titleAssinatura);
         }
 
         //private void AdicionarCodigoQR(DetailBand detailBand)
@@ -114,10 +141,123 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
             AddDataGeracaoLabel(detailBand, 20, 220);
         }
 
+        private void AdicionarBordas2(BottomMarginBand bottomMargin)
+        {
+            XRPanel borderPanel = new XRPanel
+            {
+                BoundsF = new RectangleF(5, 5, 580, 260),
+                BorderWidth = 2,
+                Borders = BorderSide.All,
+                BorderColor = Color.Black
+            };
+            bottomMargin.Controls.Add(borderPanel);
+
+            XRPanel borderAssinaturaSocio = new XRPanel
+            {
+                BoundsF = new RectangleF(160, 60, 250, 260),
+                BorderWidth = 2,
+                Borders = BorderSide.Bottom,
+                BorderColor = Color.Black
+            };
+            bottomMargin.Controls.Add(borderAssinaturaSocio);
+        }
+
+        private void AdicionarLogos2(BottomMarginBand bottomMargin)
+        {
+            XRPictureBox logo = new XRPictureBox
+            {
+                ImageUrl = "https://cdn-icons-png.flaticon.com/512/67/67827.png",
+                BoundsF = new RectangleF(450, 150, 100, 100),
+                Sizing = ImageSizeMode.StretchImage
+            };
+            bottomMargin.Controls.Add(logo);
+
+            XRPictureBox logoMinas = new XRPictureBox
+            {
+                ImageUrl = "https://lh3.googleusercontent.com/p0dsruAIgafKezYzhAU8qoRTUkrI8dAllAK2zucOaWt-XeJ0-1FTR4IHryZm1GSYWYF8yalPipmlI08Ju4sL--mT-Redwky7-t4S3ITo8QqsNXKL5Bma",
+                BoundsF = new RectangleF(20, 20, 120, 40),
+                Sizing = ImageSizeMode.StretchImage
+            };
+            bottomMargin.Controls.Add(logoMinas);
+        }
+
+        private void AdicionarTitulo2(BottomMarginBand bottomMargin)
+        {
+            XRLabel titleLabel = new XRLabel
+            {
+                Text = "Ingresso Reserva",
+                Font = new Font("Work Sans", 16F, FontStyle.Bold),
+                BoundsF = new RectangleF(205, 10, 400, 30),
+                BorderColor = Color.AliceBlue
+            };
+            bottomMargin.Controls.Add(titleLabel);
+            XRLabel titleAssinatura = new XRLabel
+            {
+                Text = "Assinatura Sócio",
+                Font = new Font("Work Sans", 16F, FontStyle.Bold),
+                BoundsF = new RectangleF(215, 330, 400, 30),
+                BorderColor = Color.AliceBlue
+            };
+            bottomMargin.Controls.Add(titleAssinatura);
+
+        }
+
+        //private void AdicionarCodigoQR(DetailBand detailBand)
+        //{
+        //    var qrCode = new XRBarCode
+        //    {
+        //        Symbology = new QRCodeGenerator(),
+        //        AutoModule = true,
+        //        BoundsF = new RectangleF(450, 50, 100, 100)
+        //    };
+        //    detailBand.Controls.Add(qrCode);
+        //}
+        private void AdicionarCodigoQR2(BottomMarginBand bottomMargin)
+        {
+
+            var qrCode = new XRPictureBox
+            {
+                Image = Image.FromFile(@"C:\Users\estagio.analise\Downloads\frame (1).png"),
+                BoundsF = new RectangleF(450, 48, 100, 100),
+                Sizing = ImageSizeMode.StretchImage
+            };
+            bottomMargin.Controls.Add(qrCode);
+        }
+        private void AdicionarCamposDeTexto2(BottomMarginBand bottomMargin)
+        {
+            float yOffset = 70;
+
+            AddIngressoLabel2(bottomMargin, "Nome:", "[Associado]", 20, yOffset, false, 42);
+            AddIngressoLabel2(bottomMargin, "Data da Reserva:", "[DataReservaFormatada]", 20, yOffset += 30, true, 110);
+            AddIngressoLabel2(bottomMargin, "NPF:", "[Npf]", 20, yOffset += 30, false, 30);
+            AddIngressoLabel2(bottomMargin, "Churrasqueira:", "[Churrasqueira.Nome]", 20, yOffset += 30, true, 97);
+            AddIngressoLabel2(bottomMargin, "Quantidade de Pessoas:", "[QtdPessoas]", 20, yOffset += 30, true, 160);
+            AddDataGeracaoLabel2(bottomMargin, 20, 220);
+        }
+
         #endregion
+
 
         #region Métodos De Criação De Textos
         private void AddIngressoLabel(DetailBand band, string labelText, string expression, float x, float y, bool singleLine = false, float labelWidth = 150)
+        {
+            XRLabel labelTitle = new XRLabel
+            {
+                Text = labelText,
+                Font = new Font("Arial", 10F, FontStyle.Bold),
+                BoundsF = new RectangleF(x, y, singleLine ? 250 : 150, 20)
+            };
+            band.Controls.Add(labelTitle);
+
+            XRLabel labelValue = new XRLabel
+            {
+                ExpressionBindings = { new ExpressionBinding("BeforePrint", "Text", expression) },
+                Font = new Font("Arial", 10F, FontStyle.Bold),
+                BoundsF = new RectangleF(x + labelWidth + 5, y, 300, 20)
+            };
+            band.Controls.Add(labelValue);
+        }
+        private void AddIngressoLabel2(BottomMarginBand band, string labelText, string expression, float x, float y, bool singleLine = false, float labelWidth = 150)
         {
             XRLabel labelTitle = new XRLabel
             {
@@ -164,6 +304,32 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
             };
             band.Controls.Add(labelValue);
         }
+        private void AddDataGeracaoLabel2(BottomMarginBand band, float x, float y)
+        {
+            CalculatedField dataGeracaoField = new CalculatedField
+            {
+                Name = "DataGeracao",
+                Expression = "Now()"
+            };
+            this.CalculatedFields.Add(dataGeracaoField);
+
+            XRLabel labelTitle = new XRLabel
+            {
+                Text = "Data da Geração:",
+                Font = new Font("Arial", 10F, FontStyle.Bold),
+                BoundsF = new RectangleF(20, y, 150, 20)
+            };
+            band.Controls.Add(labelTitle);
+
+            XRLabel labelValue = new XRLabel
+            {
+                ExpressionBindings = { new ExpressionBinding("BeforePrint", "Text", "[DataGeracao]") },
+                Font = new Font("Arial", 10F, FontStyle.Bold),
+                BoundsF = new RectangleF(x + 117, y, 200, 20),
+                TextFormatString = "{0:dd/MM/yyyy HH:mm:ss}"
+            };
+            band.Controls.Add(labelValue);
+        }
         #endregion
 
         #region Método BackGround Imagem
@@ -184,6 +350,27 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
                 Sizing = ImageSizeMode.StretchImage
             };
             detailBand.Controls.Add(backgroundImage);
+
+            backgroundImage.SendToBack();
+        }
+
+        private void AdicionarImagemDeFundo2(BottomMarginBand bottomMargin)
+        {
+            XRPanel transparentOverlay = new XRPanel
+            {
+                BoundsF = new RectangleF(8, 8, 577, 257), // Certifique-se que os limites sejam iguais ao da imagem de fundo
+                BackColor = Color.FromArgb(230, 255, 255, 255), // Ajuste a opacidade para 70%
+                BorderWidth = 0
+            };
+            bottomMargin.Controls.Add(transparentOverlay);
+
+            XRPictureBox backgroundImage = new XRPictureBox
+            {
+                Image = Image.FromFile(@"C:\Users\estagio.analise\Downloads\Minas-Tenis-Clube.jpg"),
+                BoundsF = new RectangleF(8, 8, 577, 257),
+                Sizing = ImageSizeMode.StretchImage
+            };
+            bottomMargin.Controls.Add(backgroundImage);
 
             backgroundImage.SendToBack();
         }

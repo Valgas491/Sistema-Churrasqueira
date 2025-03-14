@@ -1,4 +1,8 @@
-﻿<Router AppAssembly="@typeof(Program).Assembly" AdditionalAssemblies="new[] { typeof(DevExpress.ExpressApp.Blazor.BlazorApplication).Assembly }">
+﻿@using DevExpress.Blazor
+
+<DxLocalization Culture="pt-BR" />
+
+<Router AppAssembly="@typeof(Program).Assembly" AdditionalAssemblies="new[] { typeof(DevExpress.ExpressApp.Blazor.BlazorApplication).Assembly }">
     <Found Context="routeData">
         <RouteView RouteData="@routeData" />
     </Found>

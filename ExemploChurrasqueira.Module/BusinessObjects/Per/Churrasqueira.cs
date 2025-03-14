@@ -27,6 +27,7 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
         string nome;
         decimal preco;
         long qtdComportada;
+        bool? padrao;
        
        
         public string Nome
@@ -43,11 +44,30 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
             set => SetPropertyValue(nameof(QtdComportada), ref qtdComportada, value);
         }
 
+        [ModelDefault("AllowEdit", "true")]
+        [CaptionsForBoolValues("Sim", "Não")]
+        [VisibleInListView(false)]
+        [XafDisplayName("Utilizar valor padrão da Churrasqueira?")]
+        public bool? Padrao
+        {
+            get => padrao;
+            set
+            {
+                SetPropertyValue(nameof(Padrao), ref padrao, value);
+                if (padrao == true)
+                {
+                    Preco = 50.98m;
+                }
+                else
+                {
+                    Preco = 0m;
+                }
+            }
+        }
 
-        [ModelDefault("AllowEdit", "False")]
         [VisibleInListView(false)]
         [XafDisplayName("Valor")]
-         public decimal Preco
+        public decimal Preco
         {
             get => preco;
             set => SetPropertyValue(nameof(Preco), ref preco, value);
@@ -91,7 +111,7 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
         public override void AfterConstruction()
         {
             base.AfterConstruction();
-            Preco = 50.98m;
+            Preco = 0;
             // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
         }
         //private string _PersistentProperty;

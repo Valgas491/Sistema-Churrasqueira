@@ -5,4 +5,12 @@
     link.click();
 };
 
+window.addGlobalChangeEvent = () => {
+    document.querySelectorAll('.parametrized-action-wrapper.xaf-action-fulltextsearch.dxbl-text-edit')
+        .forEach(element => {
+            element.addEventListener('change', (event) => {
+                console.log('Valor alterado:', event.target.value);
+            });
+        });
+};
 

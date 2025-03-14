@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExemploChurrasqueira.Module")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84b1b40a6353b362be5acd4a42aa0539cdb60967")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fdd1d9b91060ab860427d6b80dc6c017e6ab11dd")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExemploChurrasqueira.Module")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExemploChurrasqueira.Module")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.*")]
