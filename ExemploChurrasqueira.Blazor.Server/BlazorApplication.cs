@@ -2,8 +2,10 @@
 using DevExpress.ExpressApp.Blazor;
 using DevExpress.ExpressApp.Security;
 using DevExpress.ExpressApp.Security.ClientServer;
+using DevExpress.ExpressApp.Templates;
 using DevExpress.ExpressApp.Xpo;
 using ExemploChurrasqueira.Blazor.Server.Services;
+using ExemploChurrasqueira.Blazor.Server.Templates;
 
 namespace ExemploChurrasqueira.Blazor.Server
 {
@@ -25,6 +27,12 @@ namespace ExemploChurrasqueira.Blazor.Server
                 DatabaseUpdateMode = DatabaseUpdateMode.UpdateDatabaseAlways;
             }
 #endif
+        }
+        protected override IFrameTemplate CreateDefaultTemplate(TemplateContext context)
+        {
+            if (context == TemplateContext.LogonWindow)
+                return new Login();
+            return base.CreateDefaultTemplate(context);
         }
         //protected override void CreateDefaultObjectSpaceProvider(CreateCustomObjectSpaceProviderEventArgs args)
         //{

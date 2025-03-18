@@ -32,6 +32,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = RWRpdG9yc1xBZ2VuZGFFZGl0b3JcQWdlbmRhQ2h1cnJhc3F1ZWlyYS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/estagio.analise/source/repos/ExemploChurrasqueira/ExemploChurrasqueira.Blazor.Server/Templates/LoginComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = VGVtcGxhdGVzXExvZ2luQ29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/estagio.analise/source/repos/ExemploChurrasqueira/ExemploChurrasqueira.Blazor.Server/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

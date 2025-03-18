@@ -1,0 +1,70 @@
+﻿@using DevExpress.ExpressApp.Blazor
+@using DevExpress.ExpressApp.Blazor.Components
+@using DevExpress.ExpressApp.Blazor.Templates
+@using DevExpress.ExpressApp.Blazor.Services
+@using DevExpress.ExpressApp.Utils
+
+@inherits FrameTemplateComponentBase<Login>
+@inject ILanguageSwitcherService LanguageSwitcherService
+
+
+<body class="bg-primary ">
+    <div class="login-content">
+        <div class="d-flex flex-column vh-100 justify-content-center align-items-center ">
+            <div class="col-xl-6 col-xxl-4 mx-auto ">
+                <div class="row align-items-center pe-2 ">
+
+                    <div class="col-6 ">
+                        <img src="/images/brasao-white.png" title="Logo" />
+                    </div>
+
+                    <div class="col-6 text-end ">
+                        <img src="/images/logo-white.png" title="Brasão" />
+                    </div>
+
+                </div>
+                <div class="cardLogin px-lg-5">
+                    <div class="card-body">
+                        <div class="row">
+                            <SizeModeContainer>
+
+                                <div>
+                                    <ViewSiteComponent View="@FrameTemplate.View" />
+
+                                </div>
+
+                                <div class="p-5 mb-5  form-check rounded-3 shadow-sm form-captcha">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Não sou um robô</label>
+                                </div>
+
+                                <div class="logon-toolbar border-0">
+                                    @FrameTemplate.Toolbar.GetComponentContent()
+                                    @FrameTemplate.AdditionalToolbar.GetComponentContent()
+                                </div>
+
+
+                                @*Botao de Logar com Windows*@
+
+                                @*                                 @if (FrameTemplate.AdditionalToolbar.ContainsVisibleActionControl())
+                                {
+                                <div>@CaptionHelper.GetLocalizedText("Security/LoginPage", "ExternalAuthorizationActionSeparator")</div>
+                                @FrameTemplate.AdditionalToolbar.GetComponentContent()
+                                } *@
+
+                            </SizeModeContainer>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+@code {
+    public static RenderFragment Create(Login logonWindowTemplate) => @<LoginComponent FrameTemplate="@logonWindowTemplate" />;
+}
+
+

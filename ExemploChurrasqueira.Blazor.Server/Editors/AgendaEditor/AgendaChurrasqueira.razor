@@ -7,6 +7,7 @@
 @using ExemploChurrasqueira.Module.BusinessObjects.Per
 @using Microsoft.JSInterop
 @using ExemploChurrasqueira.Module.Helper
+@using ExemploChurrasqueira.Blazor.Server.Services
 
 @inject IObjectSpaceFactory ObjectSpaceFactory
 @inject NavigationManager Navigation
@@ -14,13 +15,16 @@
 
 <div class="col-lg-12" style="margin-bottom:8px;">
     <DxFormLayout CaptionPosition="CaptionPosition.Vertical" CssClass="w-100">
-        <DxFormLayoutItem Caption="Selecionar Nome:" ColSpanMd="3">
+        <DxFormLayoutItem Caption="Selecionar Status:" ColSpanMd="3">
             <Template>
                 <div class="card-footer">
-                    <DxTagBox Data="@reservas"
-                              TextFieldName="@nameof(ReservaChurrasqueiraData.Churrasqueira.Nome)"
-                              Values="@ReservaSelecionadas"
-                              ValueChanged="OnChurrasqueiraSelecionada">
+                    <DxTagBox Data="@nomesChurrasqueiras"
+                    Values="@churrasqueirasSelecionadas"
+                    SearchMode="@ListSearchMode.AutoSearch"
+                    SearchFilterCondition="@ListSearchFilterCondition.Contains"
+                    CssClass="cw-480"
+                    SelectionMode="ListBoxSelectionMode.Single"
+                    ValuesChanged="@((IEnumerable<string> e) => OnChurrasqueirasSelecionadasChanged(e))">
                     </DxTagBox>
                 </div>
             </Template>
@@ -55,8 +59,8 @@ ondblclick="@OnDoubleClick">
     @<AgendaChurrasqueira ComponentModel=@componentModel />
     ;
 
-    private IEnumerable<ReservaChurrasqueiraData> ReservaSelecionadas { get; set; } = Enumerable.Empty<ReservaChurrasqueiraData>();
-    private XPCollection<ReservaChurrasqueiraData> reservas;
+    private List<string> nomesChurrasqueiras = new();
+    private IEnumerable<string> churrasqueirasSelecionadas { get; set; }
     private static DevExpress.ExpressApp.IObjectSpace objectSpace;
     private DxSchedulerAppointmentItem SelectedAppointment { get; set; }
     DxSchedulerDataStorage DataStorage = new DxSchedulerDataStorage();
@@ -65,7 +69,39 @@ ondblclick="@OnDoubleClick">
     {
         base.OnInitialized();
         ConfigurarStorage();
-        CarregarReservas();
+
+    }
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadNomesChurrasqueiras();
+    }
+    private async Task LoadNomesChurrasqueiras()
+    {
+        nomesChurrasqueiras = new List<string>
+        {
+            "Disponivel",
+            "Manutenção",
+            "Reservadas",
+            "Todas"
+        };
+
+    }
+    void OnChurrasqueirasSelecionadasChanged(IEnumerable<string> newSelecionadas)
+    {
+        if (newSelecionadas.Contains("Todas"))
+        {
+            churrasqueirasSelecionadas = newSelecionadas.TakeLast(1).ToList();
+        }
+        else if (newSelecionadas.Count() > 2)
+        {
+            churrasqueirasSelecionadas = newSelecionadas.TakeLast(2).ToList();
+        }
+        else
+        {
+            churrasqueirasSelecionadas = newSelecionadas;
+        }
+        IEnumerable<string> result = churrasqueirasSelecionadas;
+        CarregarReservas(result);
     }
 
     private void ConfigurarStorage()
@@ -79,8 +115,7 @@ ondblclick="@OnDoubleClick">
                 LabelId = "LabelId"
         };
     }
-
-    private void CarregarReservas()
+    private void CarregarReservas(IEnumerable<string> filtro)
     {
         objectSpace = ObjectSpaceFactory.CreateObjectSpace<ReservaChurrasqueiraData>();
         var todasChurrasqueiras = objectSpace.GetObjects<Churrasqueira>().ToList();
@@ -91,76 +126,133 @@ ondblclick="@OnDoubleClick">
         var intervaloEntreEventos = 1;
         Dictionary<DateTime, int> horariosOcupados = new Dictionary<DateTime, int>();
 
-        foreach (var reserva in reservas)
+        if (filtro.Any())
         {
-            if (reserva.DataReserva_Churrasqueira > DateTime.MinValue)
+            foreach (var reserva in reservas)
             {
-                var dataLimpa = reserva.DataReserva_Churrasqueira.Date;
-
-                if (!horariosOcupados.ContainsKey(dataLimpa))
-                    horariosOcupados[dataLimpa] = 0;
-
-                int proximoHorario = horariosOcupados[dataLimpa];
-
-                dynamic item = new ExpandoObject();
-                item.Start = dataLimpa.AddHours(proximoHorario);
-                item.End = dataLimpa.AddHours(proximoHorario + 1);
-                item.Subject = $"{reserva.Churrasqueira.Nome} - {(reserva.IsManutencao ? "Manutenção" : "Reservada")}";
-                item.Description = reserva.IsManutencao ? $"Reservado para Manutenção" : $"Reservado para: {reserva.Associado}";
-                item.LabelId = reserva.IsManutencao ? 1 : 5;
-                item.AllDay = false;
-
-                eventos.Add(item);
-
-                horariosOcupados[dataLimpa]++;
-            }
-        }
-
-        for (int mes = 1; mes <= 12; mes++)
-        {
-            DateTime primeiroDiaMes = new DateTime(ano, mes, 1);
-            DateTime ultimoDiaMes = new DateTime(ano, mes, DateTime.DaysInMonth(ano, mes));
-
-            for (DateTime dataAtual = primeiroDiaMes; dataAtual <= ultimoDiaMes; dataAtual = dataAtual.AddDays(1))
-            {
-                var churrasqueirasReservadas = reservas
-                    .Where(r => r.DataReserva_Churrasqueira.Date == dataAtual.Date)
-                    .Select(r => r.Churrasqueira.Nome)
-                    .ToList();
-
-                if (!horariosOcupados.ContainsKey(dataAtual))
-                    horariosOcupados[dataAtual] = 0;
-
-                int horaAtual = horariosOcupados[dataAtual];
-
-                foreach (var churrasqueira in todasChurrasqueiras)
+                if (reserva.DataReserva_Churrasqueira > DateTime.MinValue)
                 {
-                    if (!churrasqueirasReservadas.Contains(churrasqueira.Nome))
+                    if (filtro.Contains("Manutenção") && reserva.IsManutencao == true)
                     {
+                        var dataLimpa = reserva.DataReserva_Churrasqueira.Date;
+
+                        if (!horariosOcupados.ContainsKey(dataLimpa))
+                            horariosOcupados[dataLimpa] = 0;
+
+                        int proximoHorario = horariosOcupados[dataLimpa];
+
                         dynamic item = new ExpandoObject();
-                        item.Start = dataAtual.AddHours(horaAtual);
-                        item.End = dataAtual.AddHours(horaAtual + 1);
-                        item.Subject = $"{churrasqueira.Nome} - Disponível";
-                        item.Description = "Churrasqueira disponível para reserva";
-                        item.LabelId = 8;
+                        item.Start = dataLimpa.AddHours(proximoHorario);
+                        item.End = dataLimpa.AddHours(proximoHorario + 1);
+                        item.Subject = $"{reserva.Churrasqueira.Nome} - Manutenção";
+                        item.Description = $"Reservado para Manutenção";
+                        item.LabelId = reserva.IsManutencao ? 1 : 5;
                         item.AllDay = false;
 
                         eventos.Add(item);
 
-                        horaAtual += intervaloEntreEventos;
+                        horariosOcupados[dataLimpa]++;
+                    }
+                    else if (filtro.Contains("Reservadas") && reserva.IsManutencao == false)
+                    {
+                        var dataLimpa = reserva.DataReserva_Churrasqueira.Date;
+
+                        if (!horariosOcupados.ContainsKey(dataLimpa))
+                            horariosOcupados[dataLimpa] = 0;
+
+                        int proximoHorario = horariosOcupados[dataLimpa];
+
+                        dynamic item = new ExpandoObject();
+                        item.Start = dataLimpa.AddHours(proximoHorario);
+                        item.End = dataLimpa.AddHours(proximoHorario + 1);
+                        item.Subject = $"{reserva.Churrasqueira.Nome} - Reservada";
+                        item.Description = $"Reservado para: {reserva.Associado}";
+                        item.LabelId = reserva.IsManutencao ? 1 : 5;
+                        item.AllDay = false;
+
+                        eventos.Add(item);
+
+                        horariosOcupados[dataLimpa]++;
+                    }
+                    else if (filtro.Contains("Todas"))
+                    {
+                        var dataLimpa = reserva.DataReserva_Churrasqueira.Date;
+
+                        if (!horariosOcupados.ContainsKey(dataLimpa))
+                            horariosOcupados[dataLimpa] = 0;
+
+                        int proximoHorario = horariosOcupados[dataLimpa];
+
+                        dynamic item = new ExpandoObject();
+                        item.Start = dataLimpa.AddHours(proximoHorario);
+                        item.End = dataLimpa.AddHours(proximoHorario + 1);
+                        item.Subject = $"{reserva.Churrasqueira.Nome} - {(reserva.IsManutencao ? "Manutenção" : "Reservada")}";
+                        item.Description = reserva.IsManutencao ? $"Reservado para Manutenção" : $"Reservado para: {reserva.Associado}";
+                        item.LabelId = reserva.IsManutencao ? 1 : 5;
+                        item.AllDay = false;
+
+                        eventos.Add(item);
+
+                        horariosOcupados[dataLimpa]++;
                     }
                 }
             }
-        }
 
-        DataStorage.AppointmentsSource = eventos;
+            if (filtro.Contains("Disponivel") || filtro.Contains("Todas"))
+            {
+                for (int mes = 1; mes <= 12; mes++)
+                {
+                    DateTime primeiroDiaMes = new DateTime(ano, mes, 1);
+                    DateTime ultimoDiaMes = new DateTime(ano, mes, DateTime.DaysInMonth(ano, mes));
+
+                    for (DateTime dataAtual = primeiroDiaMes; dataAtual <= ultimoDiaMes; dataAtual = dataAtual.AddDays(1))
+                    {
+                        var churrasqueirasReservadas = reservas
+                            .Where(r => r.DataReserva_Churrasqueira.Date == dataAtual.Date)
+                            .Select(r => r.Churrasqueira.Nome)
+                            .ToList();
+
+                        if (!horariosOcupados.ContainsKey(dataAtual))
+                            horariosOcupados[dataAtual] = 0;
+
+                        int horaAtual = horariosOcupados[dataAtual];
+
+                        foreach (var churrasqueira in todasChurrasqueiras)
+                        {
+                            if (!churrasqueirasReservadas.Contains(churrasqueira.Nome))
+                            {
+                                dynamic item = new ExpandoObject();
+                                item.Start = dataAtual.AddHours(horaAtual);
+                                item.End = dataAtual.AddHours(horaAtual + 1);
+                                item.Subject = $"{churrasqueira.Nome} - Disponível";
+                                item.Description = "Churrasqueira disponível para reserva";
+                                item.LabelId = 8;
+                                item.AllDay = false;
+
+                                eventos.Add(item);
+
+                                horaAtual += intervaloEntreEventos;
+                            }
+                        }
+                    }
+                }
+            }
+
+            DataStorage.AppointmentsSource = eventos;
+            _shouldRender = true;
+            StateHasChanged();
+        }
+        else
+        {
+            LimparAgenda();
+        }
+    }
+    private void LimparAgenda()
+    {
+        DataStorage.AppointmentsSource = new List<dynamic>();
         _shouldRender = true;
         StateHasChanged();
     }
-
-
-
-
     protected override bool ShouldRender()
     {
         return _shouldRender;

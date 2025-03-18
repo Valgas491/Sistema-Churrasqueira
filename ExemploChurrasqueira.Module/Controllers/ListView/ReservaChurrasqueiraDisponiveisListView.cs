@@ -52,11 +52,9 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
         }
         private void Filtros()
         {
-            
             // Desativa a visualização das reservas passadas
             ((DevExpress.ExpressApp.ListView)View).CollectionSource.Criteria["DataFilter"] =
                 CriteriaOperator.Parse("DataReserva_Churrasqueira >= ?", DateTime.Today);
-           
 
         }
         
