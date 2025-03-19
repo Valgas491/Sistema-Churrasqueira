@@ -1,3 +1,16 @@
+:root {
+    --MinasDarkBlue: #004078;
+    --MinasBlue: #0069C4;
+    --MinasLightBlue: #30B2EF;
+    --MinasdarkOrange: #F16C0B;
+    --MinasOrange: #FFB033;
+    --MinasLightOrange: #F5F6EA;
+    --MinasRed: #FF0000;
+    --MinasBrown: #770125;
+    --Red: #cb2a2a;
+    --Cinza: #e9ecef;
+    --bs-primary-rgb: 0, 64, 120;
+}
 html, body {
     height: 100%;
 }

@@ -40,6 +40,7 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
         long qtdPessoas;
         decimal valor;
         Socio socio;
+        ApplicationUser usuarioRegistro;
         DateTime dataReserva_Churrasqueira;
         
 
@@ -64,7 +65,13 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
             }
 
         }
-
+        [Association]
+        [ModelDefault("AllowEdit", "false")]
+        public ApplicationUser UsuarioRegistro
+        {
+            get { return usuarioRegistro; }
+            set { SetPropertyValue(nameof(UsuarioRegistro), ref usuarioRegistro, value); }
+        }
         [ModelDefault("DisplayFormat", "{0:dd/MM/yyyy}")]
         [ModelDefault("EditMask", "dd/MM/yyyy")]
         [ModelDefault("DisplayFormatInListView", "{0:dd/MM/yyyy}")]

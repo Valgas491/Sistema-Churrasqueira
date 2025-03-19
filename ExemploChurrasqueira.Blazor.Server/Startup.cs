@@ -1,9 +1,18 @@
 ﻿using DevExpress.ExpressApp.ApplicationBuilder;
 using DevExpress.ExpressApp.Blazor.ApplicationBuilder;
 using DevExpress.ExpressApp.Blazor.Services;
+using DevExpress.ExpressApp.Security;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using DevExpress.Persistent.BaseImpl.PermissionPolicy;
 using ExemploChurrasqueira.Blazor.Server.Services;
+using ExemploChurrasqueira.Blazor.Server.Templates;
+using ExemploChurrasqueira.Module;
 using ExemploChurrasqueira.Module.BusinessObjects.Per;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components.Server.Circuits;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace ExemploChurrasqueira.Blazor.Server;
 
@@ -32,9 +41,70 @@ public class Startup
         services.AddXaf(Configuration, builder =>
         {
             builder.UseApplication<ExemploChurrasqueiraBlazorApplication>();
+            services.AddXafSecurity(options =>
+            {
+
+                options.RoleType = typeof(PermissionPolicyRole);
+                options.UserType = typeof(PermissionPolicyUser);
+                //options.Events.OnSecurityStrategyCreated = securityStrategy => ((SecurityStrategy)securityStrategy).RegisterXPOAdapterProviders();
+                options.SupportNavigationPermissionsForTypes = false;
+
+
+                options.UserLoginInfoType = typeof(ApplicationUserLoginInfo);
+                options.Events.OnSecurityStrategyCreated = securityStrategy =>
+                {
+                    ((SecurityStrategy)securityStrategy).RegisterXPOAdapterProviders();
+                    ((SecurityStrategy)securityStrategy).AnonymousAllowedTypes.Add(typeof(ApplicationUser));
+                };
+                options.UserType = typeof(ApplicationUser);
+            })
+            .AddExternalAuthentication<HttpContextPrincipalProvider>()
+            .AddAuthenticationProvider<AuthenticationStandardProviderOptions, CustomAuthenticationStandardProvider>(options =>
+            {
+                options.IsSupportChangePassword = true;
+                options.LogonParametersType = typeof(CustomLogonParameters);
+            })
+            .AddAuthenticationActiveDirectory(o =>
+            {
+                o.CreateUserAutomatically = true;
+            })
+            .AddAuthenticationStandard(options =>
+            {
+                options.IsSupportChangePassword = true;
+            });
+
+
+            var authentication = services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme);
+            authentication
+                .AddCookie(options =>
+                {
+                    options.LoginPath = "/LoginPage";
+                })
+                .AddJwtBearer(options =>
+                {
+                    options.TokenValidationParameters = new TokenValidationParameters()
+                    {
+                        ValidIssuer = Configuration["Authentication:Jwt:Issuer"],
+                        ValidAudience = Configuration["Authentication:Jwt:Audience"],
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Authentication:Jwt:IssuerSigningKey"]))
+                    };
+                });
+            services.AddAuthorization(options =>
+            {
+                options.DefaultPolicy = new AuthorizationPolicyBuilder(
+                    JwtBearerDefaults.AuthenticationScheme)
+                        .RequireAuthenticatedUser()
+                        .RequireXafAuthentication()
+                        .Build();
+            });
+            services.Configure<IISServerOptions>(options =>
+            {
+                options.AuthenticationDisplayName = "Windows";
+            });
             builder.Modules
                 .AddConditionalAppearance()
-                .AddReports(options => {
+                .AddReports(options =>
+                {
                     options.EnableInplaceReports = true;
                     options.ReportDataType = typeof(DevExpress.Persistent.BaseImpl.ReportDataV2);
                     options.ReportStoreMode = DevExpress.ExpressApp.ReportsV2.ReportStoreModes.XML;
@@ -92,6 +162,8 @@ public class Startup
         app.UseRequestLocalization(localizationOptions);
         app.UseStaticFiles();
         app.UseRouting();
+        app.UseAuthentication();
+        app.UseAuthorization();
         app.UseXaf();
         app.UseEndpoints(endpoints =>
         {

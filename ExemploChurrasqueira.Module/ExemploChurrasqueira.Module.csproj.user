@@ -5,5 +5,8 @@
     <Compile Update="BusinessObjects\Per\IngressoReport.cs">
       <SubType>XtraReport</SubType>
     </Compile>
+    <Compile Update="CustomAuthentication.cs">
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

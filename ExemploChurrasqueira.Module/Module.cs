@@ -13,6 +13,7 @@ using DevExpress.ExpressApp.Model.NodeGenerators;
 using DevExpress.Xpo;
 using DevExpress.ExpressApp.Xpo;
 using ExemploChurrasqueira.Module.Helper;
+using ExemploChurrasqueira.Module.BusinessObjects.Per;
 
 
 
@@ -40,6 +41,7 @@ public sealed class ExemploChurrasqueiraModule : ModuleBase {
         // Manage various aspects of the application UI and behavior at the module level.
         application.SetupComplete += ConfiguracaoCompletaAplicacao;
         application.ObjectSpaceCreated += Application_ObjectSpaceCreated1;
+        
 
     }
     private void ConfiguracaoCompletaAplicacao(object sender, EventArgs e)
@@ -62,7 +64,6 @@ public sealed class ExemploChurrasqueiraModule : ModuleBase {
         IObjectSpace objSpace = Application.CreateObjectSpace();
         ModuleHelperXaf.ConfigurarSocios(sender, evento, objSpace);
     }
-
     private void Application_ObjectSpaceCreated1(object sender, ObjectSpaceCreatedEventArgs e)
     {
         CompositeObjectSpace compositeObjectSpace = e.ObjectSpace as CompositeObjectSpace;

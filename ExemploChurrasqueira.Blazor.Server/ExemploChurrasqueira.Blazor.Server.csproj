@@ -34,6 +34,7 @@
 		<PackageReference Include="DevExpress.Reporting.Core" Version="24.1.7" />
 		<PackageReference Include="DevExpress.Win.Printing" Version="24.1.7" />
 		<PackageReference Include="DevExpress.Xpo" Version="24.1.7" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.9" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 		<PackageReference Include="RestSharp" Version="112.1.0" />
 	</ItemGroup>

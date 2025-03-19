@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\wwwroot\\css\\temaCustomizado.css",
+      "PackagePath": "staticwebassets\\css\\temaCustomizado.css"
+    },
+    {
       "Id": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -25,8 +29,16 @@
       "PackagePath": "staticwebassets\\images\\backIngresso.png"
     },
     {
+      "Id": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\wwwroot\\images\\brasao-white.png",
+      "PackagePath": "staticwebassets\\images\\brasao-white.png"
+    },
+    {
       "Id": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\wwwroot\\images\\loader-animado-logo.svg",
       "PackagePath": "staticwebassets\\images\\loader-animado-logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\wwwroot\\images\\logo-white.png",
+      "PackagePath": "staticwebassets\\images\\logo-white.png"
     },
     {
       "Id": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\wwwroot\\images\\mtc-xl.png",

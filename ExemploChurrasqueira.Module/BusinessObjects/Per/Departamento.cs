@@ -11,68 +11,33 @@ using System.Collections.Generic;
 using DevExpress.ExpressApp.Model;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Persistent.Validation;
-using DevExpress.ExpressApp.Security;
-using DevExpress.Persistent.Base.Security;
-using DevExpress.Persistent.BaseImpl.PermissionPolicy;
 
 namespace ExemploChurrasqueira.Module.BusinessObjects.Per {
     [DefaultClassOptions]
-    [ImageName("BO_User")]
     //[ImageName("BO_Contact")]
     //[DefaultProperty("DisplayMemberNameForLookupEditorsOfThisType")]
     //[DefaultListViewOptions(MasterDetailMode.ListViewOnly, false, NewItemRowPosition.None)]
     //[Persistent("DatabaseTableName")]
     // Specify more UI options using a declarative approach (https://documentation.devexpress.com/#eXpressAppFramework/CustomDocument112701).
-    public class ApplicationUser : PermissionPolicyUser, IObjectSpaceLink, ISecurityUserWithLoginInfo
-    { // Inherit from a different class to provide a custom primary key, concurrency and deletion behavior, etc. (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument113146.aspx).
+    public class Departamento : BaseObject { // Inherit from a different class to provide a custom primary key, concurrency and deletion behavior, etc. (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument113146.aspx).
         // Use CodeRush to create XPO classes and properties with a few keystrokes.
         // https://docs.devexpress.com/CodeRushForRoslyn/118557
-        public ApplicationUser(Session session)
+        public Departamento(Session session)
             : base(session) {
         }
-        [Browsable(false)]
-        [DevExpress.Xpo.Aggregated, Association("User-LoginInfo")]
-        public XPCollection<ApplicationUserLoginInfo> LoginInfo
+        string nome;
+        ApplicationUser responsavel;
+        public string Nome
         {
-            get { return GetCollection<ApplicationUserLoginInfo>(nameof(LoginInfo)); }
+            get { return nome; }
+            set { SetPropertyValue(nameof(Nome), ref nome, value); }
         }
-
-        string email;
 
         [Association]
-        public XPCollection<ReservaChurrasqueiraData> Reserva
+        public ApplicationUser Reponsavel
         {
-            get { return GetCollection<ReservaChurrasqueiraData>(nameof(Reserva)); }
-        }
-        public string Email
-        {
-            get { return email; }
-            set { SetPropertyValue(nameof(Email), ref email, value); }
-        }
-
-        bool podeVisualizarTodosRegistros;
-        public bool PodeVisualizarTodosRegistros
-        {
-            get => podeVisualizarTodosRegistros;
-            set => SetPropertyValue(nameof(PodeVisualizarTodosRegistros), ref podeVisualizarTodosRegistros, value);
-        }
-        [Association]
-        public XPCollection<Departamento> Departamentos
-        {
-            get { return GetCollection<Departamento>(nameof(Departamentos)); }
-        }
-
-        IEnumerable<ISecurityUserLoginInfo> IOAuthSecurityUser.UserLogins => LoginInfo.OfType<ISecurityUserLoginInfo>();
-
-        IObjectSpace IObjectSpaceLink.ObjectSpace { get; set; }
-
-        ISecurityUserLoginInfo ISecurityUserWithLoginInfo.CreateUserLoginInfo(string loginProviderName, string providerUserKey)
-        {
-            ApplicationUserLoginInfo result = ((IObjectSpaceLink)this).ObjectSpace.CreateObject<ApplicationUserLoginInfo>();
-            result.LoginProviderName = loginProviderName;
-            result.ProviderUserKey = providerUserKey;
-            result.User = this;
-            return result;
+            get { return responsavel; }
+            set { SetPropertyValue(nameof(Reponsavel), ref responsavel, value); }
         }
 
         public override void AfterConstruction() {
