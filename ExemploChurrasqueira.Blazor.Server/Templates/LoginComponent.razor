@@ -33,25 +33,10 @@
 
                                 </div>
 
-                                <div class="p-5 mb-5  form-check rounded-3 shadow-sm form-captcha">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Não sou um robô</label>
-                                </div>
-
                                 <div class="logon-toolbar border-0">
                                     @FrameTemplate.Toolbar.GetComponentContent()
                                     @FrameTemplate.AdditionalToolbar.GetComponentContent()
                                 </div>
-
-
-                                @*Botao de Logar com Windows*@
-
-                                @*                                 @if (FrameTemplate.AdditionalToolbar.ContainsVisibleActionControl())
-                                {
-                                <div>@CaptionHelper.GetLocalizedText("Security/LoginPage", "ExternalAuthorizationActionSeparator")</div>
-                                @FrameTemplate.AdditionalToolbar.GetComponentContent()
-                                } *@
-
                             </SizeModeContainer>
 
                         </div>

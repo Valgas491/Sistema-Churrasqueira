@@ -13,7 +13,6 @@ using DevExpress.Persistent.BaseImpl;
 using DevExpress.Persistent.Validation;
 
 namespace ExemploChurrasqueira.Module.BusinessObjects.Per {
-    [DefaultClassOptions]
     //[ImageName("BO_Contact")]
     //[DefaultProperty("DisplayMemberNameForLookupEditorsOfThisType")]
     //[DefaultListViewOptions(MasterDetailMode.ListViewOnly, false, NewItemRowPosition.None)]

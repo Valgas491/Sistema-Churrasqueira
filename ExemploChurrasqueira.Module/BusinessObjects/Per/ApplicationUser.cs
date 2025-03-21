@@ -16,7 +16,6 @@ using DevExpress.Persistent.Base.Security;
 using DevExpress.Persistent.BaseImpl.PermissionPolicy;
 
 namespace ExemploChurrasqueira.Module.BusinessObjects.Per {
-    [DefaultClassOptions]
     [ImageName("BO_User")]
     //[ImageName("BO_Contact")]
     //[DefaultProperty("DisplayMemberNameForLookupEditorsOfThisType")]

@@ -13,7 +13,7 @@ using ExemploChurrasqueira.Module.BusinessObjects.Per;
 namespace ExemploChurrasqueira.Module
 {
     [DomainComponent, Serializable]
-    [DisplayName("Minas Direto")]
+    [DisplayName("Churrasqueira")]
     public class CustomLogonParameters : INotifyPropertyChanged, ISerializable
     {
         private ApplicationUser app_User;

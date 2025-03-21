@@ -29,8 +29,16 @@
       "PackagePath": "staticwebassets\\images\\backIngresso.png"
     },
     {
+      "Id": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\wwwroot\\images\\bg-login.png",
+      "PackagePath": "staticwebassets\\images\\bg-login.png"
+    },
+    {
       "Id": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\wwwroot\\images\\brasao-white.png",
       "PackagePath": "staticwebassets\\images\\brasao-white.png"
+    },
+    {
+      "Id": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\wwwroot\\images\\favicon.svg",
+      "PackagePath": "staticwebassets\\images\\favicon.svg"
     },
     {
       "Id": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\wwwroot\\images\\loader-animado-logo.svg",

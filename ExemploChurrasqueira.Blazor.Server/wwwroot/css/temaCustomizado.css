@@ -4,69 +4,6 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-:root {
-    --MinasDarkBlue: #004078;
-    --MinasBlue: #0069C4;
-    --MinasLightBlue: #30B2EF;
-    --MinasdarkOrange: #F16C0B;
-    --MinasOrange: #FFB033;
-    --MinasLightOrange: #F5F6EA;
-    --MinasRed: #FF0000;
-    --MinasBrown: #770125;
-    --Red: #cb2a2a;
-    --Cinza: #e9ecef;
-    --bs-blue: var(--MinasBlue);
-    --bs-indigo: #6610f2;
-    --bs-purple: var(--MinasBlue);
-    --bs-pink: #d63384;
-    --bs-red: #dc3545;
-    --bs-orange: #fd7e14;
-    --bs-yellow: #ffc107;
-    --bs-green: #28a745;
-    --bs-teal: #20c997;
-    --bs-cyan: #00a9e6;
-    --bs-white: #fff;
-    --bs-gray: #888;
-    --bs-gray-dark: #343a40;
-    --bs-gray-100: #ececec;
-    --bs-gray-200: #e9ecef;
-    --bs-gray-300: #dee2e6;
-    --bs-gray-400: #ced4da;
-    --bs-gray-500: #adb5bd;
-    --bs-gray-600: #888;
-    --bs-gray-700: #495057;
-    --bs-gray-800: #343a40;
-    --bs-gray-900: #212529;
-    --bs-primary: var(--MinasBlue);
-    --bs-secondary: #888;
-    --bs-success: #28a745;
-    --bs-info: #00a9e6;
-    --bs-warning: #ffc107;
-    --bs-danger: #dc3545;
-    --bs-light: #ececec;
-    --bs-dark: #212529;
-    --bs-primary-rgb: 95,54,141;
-    --bs-secondary-rgb: 136,136,136;
-    --bs-success-rgb: 40,167,69;
-    --bs-info-rgb: 0,169,230;
-    --bs-warning-rgb: 255,193,7;
-    --bs-danger-rgb: 220,53,69;
-    --bs-light-rgb: 236,236,236;
-    --bs-dark-rgb: 33,37,41;
-    --bs-white-rgb: 255,255,255;
-    --bs-black-rgb: 34,34,34;
-    --bs-body-color-rgb: 33,37,41;
-    --bs-body-bg-rgb: 255,255,255;
-    --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-    --bs-body-font-family: var(--bs-font-sans-serif);
-    --bs-body-font-size: 0.875rem;
-    --bs-body-font-weight: 400;
-    --bs-body-line-height: 1.5;
-    --bs-body-color: #212529;
-    --bs-body-bg: #fff
-}
 
 .dxbs-sort-order-indicator {
     width: fit-content !important
@@ -6596,68 +6533,6 @@ textarea.form-control-lg {
     filter: invert(1) grayscale(100%) brightness(200%)
 }
 
-.toast {
-    width: 350px;
-    max-width: 100%;
-    font-size: .875rem;
-    pointer-events: auto;
-    background-color: rgba(255,255,255,.85);
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: 1px solid rgba(34,34,34,.1);
-    -webkit-box-shadow: 0 .5rem 1rem rgba(34,34,34,.15);
-    box-shadow: 0 .5rem 1rem rgba(34,34,34,.15);
-    border-radius: .2rem
-}
-
-    .toast.showing {
-        opacity: 0
-    }
-
-    .toast:not(.show) {
-        display: none
-    }
-
-.toast-container {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    max-width: 100%;
-    pointer-events: none
-}
-
-    .toast-container > :not(:last-child) {
-        margin-bottom: .75rem
-    }
-
-.toast-header {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: .5rem .75rem;
-    color: #888;
-    background-color: rgba(255,255,255,.85);
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border-bottom: 1px solid rgba(34,34,34,.05);
-    border-top-left-radius: calc(.2rem - 1px);
-    border-top-right-radius: calc(.2rem - 1px)
-}
-
-    .toast-header .btn-close {
-        margin-right: -.375rem;
-        margin-left: .75rem
-    }
-
-.toast-body {
-    padding: .75rem;
-    word-wrap: break-word
-}
 
 .modal {
     position: fixed;
@@ -30712,7 +30587,8 @@ svg.dxbl-image {
         -webkit-flex: 0 0 auto;
         -ms-flex: 0 0 auto;
         flex: 0 0 auto;
-        width: 100%
+        width: 100%;
+        
     }
 }
 

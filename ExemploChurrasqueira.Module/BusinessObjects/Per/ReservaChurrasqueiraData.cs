@@ -9,6 +9,7 @@ using DevExpress.Persistent.Validation;
 using DevExpress.Xpo;
 using ExemploChurrasqueira.Module.BusinessObjects.NoPer;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using ExemploChurrasqueira.Module.Controllers.ListView;
 
 namespace ExemploChurrasqueira.Module.BusinessObjects.Per
 {
@@ -42,7 +43,8 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
         Socio socio;
         ApplicationUser usuarioRegistro;
         DateTime dataReserva_Churrasqueira;
-        
+        private CustomLogonParameters customLogonParameters;
+
 
         #endregion
 
@@ -66,6 +68,8 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
 
         }
         [Association]
+        [VisibleInDetailView(false)]
+        [VisibleInListView(false)]
         [ModelDefault("AllowEdit", "false")]
         public ApplicationUser UsuarioRegistro
         {
@@ -197,6 +201,14 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
         protected override void OnSaving()
         {
             base.OnSaving();
+
+
+            
+        }
+
+        protected override void OnDeleting()
+        {
+            base.OnDeleting();
             
         }
         public override void AfterConstruction()

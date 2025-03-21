@@ -11,6 +11,7 @@
     --Cinza: #e9ecef;
     --bs-primary-rgb: 0, 64, 120;
 }
+
 html, body {
     height: 100%;
 }
@@ -105,6 +106,446 @@ app {
         }
     } */
 
-.parametrized-action-wrapper.xaf-action-fulltextsearch.dxbl-text-edit {
-    
+
+.header-login {
+    flex-shrink: 0;
+    background-color: #FFFFFF;
+    -webkit-mask: url('../images/mtc-xl.png');
+    mask: url('../images/mtc-xl.png');
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    width: 314px;
+    height: 50px;
+    margin-top: 20px
+}
+
+#CorFundoLogin {
+    background-image: linear-gradient(to top, var(--MinasBlue), var(--MinasLightBlue)) !important;
+}
+/*H1*/
+h1 {
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+
+/*Títulos*/
+.xaf-view-caption-lg {
+    font-size: 20pt;
+}
+
+/*Subtitulos*/
+.card-header {
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.header-logo {
+    background-image: url('../images/MinasNet.png');
+    background-repeat: no-repeat;
+    position: center;
+    width: 300px;
+    height: 55px;
+    margin-bottom: 7px;
+}
+
+.logon-main {
+    background-color: #FFFFFF;
+}
+
+
+.xaf-image-menu-item:active {
+    background-color: var(--MinasBlue);
+}
+
+
+/*Novo*/
+button[data-action-name="Novo"] {
+    background-color: var(--MinasBlue) !important;
+    color: white;
+    border-color: var(--MinasBlue) !important;
+}
+
+    button[data-action-name="Novo"]:hover {
+        background-color: var(--MinasLightBlue) !important;
+        color: white !important;
+        border-color: var(--MinasLightBlue) !important;
+    }
+
+    button[data-action-name="Novo"]:disabled {
+        background-color: var(--Cinza) !important;
+        color: black !important;
+        border-color: var(--Cinza) !important;
+    }
+
+    button[data-action-name="Novo"]:focus {
+        background-color: var(--MinasDarkBlue) !important;
+        color: white !important;
+        border-color: var(--MinasDarkBlue) !important;
+    }
+
+
+
+.ActionsPrimarias, .btn-primary {
+    background-color: var(--MinasBlue) !important;
+    color: white;
+    border-color: var(--MinasBlue) !important;
+}
+
+    .ActionsPrimarias:hover {
+        background-color: var(--MinasLightBlue) !important;
+        color: white !important;
+        border-color: var(--MinasLightBlue) !important;
+    }
+
+    .ActionsPrimarias:disabled {
+        background-color: var(--Cinza) !important;
+        color: black !important;
+        border-color: var(--Cinza) !important;
+    }
+
+    .ActionsPrimarias:focus {
+        background-color: var(--MinasDarkBlue) !important;
+        color: white !important;
+        border-color: var(--MinasDarkBlue) !important;
+    }
+
+
+.ActionsSecundarias {
+    background-color: var(--MinasOrange) !important;
+    color: white !important;
+    border-color: var(--MinasOrange) !important;
+}
+
+    .ActionsSecundarias:hover {
+        background-color: var(--MinasLightOrange) !important;
+        color: black !important;
+        border-color: var(--MinasLightOrange) !important;
+    }
+
+    .ActionsSecundarias:disabled {
+        background-color: var(--Cinza) !important;
+        color: black !important;
+        border-color: var(--Cinza) !important;
+    }
+
+    .ActionsSecundarias:focus {
+        background-color: var(--MinasdarkOrange) !important;
+        color: white !important;
+        border-color: var(--MinasdarkOrange) !important;
+    }
+
+
+.ActionsPrimariaRed {
+    background-color: var(--MinasRed) !important;
+    color: white;
+    border-color: var(--MinasRed) !important;
+}
+
+    .ActionsPrimariaRed:hover {
+        background-color: var(--Red) !important;
+        color: white !important;
+        border-color: var(--Red) !important;
+    }
+
+    .ActionsPrimariaRed:disabled {
+        background-color: var(--Cinza) !important;
+        color: black !important;
+        border-color: var(--Cinza) !important;
+    }
+
+    .ActionsPrimariaRed:focus {
+        background-color: var(--MinasBrown) !important;
+        color: white !important;
+        border-color: var(--MinasBrown) !important;
+    }
+
+
+@media screen and (min-width: 70em) {
+    .ToolbarItemCss {
+        width: 25em;
+    }
+}
+
+.ToolbarItemCssViewDocumento {
+    width: 200px;
+}
+
+
+/*Spinner*/
+.xaf-loading-content .spinner-border {
+    color: var(--MinasBlue) !important;
+}
+
+/*Formulario*/
+
+
+.border-primary {
+    border-block-color: var(--MinasBlue) !important;
+}
+
+.dxbs-tagbox > .form-control {
+    border-block-color: var(--MinasBlue) !important;
+}
+
+.bg-primary, .dxbs-scheduler .dxbs-sc-time-indicator-line {
+    background-color: var(--MinasBlue) !important;
+}
+
+.dxbs-scheduler .dxbs-sc-time-marker-image {
+    background-color: var(--MinasBlue) !important;
+    border-color: var(--MinasBlue) !important;
+}
+
+/*Calendario*/
+
+
+.ReservaEvento {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+/*Icon dos campos de imagem*/
+.xaf-image.w-100.h-100.xaf-preview-image.xaf-preview-image-detail-view {
+    -webkit-mask-size: 29px !important;
+    background-color: var(--MinasDarkBlue) !important;
+    opacity: .9 !important;
+}
+
+
+/*Captions*/
+.dxbl-fl-cpt {
+    font-weight: bold !important;
+    color: black !important
+}
+
+/*Card-Header's*/
+.dxbl-fl .dxbl-fl-group > .dxbl-group > .dxbl-group-header:not(.dxbl-fl-group-header-tmpl) {
+    font-weight: bold !important;
+    color: black !important;
+    background-color: var(--Cinza);
+}
+
+
+/*GRID*/
+
+/*Header dos grids*/
+.dxbs-gridview > .card .dxbs-table > thead > tr:first-child > td, .dxbs-gridview > .card .dxbs-table > thead > tr:first-child > th {
+    background-color: var(--Cinza);
+    border-color: var(--Cinza);
+}
+
+
+.dxbl-grid-empty-cell {
+    border-bottom: 0;
+    width: 0px !important;
+}
+
+/*Header do grid de Socio*/
+
+.dxbl-grid .dxbl-grid-table > tbody:nth-child(2) > tr:first-child > td, .dxbl-grid .dxbl-grid-table > tbody:nth-child(2) > tr:first-child > th, .dxbl-grid .dxbl-grid-table > tfoot:nth-child(2) > tr:first-child > td, .dxbl-grid .dxbl-grid-table > tfoot:nth-child(2) > tr:first-child > th, .dxbl-grid .dxbl-grid-table > thead:nth-child(2) > tr:first-child > td, .dxbl-grid .dxbl-grid-table > thead:nth-child(2) > tr:first-child > th {
+    border-top-width: 0;
+    background-color: var(--Cinza);
+    border-color: var(--Cinza);
+}
+
+
+
+/*Popup's*/
+
+.FIltroMatricula .dxbl-group-header {
+    background-color: white !important;
+    border: none;
+    height: 2em;
+}
+
+.FIltroMatricula .dxbl-group {
+    border-color: #c4c2c2;
+}
+
+.Agrupamento .dxbl-group-header {
+    background-color: white !important;
+    border: none;
+    height: 2em;
+    font-size: 17px;
+}
+
+.Agrupamento .dxbl-group {
+    border-color: var(--Cinza);
+    box-shadow: 2.5px 2.5px var(--Cinza);
+}
+
+.dxbl-btn.dxbl-btn-link, .dxbl-btn.dxbl-btn-outline-link, .dxbl-btn.dxbl-btn-text-link {
+    --dxbl-btn-hover-color: var(--MinasLightBlue);
+    --dxbl-btn-box-shadow: none;
+    color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.login-content {
+    background-image: url(../images/bg-login.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 0%;
+}
+
+    .login-content.background-sistemas {
+        background-position-y: 0 !important
+    }
+
+@media (max-width:575.98px) {
+    .login-content {
+        background-position-y: 0
+    }
+}
+
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important
+}
+
+.logon-bottom-toolbar {
+    height: 100px;
+    width: 200px;
+    margin: 4px;
+    text-align: center;
+}
+
+.btn-smLogin, .btn-primary {
+    background-color: var(--MinasBlue) !important;
+    color: white;
+    border-color: var(--MinasBlue) !important;
+    height: 35px;
+    font-size: 17px;
+}
+
+    .btn-smLogin:hover {
+        background-color: var(--MinasLightBlue) !important;
+        color: white !important;
+        border-color: var(--MinasLightBlue) !important;
+    }
+
+    .btn-smLogin:disabled {
+        background-color: var(--Cinza) !important;
+        color: black !important;
+        border-color: var(--Cinza) !important;
+    }
+
+    .btn-smLogin:focus {
+        background-color: var(--MinasDarkBlue) !important;
+        color: white !important;
+        border-color: var(--MinasDarkBlue) !important;
+    }
+
+#imgLoginBrasao {
+    background-image: url(../images/brasao-white.png);
+    background-color: black !important;
+    color: blue
+}
+
+
+#imgLoginLogo {
+    background-image: url(../images/logo-white.png);
+    background-color: black !important;
+    color: blue
+}
+
+.mainLogin {
+    margin-top: 20px;
+}
+
+.cardLogin {
+    position: relative;
+    flex-direction: column;
+    min-width: 0;
+    height: 150px;
+    word-wrap: break-word;
+    background-color: #fff;
+    /*background-clip: border-box;*/
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 10px;
+}
+
+
+.form-check-label {
+    color: black;
+}
+
+.form-captcha {
+    background: #f4f4f4;
+    margin-top: 20px;
+    width: 97.3%;
+    margin-left: 1.3%
+}
+
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important
+}
+
+.form-check {
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    margin-bottom: .125rem;
+}
+
+.form-check-input:checked {
+    background-color: var(--MinasBlue);
+    border-color: var(--MinasBlue);
+}
+
+.form-check-input:focus {
+    border-color: var(--MinasLightBlue);
+    box-shadow: 0 0 0 0.25rem rgb(0 105 196 / 20%);
+}
+
+.InputLogin {
+    margin-bottom: .5rem;
+    height: 60px;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 3em;
+    /*padding: 1rem 1rem;*/
+}
+
+.PossuiIrmaoColonia .dxbl-text-edit.dxbl-sm {
+    color: var(--MinasBlue) !important;
+}
+
+
+
+.PossuiIrmaoColonia label {
+    color: var(--MinasBlue) !important;
+}
+
+.historicoDetailViewPCD {
+    margin-top: 20px !important
+}
+
+.loading-items-center > .bg-primary {
+    background-color: transparent !important;
+}
+
+.loading-items-center > .border-primary {
+    border-color: var(--MinasBlue) !important;
+}
+
+.xaf-navmenu a .xaf-nav-link {
+    text-decoration: revert !important;
+}
+
+.xaf-object-caption {
+    font-size: 1.5rem !important;
+    line-height: 1.3rem !important;
 }
