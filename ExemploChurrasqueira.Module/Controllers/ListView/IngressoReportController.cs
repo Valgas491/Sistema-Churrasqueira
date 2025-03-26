@@ -4,6 +4,7 @@ using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Actions;
 using DevExpress.Persistent.Base;
 using ExemploChurrasqueira.Module.BusinessObjects.Per;
+using ExemploChurrasqueira.Module.BusinessObjects.Reports;
 using ExemploChurrasqueira.Module.Helper;
 
 

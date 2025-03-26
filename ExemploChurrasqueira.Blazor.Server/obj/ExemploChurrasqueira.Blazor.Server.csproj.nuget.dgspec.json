@@ -64,6 +64,10 @@
               "target": "Package",
               "version": "[24.1.7, )"
             },
+            "DevExpress.ExpressApp.AuditTrail.Xpo": {
+              "target": "Package",
+              "version": "[24.1.7, )"
+            },
             "DevExpress.ExpressApp.Blazor": {
               "target": "Package",
               "version": "[24.1.7, )"
@@ -192,6 +196,10 @@
           "targetAlias": "net8.0-windows",
           "dependencies": {
             "DevExpress.ExpressApp": {
+              "target": "Package",
+              "version": "[24.1.7, )"
+            },
+            "DevExpress.ExpressApp.AuditTrail.Xpo": {
               "target": "Package",
               "version": "[24.1.7, )"
             },

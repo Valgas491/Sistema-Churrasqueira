@@ -13,6 +13,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components.Server.Circuits;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using DevExpress.ExpressApp.AuditTrail;
+using ExemploChurrasqueira.Module.BusinessObjects.NoPer;
 
 namespace ExemploChurrasqueira.Blazor.Server;
 
@@ -37,13 +39,20 @@ public class Startup
         services.AddSingleton<XpoDataStoreProviderAccessor>();
         services.AddScoped<CircuitHandler, CircuitHandlerProxy>();
         services.AddScoped<ReservaSchedulerModel>();
+        services.AddAuditTrailXpoServices(options =>
+        {
+            options.Events.OnCustomizeAuditTrailSettings = context =>
+            {
+                ConfigureAuditTrail(context);
+            };
+        });
         //services.AddXaf<ExemploChurrasqueiraBlazorApplication>(Configuration);
         services.AddXaf(Configuration, builder =>
         {
+        
             builder.UseApplication<ExemploChurrasqueiraBlazorApplication>();
             services.AddXafSecurity(options =>
             {
-
                 options.RoleType = typeof(PermissionPolicyRole);
                 options.UserType = typeof(PermissionPolicyUser);
                 //options.Events.OnSecurityStrategyCreated = securityStrategy => ((SecurityStrategy)securityStrategy).RegisterXPOAdapterProviders();
@@ -103,6 +112,7 @@ public class Startup
             });
             builder.Modules
                 .AddConditionalAppearance()
+                .AddAuditTrailXpo()
                 .AddReports(options =>
                 {
                     options.EnableInplaceReports = true;
@@ -132,6 +142,11 @@ public class Startup
                 .AddNonPersistent();
         });
     }
+    private void ConfigureAuditTrail(CustomizeAuditTrailSettingsContext context)
+    {
+        
+    }
+
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

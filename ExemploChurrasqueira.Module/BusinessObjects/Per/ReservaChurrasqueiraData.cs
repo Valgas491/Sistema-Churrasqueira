@@ -10,6 +10,10 @@ using DevExpress.Xpo;
 using ExemploChurrasqueira.Module.BusinessObjects.NoPer;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using ExemploChurrasqueira.Module.Controllers.ListView;
+using DevExpress.ExpressApp.Security;
+using DevExpress.Persistent.AuditTrail;
+using Microsoft.Extensions.DependencyInjection;
+using ExemploChurrasqueira.Module.BusinessObjects.Logs;
 
 namespace ExemploChurrasqueira.Module.BusinessObjects.Per
 {
@@ -44,7 +48,8 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
         ApplicationUser usuarioRegistro;
         DateTime dataReserva_Churrasqueira;
         private CustomLogonParameters customLogonParameters;
-
+        string userReg;
+        private bool logCriadoRegistrado = false;
 
         #endregion
 
@@ -73,9 +78,11 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
         [ModelDefault("AllowEdit", "false")]
         public ApplicationUser UsuarioRegistro
         {
-            get { return usuarioRegistro; }
-            set { SetPropertyValue(nameof(UsuarioRegistro), ref usuarioRegistro, value); }
+            get => usuarioRegistro;
+            set => SetPropertyValue(nameof(UsuarioRegistro), ref usuarioRegistro, value);
         }
+        
+
         [ModelDefault("DisplayFormat", "{0:dd/MM/yyyy}")]
         [ModelDefault("EditMask", "dd/MM/yyyy")]
         [ModelDefault("DisplayFormatInListView", "{0:dd/MM/yyyy}")]
@@ -162,6 +169,12 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
             set => SetPropertyValue(nameof(Npf), ref npf, value);
         }
 
+        [VisibleInDetailView(false)]
+        public string UserReg
+        {
+            get { return userReg; }
+            set { SetPropertyValue(nameof(UserReg), ref userReg, value); }
+        }
 
         [VisibleInDetailView(false)]
         public decimal Valor
@@ -201,20 +214,41 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
         protected override void OnSaving()
         {
             base.OnSaving();
+            if (SecuritySystem.CurrentUser is ApplicationUser currentUser)
+            {
+                UsuarioRegistro = Session.GetObjectByKey<ApplicationUser>(currentUser.Oid);
+                UserReg = currentUser.UserName;
+            }
 
-
-            
+            if (Session.IsNewObject(this) && !logCriadoRegistrado && DataReserva_Churrasqueira > DateTime.MinValue)
+            {
+                RegistrarLog("Criado");
+                logCriadoRegistrado = true;
+            }
         }
 
         protected override void OnDeleting()
         {
             base.OnDeleting();
-            
+            RegistrarLog("Excluído");
         }
         public override void AfterConstruction()
         {
             base.AfterConstruction();
-           // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
+            // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
+        }
+
+        private void RegistrarLog(string acao)
+        {
+            var log = new LogReservaChurrasqueiraData(Session)
+            {
+                DataHora = DateTime.Now,
+                Usuario = SecuritySystem.CurrentUserName,
+                Acao = acao,
+                Detalhes = $"Reserva: {Associado}, Data: {DataReserva_Churrasqueira:dd/MM/yyyy}",
+                Churrasqueira = Churrasqueira.Nome
+            };
+            log.Save();
         }
         #endregion
 

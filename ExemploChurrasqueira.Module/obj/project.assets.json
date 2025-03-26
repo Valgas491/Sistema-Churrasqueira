@@ -370,6 +370,30 @@
           }
         }
       },
+      "DevExpress.ExpressApp.AuditTrail.Xpo/24.1.7": {
+        "type": "package",
+        "dependencies": {
+          "DevExpress.Data": "[24.1.7]",
+          "DevExpress.ExpressApp": "[24.1.7]",
+          "DevExpress.ExpressApp.Xpo": "[24.1.7]",
+          "DevExpress.Persistent.BaseImpl.Xpo": "[24.1.7]",
+          "DevExpress.Xpo": "[24.1.7]",
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Options": "6.0.0",
+          "System.Configuration.ConfigurationManager": "6.0.1"
+        },
+        "compile": {
+          "lib/net6.0/DevExpress.ExpressApp.AuditTrail.Xpo.v24.1.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/DevExpress.ExpressApp.AuditTrail.Xpo.v24.1.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "DevExpress.ExpressApp.Blazor/24.1.7": {
         "type": "package",
         "dependencies": {
@@ -2956,6 +2980,21 @@
         "devexpress.expressapp.aspnetcore.nuspec",
         "lib/net6.0/DevExpress.ExpressApp.AspNetCore.v24.1.dll",
         "lib/net6.0/DevExpress.ExpressApp.AspNetCore.v24.1.xml"
+      ]
+    },
+    "DevExpress.ExpressApp.AuditTrail.Xpo/24.1.7": {
+      "sha512": "EsSXYhlDrosAsTTHCmjUMI1xCD6ZF9TnY7xac7iJu8/TugCrbyDFTDIumU+aAQ+0f834xmAuZv7tWQhfju+0sw==",
+      "type": "package",
+      "path": "devexpress.expressapp.audittrail.xpo/24.1.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "devexpress.expressapp.audittrail.xpo.24.1.7.nupkg.sha512",
+        "devexpress.expressapp.audittrail.xpo.nuspec",
+        "lib/net452/DevExpress.ExpressApp.AuditTrail.Xpo.v24.1.dll",
+        "lib/net452/DevExpress.ExpressApp.AuditTrail.Xpo.v24.1.xml",
+        "lib/net6.0/DevExpress.ExpressApp.AuditTrail.Xpo.v24.1.dll",
+        "lib/net6.0/DevExpress.ExpressApp.AuditTrail.Xpo.v24.1.xml"
       ]
     },
     "DevExpress.ExpressApp.Blazor/24.1.7": {
@@ -5655,6 +5694,7 @@
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "DevExpress.ExpressApp >= 24.1.7",
+      "DevExpress.ExpressApp.AuditTrail.Xpo >= 24.1.7",
       "DevExpress.ExpressApp.Blazor >= 24.1.7",
       "DevExpress.ExpressApp.CodeAnalysis >= 24.1.7",
       "DevExpress.ExpressApp.ConditionalAppearance >= 24.1.7",
@@ -5728,6 +5768,10 @@
         "targetAlias": "net8.0-windows",
         "dependencies": {
           "DevExpress.ExpressApp": {
+            "target": "Package",
+            "version": "[24.1.7, )"
+          },
+          "DevExpress.ExpressApp.AuditTrail.Xpo": {
             "target": "Package",
             "version": "[24.1.7, )"
           },

@@ -1,8 +1,10 @@
-﻿using DevExpress.ExpressApp.Blazor.Components.Models;
+﻿using System.Net.NetworkInformation;
+using DevExpress.ExpressApp.Blazor.Components.Models;
 using DevExpress.ExpressApp.Blazor.Editors;
 using DevExpress.ExpressApp.Blazor.Editors.Adapters;
 using DevExpress.ExpressApp.Editors;
 using DevExpress.ExpressApp.Model;
+using ExemploChurrasqueira.Module.BusinessObjects.NoPer;
 using ExemploChurrasqueira.Module.BusinessObjects.Per;
 using Microsoft.AspNetCore.Components;
 

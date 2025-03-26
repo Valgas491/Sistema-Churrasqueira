@@ -14,8 +14,9 @@ using DevExpress.Persistent.BaseImpl;
 using DevExpress.Persistent.Validation;
 using DevExpress.Xpo;
 using DevExpress.XtraCharts.Native;
+using ExemploChurrasqueira.Module.BusinessObjects.Per;
 
-namespace ExemploChurrasqueira.Module.BusinessObjects.Per
+namespace ExemploChurrasqueira.Module.BusinessObjects.NoPer
 {
 
     //[ImageName("BO_Contact")]

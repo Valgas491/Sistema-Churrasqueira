@@ -1,7 +1,7 @@
 ﻿using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Actions;
 using DevExpress.ExpressApp.SystemModule;
-using ExemploChurrasqueira.Module.BusinessObjects.Per;
+using ExemploChurrasqueira.Module.BusinessObjects.NoPer;
 
 namespace ExemploChurrasqueira.Blazor.Server.Controllers {
     // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/clsDevExpressExpressAppWindowControllertopic.aspx.

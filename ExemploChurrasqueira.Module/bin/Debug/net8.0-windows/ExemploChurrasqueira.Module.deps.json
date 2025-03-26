@@ -9,6 +9,7 @@
       "ExemploChurrasqueira.Module/1.0.0": {
         "dependencies": {
           "DevExpress.ExpressApp": "24.1.7",
+          "DevExpress.ExpressApp.AuditTrail.Xpo": "24.1.7",
           "DevExpress.ExpressApp.Blazor": "24.1.7",
           "DevExpress.ExpressApp.CodeAnalysis": "24.1.7",
           "DevExpress.ExpressApp.ConditionalAppearance": "24.1.7",
@@ -281,6 +282,25 @@
         },
         "runtime": {
           "lib/net6.0/DevExpress.ExpressApp.AspNetCore.v24.1.dll": {
+            "assemblyVersion": "24.1.7.0",
+            "fileVersion": "24.1.7.0"
+          }
+        }
+      },
+      "DevExpress.ExpressApp.AuditTrail.Xpo/24.1.7": {
+        "dependencies": {
+          "DevExpress.Data": "24.1.7",
+          "DevExpress.ExpressApp": "24.1.7",
+          "DevExpress.ExpressApp.Xpo": "24.1.7",
+          "DevExpress.Persistent.BaseImpl.Xpo": "24.1.7",
+          "DevExpress.Xpo": "24.1.7",
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Options": "6.0.0",
+          "System.Configuration.ConfigurationManager": "6.0.1"
+        },
+        "runtime": {
+          "lib/net6.0/DevExpress.ExpressApp.AuditTrail.Xpo.v24.1.dll": {
             "assemblyVersion": "24.1.7.0",
             "fileVersion": "24.1.7.0"
           }
@@ -1707,6 +1727,13 @@
       "sha512": "sha512-na2GKGHd8XEAsUiC6as5YMGzHgD81HNwoIFys3UkjCKnjlv5LMCYHmdRtwKxs5JrD5DWfEsFkGXvWKMCKthWPA==",
       "path": "devexpress.expressapp.aspnetcore/24.1.7",
       "hashPath": "devexpress.expressapp.aspnetcore.24.1.7.nupkg.sha512"
+    },
+    "DevExpress.ExpressApp.AuditTrail.Xpo/24.1.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EsSXYhlDrosAsTTHCmjUMI1xCD6ZF9TnY7xac7iJu8/TugCrbyDFTDIumU+aAQ+0f834xmAuZv7tWQhfju+0sw==",
+      "path": "devexpress.expressapp.audittrail.xpo/24.1.7",
+      "hashPath": "devexpress.expressapp.audittrail.xpo.24.1.7.nupkg.sha512"
     },
     "DevExpress.ExpressApp.Blazor/24.1.7": {
       "type": "package",

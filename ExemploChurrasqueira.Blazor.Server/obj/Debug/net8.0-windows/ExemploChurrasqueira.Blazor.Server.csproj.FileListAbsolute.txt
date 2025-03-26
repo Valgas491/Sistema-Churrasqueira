@@ -416,7 +416,6 @@ C:\Users\estagio.analise\Documents\ExemploChurrasqueira\ExemploChurrasqueira.Bla
 C:\Users\estagio.analise\Documents\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\obj\Debug\net8.0-windows\ExemploChurrasqueira.Blazor.Server.pdb
 C:\Users\estagio.analise\Documents\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\obj\Debug\net8.0-windows\ExemploChurrasqueira.Blazor.Server.genruntimeconfig.cache
 C:\Users\estagio.analise\Documents\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\obj\Debug\net8.0-windows\ref\ExemploChurrasqueira.Blazor.Server.dll
-C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\ExemploChurrasqueira.Module.dll
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\appsettings.Development.json
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\appsettings.json
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\ExemploChurrasqueira.Blazor.Server.staticwebassets.runtime.json
@@ -445,6 +444,7 @@ C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\DevExpress.Drawing.v24.1.Skia.dll
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\DevExpress.ExpressApp.v24.1.dll
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\DevExpress.ExpressApp.AspNetCore.v24.1.dll
+C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\DevExpress.ExpressApp.AuditTrail.Xpo.v24.1.dll
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\DevExpress.ExpressApp.Blazor.v24.1.dll
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\DevExpress.ExpressApp.ConditionalAppearance.v24.1.dll
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\DevExpress.ExpressApp.Objects.v24.1.dll
@@ -605,6 +605,7 @@ C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\runtimes\win-x86\native\libSkiaSharp.dll
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\ExemploChurrasqueira.Module.dll
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\ExemploChurrasqueira.Module.pdb
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\obj\Debug\net8.0-windows\ExemploChurrasqueira.Blazor.Server.csproj.AssemblyReference.cache
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\obj\Debug\net8.0-windows\ExemploChurrasqueira.Blazor.Server.GeneratedMSBuildEditorConfig.editorconfig

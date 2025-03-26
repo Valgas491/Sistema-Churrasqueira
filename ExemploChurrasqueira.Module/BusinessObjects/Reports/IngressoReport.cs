@@ -4,7 +4,7 @@ using DevExpress.XtraPrinting;
 using DevExpress.XtraPrinting.BarCode;
 using DevExpress.XtraReports.UI;
 
-namespace ExemploChurrasqueira.Module.BusinessObjects.Per
+namespace ExemploChurrasqueira.Module.BusinessObjects.Reports
 {
     public class IngressoReport : XtraReport
     {
@@ -21,8 +21,8 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
         #region Métodos Da Criação De Página
         private void ConfigurarPagina()
         {
-            this.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.A4;
-            this.Landscape = false;
+            PaperKind = DevExpress.Drawing.Printing.DXPaperKind.A4;
+            Landscape = false;
         }
 
         private void CriarDetalhes()
@@ -30,7 +30,7 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
             DetailBand detailBand = new DetailBand { HeightF = 100 };
             BottomMarginBand bottomMargin = new BottomMarginBand { HeightF =  500};
             
-            this.Bands.Add(detailBand);
+            Bands.Add(detailBand);
             AdicionarBordas(detailBand);
             AdicionarLogos(detailBand);
             AdicionarTitulo(detailBand);
@@ -38,7 +38,7 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
             AdicionarCamposDeTexto(detailBand);
             AdicionarImagemDeFundo(detailBand);
            
-            this.Bands.Add(bottomMargin);
+            Bands.Add(bottomMargin);
             AdicionarBordas2(bottomMargin);
             AdicionarLogos2(bottomMargin);
             AdicionarTitulo2(bottomMargin);
@@ -285,7 +285,7 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
                 Name = "DataGeracao",
                 Expression = "Now()"
             };
-            this.CalculatedFields.Add(dataGeracaoField);
+            CalculatedFields.Add(dataGeracaoField);
 
             XRLabel labelTitle = new XRLabel
             {
@@ -311,7 +311,7 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
                 Name = "DataGeracao",
                 Expression = "Now()"
             };
-            this.CalculatedFields.Add(dataGeracaoField);
+            CalculatedFields.Add(dataGeracaoField);
 
             XRLabel labelTitle = new XRLabel
             {
@@ -378,31 +378,31 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
 
         private void InitializeComponent()
         {
-            this.topMarginBand1 = new DevExpress.XtraReports.UI.TopMarginBand();
-            this.detailBand1 = new DevExpress.XtraReports.UI.DetailBand();
-            this.bottomMarginBand1 = new DevExpress.XtraReports.UI.BottomMarginBand();
-            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
+            topMarginBand1 = new TopMarginBand();
+            detailBand1 = new DetailBand();
+            bottomMarginBand1 = new BottomMarginBand();
+            ((System.ComponentModel.ISupportInitialize)this).BeginInit();
             // 
             // topMarginBand1
             // 
-            this.topMarginBand1.Name = "topMarginBand1";
+            topMarginBand1.Name = "topMarginBand1";
             // 
             // detailBand1
             // 
-            this.detailBand1.Name = "detailBand1";
+            detailBand1.Name = "detailBand1";
             // 
             // bottomMarginBand1
             // 
-            this.bottomMarginBand1.Name = "bottomMarginBand1";
+            bottomMarginBand1.Name = "bottomMarginBand1";
             // 
             // IngressoReport
             // 
-            this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
-            this.topMarginBand1,
-            this.detailBand1,
-            this.bottomMarginBand1});
-            this.Version = "24.1";
-            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
+            Bands.AddRange(new Band[] {
+            topMarginBand1,
+            detailBand1,
+            bottomMarginBand1});
+            Version = "24.1";
+            ((System.ComponentModel.ISupportInitialize)this).EndInit();
 
         }
     }

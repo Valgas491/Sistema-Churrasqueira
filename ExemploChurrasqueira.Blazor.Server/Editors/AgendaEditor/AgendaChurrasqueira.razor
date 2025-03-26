@@ -5,6 +5,7 @@
 @using DevExpress.Xpo
 @using DevExpress.ExpressApp.Editors
 @using ExemploChurrasqueira.Module.BusinessObjects.Per
+@using ExemploChurrasqueira.Module.BusinessObjects.NoPer
 @using Microsoft.JSInterop
 @using ExemploChurrasqueira.Module.Helper
 @using ExemploChurrasqueira.Blazor.Server.Services
@@ -69,6 +70,7 @@ ondblclick="@OnDoubleClick">
     {
         base.OnInitialized();
         ConfigurarStorage();
+        
 
     }
     protected override async Task OnInitializedAsync()

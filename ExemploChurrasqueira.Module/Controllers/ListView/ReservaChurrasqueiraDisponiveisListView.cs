@@ -70,22 +70,23 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
             var objectSpace = View.ObjectSpace;
             if (selectObjects.Any())
             {
-                foreach(var item in selectObjects)
+                var result = await jsRuntime.InvokeAsync<JsonElement>("Swal.fire", new
                 {
-                    var result = await jsRuntime.InvokeAsync<JsonElement>("Swal.fire", new
+                    title = "Digite sua senha!",
+                    input = "text",
+                    inputAttributes = new
                     {
-                        title = "Digite sua senha!",
-                        input = "text",
-                        inputAttributes = new
-                        {
-                            autocapitalize = "off"
-                        },
-                        showCancelButton = true,
-                        confirmButtonText = "Confirmar",
-                        cancelButtonText = "Cancelar",
-                        showLoaderOnConfirm = true,
-                        allowOutsideClick = false
-                    });
+                        autocapitalize = "off"
+                    },
+                    showCancelButton = true,
+                    confirmButtonText = "Confirmar",
+                    cancelButtonText = "Cancelar",
+                    showLoaderOnConfirm = true,
+                    allowOutsideClick = false
+                });
+                foreach (var item in selectObjects)
+                {
+                    
                     if (result.TryGetProperty("isConfirmed", out JsonElement isConfirmed) && isConfirmed.GetBoolean())
                     {
                         if (result.TryGetProperty("value", out JsonElement value) && !string.IsNullOrEmpty(value.GetString()))
@@ -133,6 +134,7 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
                             confirmButtonText = "OK"
                         });
                     }
+                
                 }
             }
             else
@@ -160,6 +162,8 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
             {
                 newAction.Caption = "Criar";
             }
+            var delete = Frame.GetController<DeleteObjectsViewController>().DeleteAction;
+            delete.Active.SetItemValue("Desabilitar", true);
 
         }
 

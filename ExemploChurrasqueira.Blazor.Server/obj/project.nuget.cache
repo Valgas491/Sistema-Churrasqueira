@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eqqKQWoDwXo=",
+  "dgSpecHash": "vGFeZLZFr/s=",
   "success": true,
   "projectFilePath": "C:\\Users\\estagio.analise\\source\\repos\\ExemploChurrasqueira\\ExemploChurrasqueira.Blazor.Server\\ExemploChurrasqueira.Blazor.Server.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,7 @@
     "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages\\devexpress.drawing.skia\\24.1.7\\devexpress.drawing.skia.24.1.7.nupkg.sha512",
     "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages\\devexpress.expressapp\\24.1.7\\devexpress.expressapp.24.1.7.nupkg.sha512",
     "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages\\devexpress.expressapp.aspnetcore\\24.1.7\\devexpress.expressapp.aspnetcore.24.1.7.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages\\devexpress.expressapp.audittrail.xpo\\24.1.7\\devexpress.expressapp.audittrail.xpo.24.1.7.nupkg.sha512",
     "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages\\devexpress.expressapp.blazor\\24.1.7\\devexpress.expressapp.blazor.24.1.7.nupkg.sha512",
     "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages\\devexpress.expressapp.codeanalysis\\24.1.7\\devexpress.expressapp.codeanalysis.24.1.7.nupkg.sha512",
     "C:\\Program Files\\DevExpress 24.1\\Components\\Offline Packages\\devexpress.expressapp.conditionalappearance\\24.1.7\\devexpress.expressapp.conditionalappearance.24.1.7.nupkg.sha512",

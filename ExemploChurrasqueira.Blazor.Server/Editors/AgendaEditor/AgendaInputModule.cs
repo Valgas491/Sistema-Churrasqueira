@@ -1,5 +1,7 @@
-﻿using DevExpress.ExpressApp.Blazor.Components.Models;
+﻿using System.Net.NetworkInformation;
+using DevExpress.ExpressApp.Blazor.Components.Models;
 using ExemploChurrasqueira.Module.BusinessObjects.Per;
+using ExemploChurrasqueira.Module.BusinessObjects.NoPer;
 
 namespace ExemploChurrasqueira.Blazor.Server.Editors.AgendaEditor
 {

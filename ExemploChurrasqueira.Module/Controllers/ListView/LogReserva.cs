@@ -13,32 +13,22 @@ using DevExpress.ExpressApp.Templates;
 using DevExpress.ExpressApp.Utils;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.Validation;
-using ExemploChurrasqueira.Module.BusinessObjects.NoPer;
+using ExemploChurrasqueira.Module.BusinessObjects.Logs;
 
-namespace ExemploChurrasqueira.Module.Controllers.DetailView {
+namespace ExemploChurrasqueira.Module.Controllers.ListView {
     // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/clsDevExpressExpressAppViewControllertopic.aspx.
-    public partial class AgendaControllerDetailView : ObjectViewController<DevExpress.ExpressApp.DetailView, ReservaSchedulerModel> {
+    public partial class LogReserva : ObjectViewController<DevExpress.ExpressApp.ListView, LogReservaChurrasqueiraData> {
         // Use CodeRush to create Controllers and Actions with a few keystrokes.
         // https://docs.devexpress.com/CodeRushForRoslyn/403133/
-        public AgendaControllerDetailView() { 
+        public LogReserva() { 
             InitializeComponent();
             // Target required Views (via the TargetXXX properties) and create their Actions.
         }
-        private void ConfigurarBotoes(bool desabilitar)
-        {
-            Frame.GetController<ExportController>()?.ExportAction?.Active.SetItemValue("DetailView", desabilitar);
-            Frame.GetController<RefreshController>()?.RefreshAction?.Active.SetItemValue("DetailView", desabilitar);
-            Frame.GetController<ModificationsController>()?.SaveAction?.Active.SetItemValue("DetailView", desabilitar);
-            Frame.GetController<ModificationsController>()?.SaveAndNewAction?.Active.SetItemValue("DetailView", desabilitar);
-            Frame.GetController<RecordsNavigationController>()?.PreviousObjectAction?.Active.SetItemValue("DetailView", desabilitar);
-            Frame.GetController<RecordsNavigationController>()?.NextObjectAction?.Active.SetItemValue("DetailView", desabilitar);
-            Frame.GetController<ModificationsController>()?.SaveAndCloseAction.Active.SetItemValue("DetailView", desabilitar);
-        }
-
+        
         protected override void OnActivated() {
-            base.OnActivated();
+            base.OnActivated(); 
             // Perform various tasks depending on the target View.
-            ConfigurarBotoes(false);
+            
         }
         protected override void OnViewControlsCreated() {
             base.OnViewControlsCreated(); 
@@ -47,7 +37,6 @@ namespace ExemploChurrasqueira.Module.Controllers.DetailView {
         protected override void OnDeactivated() {
             // Unsubscribe from previously subscribed events and release other references and resources.
             base.OnDeactivated();
-            ConfigurarBotoes(true);
         }
     }
 }
