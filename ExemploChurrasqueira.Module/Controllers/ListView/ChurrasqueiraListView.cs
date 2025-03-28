@@ -13,6 +13,8 @@ using DevExpress.ExpressApp.Templates;
 using DevExpress.ExpressApp.Utils;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.Validation;
+using DevExpress.XtraBars.Docking2010.Views.WindowsUI;
+using ExemploChurrasqueira.Module.BusinessObjects.Logs;
 using ExemploChurrasqueira.Module.BusinessObjects.Per;
 
 namespace ExemploChurrasqueira.Module.Controllers.ListView
@@ -33,12 +35,33 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
             // Perform various tasks depending on the target View.
             var newAction = Frame.GetController<NewObjectViewController>()?.NewObjectAction;
             if (newAction != null)
-            {
                 newAction.Caption = "Cadastro Churrasqueira";
-            }
             var exportAction = Frame.GetController<ExportController>()?.ExportAction;
             exportAction?.Active.SetItemValue("ListView", false);
+            var deleteAction = Frame.GetController<DeleteObjectsViewController>().DeleteAction;
+            if(deleteAction != null)
+                deleteAction.Execute += DeleteAction_Execute;
         }
+
+        private void DeleteAction_Execute(object sender, SimpleActionExecuteEventArgs e)
+        {
+            var select = e.SelectedObjects.Cast<Churrasqueira>().ToList();
+            if (select.Any())
+            {
+                foreach(var item in select)
+                {
+                    var log = ObjectSpace.CreateObject<LogReservaChurrasqueiraData>();
+                    log.DataHora = DateTime.Now;
+                    log.Usuario = SecuritySystem.CurrentUserName;
+                    log.Acao = "Excluído";
+                    log.Detalhes = $"Exclusão de Churrasqueira, Data: {DateTime.Today:dd/MM/yyyy}";
+                    log.Churrasqueira1 = item.Nome;
+                    log.Local = "Criar Churrasqueira";
+                    ObjectSpace.CommitChanges();
+                }
+            }
+        }
+
         protected override void OnViewControlsCreated()
         {
             base.OnViewControlsCreated();
@@ -50,6 +73,8 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
             base.OnDeactivated();
             var exportAction = Frame.GetController<ExportController>()?.ExportAction;
             exportAction?.Active.SetItemValue("ListView", true);
+            var deleteAction = Frame.GetController<DeleteObjectsViewController>().DeleteAction;
+            deleteAction.Execute -= DeleteAction_Execute;
         }
     }
 }

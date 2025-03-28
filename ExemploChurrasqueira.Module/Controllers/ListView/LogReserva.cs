@@ -26,9 +26,11 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView {
         }
         
         protected override void OnActivated() {
-            base.OnActivated(); 
+            base.OnActivated();
             // Perform various tasks depending on the target View.
+            // Buscar logs duplicados
             
+
         }
         protected override void OnViewControlsCreated() {
             base.OnViewControlsCreated(); 

@@ -3,6 +3,7 @@ using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Actions;
 using DevExpress.ExpressApp.Editors;
 using DevExpress.ExpressApp.SystemModule;
+using ExemploChurrasqueira.Module.BusinessObjects.Logs;
 using ExemploChurrasqueira.Module.BusinessObjects.Per;
 using Microsoft.JSInterop;
 using System.Security.Policy;
@@ -14,6 +15,7 @@ namespace ExemploChurrasqueira.Module.Controllers.DetailView
     public partial class VerificarDisponibilidadeController : ObjectViewController<DevExpress.ExpressApp.DetailView, ReservaChurrasqueiraData>
     {
         private List<DateTime> datasIndisponiveis = new();
+        private IJSRuntime jsRuntime;
         // Use CodeRush to create Controllers and Actions with a few keystrokes.
         // https://docs.devexpress.com/CodeRushForRoslyn/403133/
         public VerificarDisponibilidadeController()
@@ -22,6 +24,7 @@ namespace ExemploChurrasqueira.Module.Controllers.DetailView
         }
         protected override void OnActivated()
         {
+            jsRuntime = Application.ServiceProvider.GetService(typeof(IJSRuntime)) as IJSRuntime;
             base.OnActivated();
             
             // Perform various tasks depending on the target View.
@@ -31,10 +34,12 @@ namespace ExemploChurrasqueira.Module.Controllers.DetailView
             AoAlterarData();
 
             ConfigurarBotoes(false);
-            
+            var saveAction = Frame.GetController<ModificationsController>()?.SaveAction;
+            saveAction.Execute += SaveAction_Execute;
 
 
         }
+
         protected override void OnViewControlsCreated()
         {
             base.OnViewControlsCreated();
@@ -46,6 +51,8 @@ namespace ExemploChurrasqueira.Module.Controllers.DetailView
             base.OnDeactivated();
             base.OnDeactivated();
             ConfigurarBotoes(true);
+            var saveAction = Frame.GetController<ModificationsController>()?.SaveAction;
+            saveAction.Execute -= SaveAction_Execute;
         }
 
 
@@ -63,6 +70,32 @@ namespace ExemploChurrasqueira.Module.Controllers.DetailView
                 {
                     saveAction.Caption = "Salvar Reserva";
                 }
+            }
+        }
+
+        private async void SaveAction_Execute(object sender, SimpleActionExecuteEventArgs e)
+        {
+            var select = e.SelectedObjects.Cast<ReservaChurrasqueiraData>().ToList();
+            if (select.Any())
+            {
+                foreach (var item in select)
+                {
+                    var log = ObjectSpace.CreateObject<LogReservaChurrasqueiraData>();
+                    log.DataHora = DateTime.Now;
+                    log.Usuario = SecuritySystem.CurrentUserName;
+                    log.Acao = "Criado";
+                    log.Detalhes = $"Reserva: {item.Associado}, Data: {item.DataReserva_Churrasqueira:dd/MM/yyyy}";
+                    log.Churrasqueira1 = item.Churrasqueira.Nome;
+                    log.Local = "Reservar Churrasqueira";
+                    ObjectSpace.CommitChanges();
+                }
+                await jsRuntime.InvokeVoidAsync("Swal.fire", new
+                {
+                    title = "Reserva salva com sucesso!",
+                    icon = "success",
+                    confirmButtonText = "OK"
+                });
+                await jsRuntime.InvokeVoidAsync("open", $"ReservaChurrasqueiraData_ListView", "_self");
             }
         }
 

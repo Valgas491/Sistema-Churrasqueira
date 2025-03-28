@@ -49,7 +49,6 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
         DateTime dataReserva_Churrasqueira;
         private CustomLogonParameters customLogonParameters;
         string userReg;
-        private bool logCriadoRegistrado = false;
 
         #endregion
 
@@ -211,6 +210,7 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
                 Npf = string.Empty;
             }
         }
+
         protected override void OnSaving()
         {
             base.OnSaving();
@@ -219,18 +219,11 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
                 UsuarioRegistro = Session.GetObjectByKey<ApplicationUser>(currentUser.Oid);
                 UserReg = currentUser.UserName;
             }
-
-            if (Session.IsNewObject(this) && !logCriadoRegistrado && DataReserva_Churrasqueira > DateTime.MinValue)
-            {
-                RegistrarLog("Criado");
-                logCriadoRegistrado = true;
-            }
         }
 
         protected override void OnDeleting()
         {
             base.OnDeleting();
-            RegistrarLog("Excluído");
         }
         public override void AfterConstruction()
         {
@@ -238,18 +231,6 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
             // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
         }
 
-        private void RegistrarLog(string acao)
-        {
-            var log = new LogReservaChurrasqueiraData(Session)
-            {
-                DataHora = DateTime.Now,
-                Usuario = SecuritySystem.CurrentUserName,
-                Acao = acao,
-                Detalhes = $"Reserva: {Associado}, Data: {DataReserva_Churrasqueira:dd/MM/yyyy}",
-                Churrasqueira = Churrasqueira.Nome
-            };
-            log.Save();
-        }
         #endregion
 
         //private string _PersistentProperty;

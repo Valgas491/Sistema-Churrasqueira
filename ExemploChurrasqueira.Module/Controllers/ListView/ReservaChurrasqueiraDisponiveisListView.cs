@@ -16,6 +16,7 @@ using DevExpress.Xpo;
 using DevExpress.XtraBars.Docking2010.Views.WindowsUI;
 using DevExpress.XtraPrinting;
 using DevExpress.XtraRichEdit.Utils;
+using ExemploChurrasqueira.Module.BusinessObjects.Logs;
 using ExemploChurrasqueira.Module.BusinessObjects.Per;
 using Microsoft.JSInterop;
 
@@ -61,6 +62,7 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
             if(ObjectSpace != null)
             {
                 MaintanceDelete();
+                DeletarDuplicataManutencao();
             }
         }
         private async void DeleteAction_Execute(object sender, SimpleActionExecuteEventArgs e)
@@ -73,7 +75,7 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
                 var result = await jsRuntime.InvokeAsync<JsonElement>("Swal.fire", new
                 {
                     title = "Digite sua senha!",
-                    input = "text",
+                    input = "password",
                     inputAttributes = new
                     {
                         autocapitalize = "off"
@@ -94,6 +96,14 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
                             string mensagem = value.GetString();
                             if (UsuarioLogado.ComparePassword($"{mensagem}"))
                             {
+                                var log = ObjectSpace.CreateObject<LogReservaChurrasqueiraData>();
+                                log.DataHora = DateTime.Now;
+                                log.Usuario = SecuritySystem.CurrentUserName;
+                                log.Acao = "Excluído";
+                                log.Detalhes = $"Reserva: {item.Associado}, Data: {item.DataReserva_Churrasqueira:dd/MM/yyyy}";
+                                log.Churrasqueira1 = item.Churrasqueira.Nome;
+                                log.Local = "Reservar Churrasqueira";
+                                ObjectSpace.CommitChanges();
                                 await jsRuntime.InvokeVoidAsync("Swal.fire", new
                                 {
                                     title = "Exclusão Confirmada!",
@@ -102,7 +112,7 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
                                 });
                                 objectSpace.Delete(selectObjects);
                                 objectSpace.CommitChanges();
-
+                               
                             }
                             else
                             {
@@ -188,7 +198,31 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
             }
             
         }
+        private void DeletarDuplicataManutencao()
+        {
 
+            var duplicados = ObjectSpace.GetObjects<ReservaChurrasqueiraData>()
+                .GroupBy(r => new { 
+                    r.ClassInfo,
+                    r.GerenciarChurrasqueira,
+                    r.Churrasqueira,
+                    r.DataReserva_Churrasqueira
+                })
+                .Where(g => g.Count() > 1)
+                .ToList();
+
+            foreach (var grupo in duplicados)
+            {
+
+                var registrosParaExcluir = grupo.Skip(1).ToList();
+                foreach (var registro in registrosParaExcluir)
+                {
+                    ObjectSpace.Delete(registro);
+                }
+            }
+
+            ObjectSpace.CommitChanges();
+        }
 
     }
 }

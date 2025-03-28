@@ -28,8 +28,8 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
         decimal preco;
         long qtdComportada;
         bool? padrao;
-       
-       
+
+        [RuleRequiredField]
         public string Nome
         {
             get => nome;
@@ -103,10 +103,7 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
             {
                 throw new UserFriendlyException("Já existe uma churrasqueira com este nome. Por favor, escolha outro nome.");
             }
-            if (string.IsNullOrWhiteSpace(nome))
-            {
-                throw new UserFriendlyException("O campo Nome é obrigatório.");
-            }
+            
         }
         public override void AfterConstruction()
         {

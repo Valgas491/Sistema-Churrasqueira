@@ -14,7 +14,7 @@ using DevExpress.Persistent.Validation;
 
 namespace ExemploChurrasqueira.Module.BusinessObjects.Logs {
     [DefaultClassOptions]
-    [XafDisplayName("Log Reserva")]
+    [XafDisplayName("Logs")]
     //[ImageName("BO_Contact")]
     //[DefaultProperty("DisplayMemberNameForLookupEditorsOfThisType")]
     //[DefaultListViewOptions(MasterDetailMode.ListViewOnly, false, NewItemRowPosition.None)]
@@ -34,7 +34,10 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Logs {
 
         public string Detalhes { get; set; }
 
-        public string Churrasqueira { get; set; }
+        [XafDisplayName("Churrasqueira")]
+        public string Churrasqueira1 { get; set; }
+
+        public string Local { get; set; }
         public override void AfterConstruction() {
             base.AfterConstruction();
             // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).

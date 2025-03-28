@@ -52,8 +52,14 @@
         <ColumnInfo Id="QtdDias" MinWidth="0" Width="180" />
       </Columns>
     </ListView>
-    <ListView Id="LogReservaChurrasqueiraData_ListView" AllowNew="False" ImageName="BO_Dashboard" />
-    <DetailView Id="ReservaChurrasqueiraData_DetailView">
+    <ListView Id="LogReservaChurrasqueiraData_ListView" AllowNew="False" ImageName="BO_Dashboard" IsGroupPanelVisible="True">
+      <Columns>
+        <ColumnInfo Id="DataHora" SortOrder="None" GroupIndex="-1" Index="0" />
+        <ColumnInfo Id="Usuario" Index="1" SortOrder="Ascending" GroupIndex="0" />
+        <ColumnInfo Id="Acao" Width="100" />
+      </Columns>
+    </ListView>
+    <DetailView Id="ReservaChurrasqueiraData_DetailView" AllowEdit="True" AllowNew="False">
       <Items>
         <PropertyEditor Id="DataReserva_Churrasqueira" DisplayFormat="{0:dd/MM/yyyy}" />
       </Items>
@@ -61,7 +67,10 @@
         <LayoutGroup Id="Main">
           <LayoutGroup Id="SimpleEditors">
             <LayoutGroup Id="ReservaChurrasqueiraData">
-              <LayoutItem Id="Socio" RelativeSize="10" />
+              <LayoutItem Id="Socio" RelativeSize="100" SizeConstraintsType="Custom" MaxSize="0, 0" CustomCSSClassName="SocioReserva" />
+              <LayoutItem Id="DataReserva_Churrasqueira" CustomCSSClassName="DataReserva" />
+              <LayoutItem Id="QtdPessoas" CustomCSSClassName="QtdReserva" />
+              <LayoutItem Id="Churrasqueira" CustomCSSClassName="ChurrasqueiraReserva" />
             </LayoutGroup>
           </LayoutGroup>
         </LayoutGroup>
