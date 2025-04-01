@@ -19,12 +19,56 @@
     <SchemaModule Name="SystemModule" Version="24.1.7.0" IsNewNode="True" />
   </SchemaModules>
   <Views>
+    <DetailView Id="Churrasqueira_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Churrasqueira" RelativeSize="100" Direction="Vertical">
+              <LayoutGroup Id="Auto50d29634-867e-496a-80d6-fa78d1e9b68d" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="4.783258594917788" IsNewNode="True">
+                <LayoutItem Id="Nome" ViewItem="Nome" Index="0" RelativeSize="50" IsNewNode="True" />
+                <LayoutItem Id="QtdComportada" ViewItem="QtdComportada" Index="1" RelativeSize="50" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Auto6f65e8a0-37f2-420b-9f4a-648834cf7991" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="95.21674140508222" IsNewNode="True">
+                <LayoutItem Id="Padrao" ViewItem="Padrao" Index="0" RelativeSize="50" IsNewNode="True" />
+                <LayoutItem Id="Preco" ViewItem="Preco" Index="1" RelativeSize="50" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="Padrao" ViewItem="Padrao" Index="1" RelativeSize="3.587443946188341" Removed="True" />
+              <LayoutItem Id="Preco" ViewItem="Preco" Index="2" RelativeSize="91.62929745889387" Removed="True" />
+              <LayoutItem Id="Nome" Removed="True" />
+              <LayoutItem Id="QtdComportada" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
     <ListView Id="GerenciarChurrasqueira_ListView" ImageName="Action_ColumnChooser" />
     <DetailView Id="NewReportWizardParameters_DetailView" EnableCaptionColon="True" />
     <DetailView Id="ReservaChurrasqueiraData_DetailView">
       <Items>
         <PropertyEditor Id="DataReserva_Churrasqueira" EditMask="dd/MM/yyyy" />
+        <PropertyEditor Id="QtdPessoas" MaxLength="0" />
+        <PropertyEditor Id="Socio" MaxLength="0" />
       </Items>
+      <Layout>
+        <LayoutGroup Id="Main" IsCollapsibleGroup="True" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="ReservaChurrasqueiraData" IsCollapsibleGroup="False" IsGroupCollapsed="False" RelativeSize="100" Caption="ReservaChurrasqueiraData" Direction="Horizontal">
+              <LayoutGroup Id="Autob070ebc1-870f-49c8-bc8d-0243bb8a897f" ShowCaption="False" Caption="Autob070ebc1-870f-49c8-bc8d-0243bb8a897f(4)" Index="0" RelativeSize="48.11715481171548" IsNewNode="True">
+                <LayoutItem Id="Socio" ViewItem="Socio" CaptionWordWrap="Wrap" CaptionHorizontalAlignment="Center" CaptionVerticalAlignment="Center" Index="0" RelativeSize="5.333333333333333" IsNewNode="True" />
+                <LayoutItem Id="QtdPessoas" ViewItem="QtdPessoas" CaptionWordWrap="Wrap" CaptionHorizontalAlignment="Center" CaptionVerticalAlignment="Center" Index="1" RelativeSize="94.66666666666667" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="QtdPessoas" CaptionHorizontalAlignment="Center" CaptionVerticalAlignment="Center" CaptionWordWrap="Wrap" RelativeSize="23.84937238493724" Index="0" Removed="True" />
+              <LayoutGroup Id="Auto48a77ec8-425e-485d-a3e9-d4cda4691dac" ShowCaption="False" Caption="Auto48a77ec8-425e-485d-a3e9-d4cda4691dac(7)" Index="1" RelativeSize="51.88284518828452" IsNewNode="True">
+                <LayoutItem Id="DataReserva_Churrasqueira" ViewItem="DataReserva_Churrasqueira" CaptionWordWrap="Wrap" CaptionHorizontalAlignment="Center" CaptionVerticalAlignment="Center" Index="0" RelativeSize="5.333333333333333" IsNewNode="True" />
+                <LayoutItem Id="Churrasqueira" ViewItem="Churrasqueira" CaptionHorizontalAlignment="Center" CaptionVerticalAlignment="Center" Index="1" RelativeSize="94.66666666666667" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="Churrasqueira" ViewItem="Churrasqueira" CaptionHorizontalAlignment="Center" CaptionVerticalAlignment="Center" Index="1" RelativeSize="76.15062761506276" Removed="True" />
+              <LayoutItem Id="DataReserva_Churrasqueira" CaptionHorizontalAlignment="Center" CaptionVerticalAlignment="Center" CaptionWordWrap="Wrap" RelativeSize="3.9933444259567388" Removed="True" />
+              <LayoutItem Id="Socio" MaxSize="10, 0" CaptionHorizontalAlignment="Center" CaptionVerticalAlignment="Center" CaptionWordWrap="Wrap" RelativeSize="5.324459234608985" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
     </DetailView>
     <ListView Id="ReservaChurrasqueiraData_ListView" IsGroupPanelVisible="False">
       <Columns>

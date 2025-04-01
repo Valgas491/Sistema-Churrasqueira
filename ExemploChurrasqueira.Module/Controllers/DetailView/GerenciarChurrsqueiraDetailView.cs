@@ -3,6 +3,7 @@ using DevExpress.Data.Filtering;
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Editors;
 using DevExpress.ExpressApp.SystemModule;
+using ExemploChurrasqueira.Module.BusinessObjects.Logs;
 using ExemploChurrasqueira.Module.BusinessObjects.Per;
 using Microsoft.JSInterop;
 
@@ -36,8 +37,23 @@ namespace ExemploChurrasqueira.Module.Controllers.DetailView
 
         private async Task SaveACtion_Execute(object sender, DevExpress.ExpressApp.Actions.SimpleActionExecuteEventArgs e)
         {
+            var select = e.SelectedObjects.Cast<GerenciarChurrasqueira>().ToList();
+            if (select.Any())
+            {
+                foreach (var item in select)
+                {
+                    var log = ObjectSpace.CreateObject<LogReservaChurrasqueiraData>();
+                    log.DataHora = DateTime.Now;
+                    log.Usuario = SecuritySystem.CurrentUserName;
+                    log.Acao = "Criado";
+                    log.Detalhes = $"Adicionado Manutenção de Churrasqueira, para a Churrasqueira {item.Churrasqueira.Nome}, Data: {DateTime.Today:dd/MM/yyyy}";
+                    log.Churrasqueira1 = item.Churrasqueira.Nome;
+                    log.Local = "Gerenciar Manutenção";
+                    ObjectSpace.CommitChanges();
+                }
+            }
             await Task.Delay(100);
-            await jsRuntime.InvokeVoidAsync("open", "/ReservaChurrasqueiraData_ListView", "_self");
+            await jsRuntime.InvokeVoidAsync("open", "/GerenciarChurrasqueira_ListView", "_self");
         }
 
         protected override void OnViewControlsCreated()
@@ -49,6 +65,11 @@ namespace ExemploChurrasqueira.Module.Controllers.DetailView
         {
             // Unsubscribe from previously subscribed events and release other references and resources.
             base.OnDeactivated();
+            var saveACtion = Frame.GetController<ModificationsController>()?.SaveAction;
+            if (saveACtion != null)
+            {
+                saveACtion.Execute -= async (s, e) => await SaveACtion_Execute(s, e);
+            }
 
         }
         private void AoAlterarData()

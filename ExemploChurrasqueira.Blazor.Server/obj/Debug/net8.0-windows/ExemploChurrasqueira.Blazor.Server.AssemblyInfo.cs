@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExemploChurrasqueira.Blazor.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+face1e345058a75ca62e3c687cf8ba48bc338044")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cbf3326f5f10078a03294b1f201f275d3bef26fa")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExemploChurrasqueira.Blazor.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExemploChurrasqueira.Blazor.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.*")]

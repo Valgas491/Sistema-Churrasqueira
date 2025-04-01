@@ -1,4 +1,8 @@
-﻿using DevExpress.ExpressApp;
+﻿using System.Text.Json;
+using DevExpress.ExpressApp;
+using DevExpress.ExpressApp.Actions;
+using DevExpress.ExpressApp.SystemModule;
+using ExemploChurrasqueira.Module.BusinessObjects.Logs;
 using ExemploChurrasqueira.Module.BusinessObjects.Per;
 using ExemploChurrasqueira.Module.Helper;
 using Microsoft.JSInterop;
@@ -15,16 +19,36 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
         {
             InitializeComponent();
             // Target required Views (via the TargetXXX properties) and create their Actions.
+            SimpleAction deleteAction3 = new SimpleAction(
+               this, "Deletar Reserva3", DevExpress.Persistent.Base.PredefinedCategory.Edit)
+            {
+                Caption = "Deletar Manutenção",
+                ImageName = "Action_Delete"
+            };
+            deleteAction3.Execute += DeleteAction_Execute;
+
+            SimpleAction alterarAction = new SimpleAction(
+               this, "Alterar Status", DevExpress.Persistent.Base.PredefinedCategory.Edit)
+            {
+                Caption = "Alterar Status",
+                ImageName = "Action_Validation_Validate"
+            };
+            alterarAction.Execute += StatusAction_Execute;
+
         }
         protected override void OnActivated()
         {
             base.OnActivated();
             // Perform various tasks depending on the target View.
             jsRuntime = Application.ServiceProvider.GetService(typeof(IJSRuntime)) as IJSRuntime;
-            //if (ObjectSpace != null)
-            //{
-            //    ObjectSpace.Committed += ObjectSpace_Committed;
-            //}
+            var deleteorigin = Frame.GetController<DeleteObjectsViewController>().DeleteAction;
+            deleteorigin.Active.SetItemValue("Desablitar", false);
+            if (ObjectSpace != null)
+            {
+                MaintanceDelete();
+                DeletarDuplicataManutencao();
+            }
+
 
         }
         public async Task ObjectSpace_Committed()
@@ -49,8 +73,150 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
                 await jsRuntime.InvokeVoidAsync("open", $"ReservaChurrasqueiraData_ListView", "_self");
             }
         }
+        private async void StatusAction_Execute(object sender, SimpleActionExecuteEventArgs e)
+        {
+            var objectSpace = View.ObjectSpace;
+            var selectObjects = e.SelectedObjects.Cast<GerenciarChurrasqueira>().ToList();
 
+            if (selectObjects.Any())
+            {
+                foreach (var item in selectObjects)
+                {
+                    if(item.Status == GerenciarChurrasqueira.TaskStatus.Maintance)
+                    {
+                        if (item.Status == GerenciarChurrasqueira.TaskStatus.Maintance && item.DataManutencao.AddDays(item.QtdDias) > DateTime.Today)
+                        {
 
+                            var result = await jsRuntime.InvokeAsync<JsonElement>("Swal.fire", new
+                            {
+                                title = "Confirmação",
+                                text = "Deseja realmente marcar como concluído, antes do prazo?",
+                                icon = "warning",
+                                showCancelButton = true,
+                                confirmButtonText = "Sim, concluir!",
+                                cancelButtonText = "Cancelar"
+                            });
+
+                            if (result.TryGetProperty("isConfirmed", out JsonElement isConfirmed) && isConfirmed.GetBoolean())
+                            {
+                                item.Status = GerenciarChurrasqueira.TaskStatus.Completed;
+                                objectSpace.CommitChanges();
+                                await jsRuntime.InvokeVoidAsync("Swal.fire", new
+                                {
+                                    title = "Status alterado para concluído antes do prazo!",
+                                    text = "A Churrasqueira será liberada para fazer Reserva",
+                                    icon = "success",
+                                    confirmButtonText = "OK"
+                                });
+                                await jsRuntime.InvokeVoidAsync("open", "/GerenciarChurrasqueira_ListView", "_self");
+                                
+                            }
+                            else
+                            {
+                                await jsRuntime.InvokeVoidAsync("Swal.fire", new
+                                {
+                                    title = "Ação Cancelada!",
+                                    icon = "error",
+                                    confirmButtonText = "OK"
+                                });
+                            }
+                        }
+                        else
+                        {
+                            item.Status = GerenciarChurrasqueira.TaskStatus.Completed;
+                            objectSpace.CommitChanges();
+                            await jsRuntime.InvokeVoidAsync("Swal.fire", new
+                            {
+                                title = "Status alterado para concluído!",
+                                icon = "success",
+                                confirmButtonText = "OK"
+                            });
+                            await jsRuntime.InvokeVoidAsync("open", "/GerenciarChurrasqueira_ListView", "_self");
+                        }
+                    }
+                    else
+                    {
+                        await jsRuntime.InvokeVoidAsync("Swal.fire", new
+                        {
+                            title = "Status já está como Finalizado.",
+                            icon = "error",
+                            confirmButtonText = "OK"
+                        });
+                    }
+                }
+            }
+                
+        }
+        private async void DeleteAction_Execute(object sender, SimpleActionExecuteEventArgs e)
+        {
+            var objectSpace = View.ObjectSpace;
+            var selectedObjects = e.SelectedObjects.Cast<GerenciarChurrasqueira>().ToList();
+
+            if (selectedObjects.Any())
+            {
+                foreach (var item in selectedObjects)
+                {
+                    var log = ObjectSpace.CreateObject<LogReservaChurrasqueiraData>();
+                    log.DataHora = DateTime.Now;
+                    log.Usuario = SecuritySystem.CurrentUserName;
+                    log.Acao = "Excluído";
+                    log.Detalhes = $"Manutenção de Churrasqueira Excluída, para a Churrasqueira {item.Churrasqueira.Nome}, Data: {DateTime.Today:dd/MM/yyyy}";
+                    log.Churrasqueira1 = item.Churrasqueira.Nome;
+                    log.Local = "Gerenciar Manutenção";
+                    ObjectSpace.CommitChanges();
+                }
+                foreach (var item in selectedObjects)
+                {
+                    objectSpace.Delete(item);
+                    objectSpace.CommitChanges();
+                }
+                await Task.Delay(500);
+                await jsRuntime.InvokeVoidAsync("Swal.fire", new
+                {
+                    title = "Manutenção excluída.",
+                    icon = "success",
+                    confirmButtonText = "OK"
+                });
+            }
+        }
+        private void MaintanceDelete()
+        {
+            var reservasManutencaoConcluidas = ObjectSpace.GetObjects<ReservaChurrasqueiraData>()
+                .Where(r => r.IsManutencao == true && r.GerenciarChurrasqueira.Status.Equals(GerenciarChurrasqueira.TaskStatus.Completed) && r.DataReserva_Churrasqueira > DateTime.Today)
+                .ToList();
+
+            foreach (var reserva in reservasManutencaoConcluidas)
+            {
+                ObjectSpace.Delete(reserva);
+                ObjectSpace.CommitChanges();
+            }
+
+        }
+        private void DeletarDuplicataManutencao()
+        {
+
+            var duplicados = ObjectSpace.GetObjects<ReservaChurrasqueiraData>()
+                .GroupBy(r => new {
+                    r.ClassInfo,
+                    r.GerenciarChurrasqueira,
+                    r.Churrasqueira,
+                    r.DataReserva_Churrasqueira
+                })
+                .Where(g => g.Count() > 1)
+                .ToList();
+
+            foreach (var grupo in duplicados)
+            {
+
+                var registrosParaExcluir = grupo.Skip(1).ToList();
+                foreach (var registro in registrosParaExcluir)
+                {
+                    ObjectSpace.Delete(registro);
+                }
+            }
+
+            ObjectSpace.CommitChanges();
+        }
         protected override void OnFrameAssigned()
         {
             base.OnFrameAssigned();
@@ -65,10 +231,9 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
         {
             // Unsubscribe from previously subscribed events and release other references and resources.
             base.OnDeactivated();
-            //if (ObjectSpace != null)
-            //{
-            //    ObjectSpace.Committed -= ObjectSpace_Committed;
-            //}
+            var deleteorigin = Frame.GetController<DeleteObjectsViewController>().DeleteAction;
+            deleteorigin.Active.SetItemValue("Desablitar", true);
+
         }
     }
 }

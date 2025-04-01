@@ -11,6 +11,7 @@ using DevExpress.Xpo;
 namespace ExemploChurrasqueira.Module.BusinessObjects.Per
 {
     [XafDisplayName("Gerenciar Manutenção")]
+    [DefaultClassOptions]
     //[ImageName("BO_Contact")]
     //[DefaultProperty("DisplayMemberNameForLookupEditorsOfThisType")]
     //[DefaultListViewOptions(MasterDetailMode.ListViewOnly, false, NewItemRowPosition.None)]

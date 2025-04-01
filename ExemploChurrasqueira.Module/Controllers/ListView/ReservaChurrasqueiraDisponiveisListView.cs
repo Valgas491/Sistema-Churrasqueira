@@ -1,21 +1,8 @@
-﻿using System.Net.Http;
-using System.Net.Mail;
-using System.ServiceModel.Security;
-using System.Text.Json;
+﻿using System.Text.Json;
 using DevExpress.Data.Filtering;
-using DevExpress.DocumentServices.ServiceModel.DataContracts;
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Actions;
-using DevExpress.ExpressApp.Blazor;
-using DevExpress.ExpressApp.DC;
 using DevExpress.ExpressApp.SystemModule;
-using DevExpress.ExpressApp.Utils;
-using DevExpress.Pdf.Native;
-using DevExpress.Pdf.Native.BouncyCastle.Asn1.Cms;
-using DevExpress.Xpo;
-using DevExpress.XtraBars.Docking2010.Views.WindowsUI;
-using DevExpress.XtraPrinting;
-using DevExpress.XtraRichEdit.Utils;
 using ExemploChurrasqueira.Module.BusinessObjects.Logs;
 using ExemploChurrasqueira.Module.BusinessObjects.Per;
 using Microsoft.JSInterop;
@@ -54,16 +41,12 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
             var newAction = Frame.GetController<NewObjectViewController>()?.NewObjectAction;
             if (newAction != null)
             {
-                newAction.Caption = "Gerar Reserva";
+                newAction.Caption = "Criar Reserva";
             }
             Filtros();           
             var delete = Frame.GetController<DeleteObjectsViewController>().DeleteAction;
             delete.Active.SetItemValue("Desabilitar", false);
-            if(ObjectSpace != null)
-            {
-                MaintanceDelete();
-                DeletarDuplicataManutencao();
-            }
+            
         }
         private async void DeleteAction_Execute(object sender, SimpleActionExecuteEventArgs e)
         {
@@ -182,47 +165,11 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
             // Desativa a visualização das reservas passadas
             ((DevExpress.ExpressApp.ListView)View).CollectionSource.Criteria["DataFilter"] =
                 CriteriaOperator.Parse("DataReserva_Churrasqueira >= ?", DateTime.Today);
-
+            ((DevExpress.ExpressApp.ListView)View).CollectionSource.Criteria["QtdFilter"] =
+                CriteriaOperator.Parse("QtdPessoas >= ?", 1);
         }
         
-        private void MaintanceDelete()
-        {
-            var reservasManutencaoConcluidas = ObjectSpace.GetObjects<ReservaChurrasqueiraData>()
-                .Where(r => r.IsManutencao == true && r.GerenciarChurrasqueira.Status.Equals(GerenciarChurrasqueira.TaskStatus.Completed)&& r.DataReserva_Churrasqueira > DateTime.Today)
-                .ToList();
-
-            foreach (var reserva in reservasManutencaoConcluidas)
-            {
-                ObjectSpace.Delete(reserva);
-                ObjectSpace.CommitChanges();
-            }
-            
-        }
-        private void DeletarDuplicataManutencao()
-        {
-
-            var duplicados = ObjectSpace.GetObjects<ReservaChurrasqueiraData>()
-                .GroupBy(r => new { 
-                    r.ClassInfo,
-                    r.GerenciarChurrasqueira,
-                    r.Churrasqueira,
-                    r.DataReserva_Churrasqueira
-                })
-                .Where(g => g.Count() > 1)
-                .ToList();
-
-            foreach (var grupo in duplicados)
-            {
-
-                var registrosParaExcluir = grupo.Skip(1).ToList();
-                foreach (var registro in registrosParaExcluir)
-                {
-                    ObjectSpace.Delete(registro);
-                }
-            }
-
-            ObjectSpace.CommitChanges();
-        }
+        
 
     }
 }

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="ReservaChurrasqueiraData_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ReservaChurrasqueiraData">
+              <LayoutItem Id="Socio" RelativeSize="100" SizeConstraintsType="Custom" MaxSize="0, 0" CustomCSSClassName="SocioReserva" />
+              <LayoutItem Id="DataReserva_Churrasqueira" CustomCSSClassName="DataReserva" />
+              <LayoutItem Id="QtdPessoas" CustomCSSClassName="QtdReserva" />
+              <LayoutItem Id="Churrasqueira" CustomCSSClassName="ChurrasqueiraReserva" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

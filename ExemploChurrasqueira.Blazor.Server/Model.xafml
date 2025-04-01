@@ -2,6 +2,7 @@
 <Application PreferredLanguage="pt-BR">
   <ActionDesign>
     <Actions>
+      <Action Id="Close" ImageName="Action_Close" />
       <Action Id="SaveAndClose" CustomCSSClassName="SaveAndCloseCss" ImageName="Grid_Save" />
     </Actions>
   </ActionDesign>
@@ -36,7 +37,7 @@
       </Item>
       <Item Id="@6777d148-fd7c-4516-bd5b-49bfbd64f714" Caption="Logs" Index="2" IsNewNode="True">
         <Items IsNewNode="True">
-          <Item Id="LogReservaChurrasqueiraData_ListView" ViewId="LogReservaChurrasqueiraData_ListView" ObjectKey="" Caption="Log Reserva" ImageName="BO_Dashboard" IsNewNode="True" />
+          <Item Id="LogReservaChurrasqueiraData_ListView" ViewId="LogReservaChurrasqueiraData_ListView" ObjectKey="" Caption="Log" ImageName="BO_Dashboard" IsNewNode="True" />
         </Items>
       </Item>
     </Items>
@@ -63,18 +64,6 @@
       <Items>
         <PropertyEditor Id="DataReserva_Churrasqueira" DisplayFormat="{0:dd/MM/yyyy}" />
       </Items>
-      <Layout>
-        <LayoutGroup Id="Main">
-          <LayoutGroup Id="SimpleEditors">
-            <LayoutGroup Id="ReservaChurrasqueiraData">
-              <LayoutItem Id="Socio" RelativeSize="100" SizeConstraintsType="Custom" MaxSize="0, 0" CustomCSSClassName="SocioReserva" />
-              <LayoutItem Id="DataReserva_Churrasqueira" CustomCSSClassName="DataReserva" />
-              <LayoutItem Id="QtdPessoas" CustomCSSClassName="QtdReserva" />
-              <LayoutItem Id="Churrasqueira" CustomCSSClassName="ChurrasqueiraReserva" />
-            </LayoutGroup>
-          </LayoutGroup>
-        </LayoutGroup>
-      </Layout>
     </DetailView>
     <ListView Id="ReservaChurrasqueiraData_ListView">
       <Columns>
