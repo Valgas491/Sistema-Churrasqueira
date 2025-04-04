@@ -61,7 +61,8 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
                 showDenyButton = true,
                 showCancelButton = true,
                 confirmButtonText = "Salvar",
-                denyButtonText = "Não salvar"
+                denyButtonText = "Não salvar",
+                timer = 4000
             });
 
             if (result != null && result.ToString() == "confirmed")
@@ -94,7 +95,8 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
                                 icon = "warning",
                                 showCancelButton = true,
                                 confirmButtonText = "Sim, concluir!",
-                                cancelButtonText = "Cancelar"
+                                cancelButtonText = "Cancelar",
+                                timer = 4000
                             });
 
                             if (result.TryGetProperty("isConfirmed", out JsonElement isConfirmed) && isConfirmed.GetBoolean())
@@ -106,7 +108,8 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
                                     title = "Status alterado para concluído antes do prazo!",
                                     text = "A Churrasqueira será liberada para fazer Reserva",
                                     icon = "success",
-                                    confirmButtonText = "OK"
+                                    confirmButtonText = "OK",
+                                    timer = 4000
                                 });
                                 await jsRuntime.InvokeVoidAsync("open", "/GerenciarChurrasqueira_ListView", "_self");
                                 
@@ -117,7 +120,8 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
                                 {
                                     title = "Ação Cancelada!",
                                     icon = "error",
-                                    confirmButtonText = "OK"
+                                    confirmButtonText = "OK",
+                                    timer = 4000
                                 });
                             }
                         }
@@ -129,7 +133,8 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
                             {
                                 title = "Status alterado para concluído!",
                                 icon = "success",
-                                confirmButtonText = "OK"
+                                confirmButtonText = "OK",
+                                timer = 4000
                             });
                             await jsRuntime.InvokeVoidAsync("open", "/GerenciarChurrasqueira_ListView", "_self");
                         }
@@ -140,7 +145,8 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
                         {
                             title = "Status já está como Finalizado.",
                             icon = "error",
-                            confirmButtonText = "OK"
+                            confirmButtonText = "OK",
+                            timer = 4000
                         });
                     }
                 }
@@ -175,7 +181,8 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
                 {
                     title = "Manutenção excluída.",
                     icon = "success",
-                    confirmButtonText = "OK"
+                    confirmButtonText = "OK",
+                    timer = 4000
                 });
             }
         }

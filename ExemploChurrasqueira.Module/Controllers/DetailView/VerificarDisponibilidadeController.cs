@@ -5,7 +5,10 @@ using DevExpress.ExpressApp.Editors;
 using DevExpress.ExpressApp.SystemModule;
 using ExemploChurrasqueira.Module.BusinessObjects.Logs;
 using ExemploChurrasqueira.Module.BusinessObjects.Per;
+using ExemploChurrasqueira.Module.BusinessObjects.Reports;
 using Microsoft.JSInterop;
+using System.Diagnostics;
+using System.IO;
 using System.Security.Policy;
 
 
@@ -88,12 +91,25 @@ namespace ExemploChurrasqueira.Module.Controllers.DetailView
                     log.Churrasqueira1 = item.Churrasqueira.Nome;
                     log.Local = "Reservar Churrasqueira";
                     ObjectSpace.CommitChanges();
+                    // Generate ticket automatically after saving
+                    IngressoReport report = new IngressoReport();
+                    report.DataSource = new List<ReservaChurrasqueiraData> { item };
+                    report.CreateDocument();
+
+                    string caminhoArquivo = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
+                        $"IngressoDeChurrasqueira_{item.Oid}_{DateTime.Now:yyyyMMddHHmmss}.pdf");
+                    report.ExportToPdf(caminhoArquivo);
+
+                    // Open the generated PDF
+                    Process.Start(new ProcessStartInfo(caminhoArquivo) { UseShellExecute = true });
                 }
                 await jsRuntime.InvokeVoidAsync("Swal.fire", new
                 {
-                    title = "Reserva salva com sucesso!",
+                    position = "center",
                     icon = "success",
-                    confirmButtonText = "OK"
+                    title = "Reserva salva com sucesso!",
+                    showConfirmButton = false,
+                    timer = 3500
                 });
                 await jsRuntime.InvokeVoidAsync("open", $"ReservaChurrasqueiraData_ListView", "_self");
             }

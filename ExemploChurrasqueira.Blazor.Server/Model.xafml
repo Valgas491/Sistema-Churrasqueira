@@ -55,9 +55,12 @@
     </ListView>
     <ListView Id="LogReservaChurrasqueiraData_ListView" AllowNew="False" ImageName="BO_Dashboard" IsGroupPanelVisible="True">
       <Columns>
-        <ColumnInfo Id="DataHora" SortOrder="None" GroupIndex="-1" Index="0" />
-        <ColumnInfo Id="Usuario" Index="1" SortOrder="Ascending" GroupIndex="0" />
-        <ColumnInfo Id="Acao" Width="100" />
+        <ColumnInfo Id="Churrasqueira1" AllowEdit="False" Index="-1" />
+        <ColumnInfo Id="DataHora" SortOrder="None" GroupIndex="-1" Index="0" DisplayFormat="{0:dd/MM/yyyy HH:mm:ss}" EditMask="dd/MM/yyyy HH:mm:ss" AllowEdit="False" />
+        <ColumnInfo Id="Usuario" Index="1" SortOrder="Ascending" GroupIndex="0" AllowEdit="False" />
+        <ColumnInfo Id="Acao" Width="100" AllowEdit="False" />
+        <ColumnInfo Id="Detalhes" AllowEdit="False" Index="3" />
+        <ColumnInfo Id="Local" AllowEdit="False" Index="4" />
       </Columns>
     </ListView>
     <DetailView Id="ReservaChurrasqueiraData_DetailView" AllowEdit="True" AllowNew="False">
@@ -67,8 +70,8 @@
     </DetailView>
     <ListView Id="ReservaChurrasqueiraData_ListView">
       <Columns>
-        <ColumnInfo Id="DataReserva_Churrasqueira" DisplayFormat="{0:dd/MM/yyyy}" EditMask="dd/MM/yyyy" SortIndex="0" SortOrder="Ascending" />
         <ColumnInfo Id="Socio" SortIndex="-1" SortOrder="None" />
+        <ColumnInfo Id="DataReserva_Churrasqueira" DisplayFormat="{0:dd/MM/yyyy}" EditMask="dd/MM/yyyy" SortIndex="0" SortOrder="Ascending" />
       </Columns>
     </ListView>
     <DetailView Id="ReservaSchedulerModel_DetailView" AllowDelete="False" AllowEdit="False" AllowNew="False" EnableCaptionColon="False" Caption="Agenda Reserva" EnableLayoutGroupImages="True" FreezeLayout="False" ImageName="BO_Scheduler" DefaultFocusedItem="ListaReservas">

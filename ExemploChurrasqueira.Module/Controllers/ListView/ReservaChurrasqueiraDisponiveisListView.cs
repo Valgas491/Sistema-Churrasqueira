@@ -55,6 +55,20 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
             var objectSpace = View.ObjectSpace;
             if (selectObjects.Any())
             {
+                var result2 = await jsRuntime.InvokeAsync<JsonElement>("Swal.fire", new
+                {
+                    title = "Digite o motivo da exclusão!",
+                    input = "text",
+                    inputAttributes = new
+                    {
+                        autocapitalize = "on"
+                    },
+                    showCancelButton = true,
+                    confirmButtonText = "Confirmar",
+                    cancelButtonText = "Cancelar",
+                    showLoaderOnConfirm = true,
+                    allowOutsideClick = false
+                });
                 var result = await jsRuntime.InvokeAsync<JsonElement>("Swal.fire", new
                 {
                     title = "Digite sua senha!",
@@ -70,42 +84,59 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
                     allowOutsideClick = false
                 });
                 foreach (var item in selectObjects)
-                {
-                    
-                    if (result.TryGetProperty("isConfirmed", out JsonElement isConfirmed) && isConfirmed.GetBoolean())
+                {         
+                    if ((result.TryGetProperty("isConfirmed", out JsonElement isConfirmed) && isConfirmed.GetBoolean()) && (result2.TryGetProperty("isConfirmed", out JsonElement isConfirmed2) && isConfirmed2.GetBoolean()))
                     {
-                        if (result.TryGetProperty("value", out JsonElement value) && !string.IsNullOrEmpty(value.GetString()))
+                        if ((result.TryGetProperty("value", out JsonElement value) && !string.IsNullOrEmpty(value.GetString()))&&(result2.TryGetProperty("value", out JsonElement value2) && !string.IsNullOrEmpty(value2.GetString())))
                         {
                             string mensagem = value.GetString();
-                            if (UsuarioLogado.ComparePassword($"{mensagem}"))
+                            string mensagem2 = value2.GetString().ToLower();
+
+                            if(mensagem2.Length > 3)
                             {
-                                var log = ObjectSpace.CreateObject<LogReservaChurrasqueiraData>();
-                                log.DataHora = DateTime.Now;
-                                log.Usuario = SecuritySystem.CurrentUserName;
-                                log.Acao = "Excluído";
-                                log.Detalhes = $"Reserva: {item.Associado}, Data: {item.DataReserva_Churrasqueira:dd/MM/yyyy}";
-                                log.Churrasqueira1 = item.Churrasqueira.Nome;
-                                log.Local = "Reservar Churrasqueira";
-                                ObjectSpace.CommitChanges();
-                                await jsRuntime.InvokeVoidAsync("Swal.fire", new
+                                if (UsuarioLogado.ComparePassword($"{mensagem}"))
                                 {
-                                    title = "Exclusão Confirmada!",
-                                    icon = "success",
-                                    confirmButtonText = "OK"
-                                });
-                                objectSpace.Delete(selectObjects);
-                                objectSpace.CommitChanges();
-                               
+                                    var log = ObjectSpace.CreateObject<LogReservaChurrasqueiraData>();
+                                    log.DataHora = DateTime.Now;
+                                    log.Usuario = SecuritySystem.CurrentUserName;
+                                    log.Acao = "Excluído";
+                                    log.Detalhes = $"Reserva: {item.Associado}, Data da Reserva Excluída: {item.DataReserva_Churrasqueira:dd/MM/yyyy}, Motivo: {mensagem2}";
+                                    log.Churrasqueira1 = item.Churrasqueira.Nome;
+                                    log.Local = "Reservar Churrasqueira";
+                                    await jsRuntime.InvokeVoidAsync("Swal.fire", new
+                                    {
+                                        title = "Exclusão Confirmada!",
+                                        icon = "success",
+                                        confirmButtonText = "OK",
+                                        timer = 4000
+                                    });
+                                    objectSpace.Delete(item);
+                                    objectSpace.CommitChanges();
+
+                                }
+                                else
+                                {
+                                    await jsRuntime.InvokeVoidAsync("Swal.fire", new
+                                    {
+                                        title = "Senha Incorreta!",
+                                        icon = "error",
+                                        confirmButtonText = "OK",
+                                        timer = 4000
+                                    });
+
+                                }
                             }
                             else
                             {
                                 await jsRuntime.InvokeVoidAsync("Swal.fire", new
                                 {
-                                    title = "Senha Incorreta!",
+                                    title = "Quantidade de caracteres em motivo invalida!",
                                     icon = "error",
-                                    confirmButtonText = "OK"
+                                    confirmButtonText = "OK",
+                                    timer = 4000
                                 });
                             }
+                            
                         }
                         else
                         {
@@ -114,7 +145,8 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
                                 title = "Campo vazio!",
                                 text = "Você precisa digitar uma mensagem.",
                                 icon = "error",
-                                confirmButtonText = "OK"
+                                confirmButtonText = "OK",
+                                timer = 4000
                             });
                         }
                     }
@@ -124,7 +156,8 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
                         {
                             title = "Ação Cancelada!",
                             icon = "error",
-                            confirmButtonText = "OK"
+                            confirmButtonText = "OK",
+                            timer = 4000
                         });
                     }
                 
@@ -136,7 +169,8 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
                 {
                     title = "Nenhuma Reserva Selecionada!",
                     icon = "error",
-                    confirmButtonText = "OK"
+                    confirmButtonText = "OK",
+                    timer = 4000
                 });
             }
         }

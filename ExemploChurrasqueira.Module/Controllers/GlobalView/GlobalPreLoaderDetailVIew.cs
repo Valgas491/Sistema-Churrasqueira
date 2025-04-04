@@ -20,21 +20,21 @@ namespace ExemploChurrasqueira.Module.Controllers.GlobalView {
             jsRuntime = Application.ServiceProvider.GetService(typeof(IJSRuntime)) as IJSRuntime;
             if (View != null)
             {
-                View.ControlsCreated += View_ControlsCreated;
+                //View.ControlsCreated += View_ControlsCreated;
             }
         }
         private void View_ControlsCreated(object sender, System.EventArgs e)
         {
             if (jsRuntime != null)
             {
-                Escrever();
+                //Escrever();
             }
         }
         protected override void OnDeactivated()
         {
             if (View != null)
             {
-                View.ControlsCreated -= View_ControlsCreated;
+                //View.ControlsCreated -= View_ControlsCreated;
             }
             // Unsubscribe from previously subscribed events and release other references and resources.
             base.OnDeactivated();
@@ -141,8 +141,9 @@ l-73 0 0 200 0 200 170 0 170 0 0 -174z m560 145 c-53 -76 -242 -221 -318
 0 3 573 3 572 24 60 c31 76 131 178 214 218 132 64 303 83 452 52z"" />
                 </g>
             </svg>
+            <p class=""loading-text"">Carregando...</p>
             ";
-            await jsRuntime.InvokeVoidAsync("setLoadingText", svgMarkup);
+            
         }
     }
 }

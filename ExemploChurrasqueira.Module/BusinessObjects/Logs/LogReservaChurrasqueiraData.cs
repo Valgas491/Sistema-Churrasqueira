@@ -26,12 +26,14 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Logs {
         public LogReservaChurrasqueiraData(Session session)
             : base(session) {
         }
+        
         public DateTime DataHora { get; set; }
 
         public string Usuario { get; set; }
 
         public string Acao { get; set; } // "Criado" ou "Excluído"
 
+        [Size(SizeAttribute.Unlimited)]
         public string Detalhes { get; set; }
 
         [XafDisplayName("Churrasqueira")]

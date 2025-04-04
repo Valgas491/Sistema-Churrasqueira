@@ -70,11 +70,13 @@ ondblclick="@OnDoubleClick">
     {
         base.OnInitialized();
         ConfigurarStorage();
-        
+        churrasqueirasSelecionadas = new List<string> { "Todas" };
+        CarregarReservas(churrasqueirasSelecionadas);
 
     }
     protected override async Task OnInitializedAsync()
     {
+
         await LoadNomesChurrasqueiras();
     }
     private async Task LoadNomesChurrasqueiras()
@@ -331,8 +333,9 @@ ondblclick="@OnDoubleClick">
             {
                 title = "Não é possível acessar uma reserva de manutenção.",
                 icon = "error",
-                confirmButtonText = "OK"
-            });
+                confirmButtonText = "OK",
+                timer = 4000
+        });
             return;
         }
     }

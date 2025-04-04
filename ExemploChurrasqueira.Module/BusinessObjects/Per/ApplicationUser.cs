@@ -56,6 +56,7 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per {
             set => SetPropertyValue(nameof(PodeVisualizarTodosRegistros), ref podeVisualizarTodosRegistros, value);
         }
         [Association]
+        [Browsable(false)]
         public XPCollection<Departamento> Departamentos
         {
             get { return GetCollection<Departamento>(nameof(Departamentos)); }

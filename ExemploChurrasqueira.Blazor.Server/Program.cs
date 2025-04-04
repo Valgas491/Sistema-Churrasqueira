@@ -4,6 +4,7 @@ using DevExpress.ExpressApp.Blazor.DesignTime;
 using DevExpress.ExpressApp.Blazor.Services;
 using DevExpress.ExpressApp.Design;
 using DevExpress.ExpressApp.Utils;
+using ExemploChurrasqueira.Module.BusinessObjects.Per;
 
 namespace ExemploChurrasqueira.Blazor.Server;
 

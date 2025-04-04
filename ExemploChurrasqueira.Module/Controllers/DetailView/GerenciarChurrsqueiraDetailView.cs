@@ -145,7 +145,8 @@ namespace ExemploChurrasqueira.Module.Controllers.DetailView
             {
                 title = $"Na Data: {dataReservaAtual},existe uma reserva de associado.",
                 icon = "success",
-                confirmButtonText = "OK"
+                confirmButtonText = "OK",
+                timer = 4000
             });
         }
 

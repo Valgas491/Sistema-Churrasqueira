@@ -84,9 +84,8 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
 
         [ModelDefault("DisplayFormat", "{0:dd/MM/yyyy}")]
         [ModelDefault("EditMask", "dd/MM/yyyy")]
-        [ModelDefault("DisplayFormatInListView", "{0:dd/MM/yyyy}")]
         [VisibleInDetailView(true)]
-        [VisibleInListView(false)]
+        [VisibleInListView(true)]
         [XafDisplayName("Data da Reserva")]
         [RuleRequiredField(DefaultContexts.Save)]
         public DateTime DataReserva_Churrasqueira
@@ -96,7 +95,7 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
         }
 
         [VisibleInDetailView(false)]
-        [VisibleInListView(true)]
+        [VisibleInListView(false)]
         [ModelDefault("DisplayFormat", "{0:dd/MM/yyyy}")]
         [XafDisplayName("Data da Reserva")]
         public string DataReservaFormatada => DataReserva_Churrasqueira.ToString("dd/MM/yyyy");

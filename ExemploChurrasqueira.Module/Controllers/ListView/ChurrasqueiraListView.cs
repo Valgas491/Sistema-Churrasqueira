@@ -75,6 +75,9 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
             exportAction?.Active.SetItemValue("ListView", true);
             var deleteAction = Frame.GetController<DeleteObjectsViewController>().DeleteAction;
             deleteAction.Execute -= DeleteAction_Execute;
+            var newAction = Frame.GetController<NewObjectViewController>()?.NewObjectAction;
+            if (newAction != null)
+                newAction.Caption = "Novo";
         }
     }
 }
