@@ -1,9 +1,11 @@
-﻿using DevExpress.Persistent.BaseImpl;
+﻿using DevExpress.Persistent.Base;
+using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
 
 namespace ExemploChurrasqueira.Module.BusinessObjects.Per
 {
     //[ImageName("BO_Contact")]
+    [DefaultClassOptions]
     //[DefaultProperty("DisplayMemberNameForLookupEditorsOfThisType")]
     //[DefaultListViewOptions(MasterDetailMode.ListViewOnly, false, NewItemRowPosition.None)]
     //[Persistent("DatabaseTableName")]
@@ -21,6 +23,12 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
         {
             get => endereco;
             set => SetPropertyValue(nameof(Endereco), ref endereco, value);
+        }
+        string dominio;
+        public string Dominio
+        {
+            get => dominio;
+            set => SetPropertyValue(nameof(Dominio), ref dominio, value);
         }
         public override void AfterConstruction()
         {

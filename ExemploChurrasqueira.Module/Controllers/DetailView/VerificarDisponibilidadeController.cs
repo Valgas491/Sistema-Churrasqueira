@@ -3,6 +3,7 @@ using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Actions;
 using DevExpress.ExpressApp.Editors;
 using DevExpress.ExpressApp.SystemModule;
+using DevExpress.XtraCharts;
 using ExemploChurrasqueira.Module.BusinessObjects.Logs;
 using ExemploChurrasqueira.Module.BusinessObjects.Per;
 using ExemploChurrasqueira.Module.BusinessObjects.Reports;
@@ -35,13 +36,16 @@ namespace ExemploChurrasqueira.Module.Controllers.DetailView
 
             // Configurar evento de alteração da data
             AoAlterarData();
-
+            ValorLimiteComportado();
+            AlterarChurrasqueira();
             ConfigurarBotoes(false);
             var saveAction = Frame.GetController<ModificationsController>()?.SaveAction;
             saveAction.Execute += SaveAction_Execute;
 
 
         }
+
+        
 
         protected override void OnViewControlsCreated()
         {
@@ -103,17 +107,26 @@ namespace ExemploChurrasqueira.Module.Controllers.DetailView
                     // Open the generated PDF
                     Process.Start(new ProcessStartInfo(caminhoArquivo) { UseShellExecute = true });
                 }
-                await jsRuntime.InvokeVoidAsync("Swal.fire", new
+                try
                 {
-                    position = "center",
-                    icon = "success",
-                    title = "Reserva salva com sucesso!",
-                    showConfirmButton = false,
-                    timer = 3500
-                });
+                    await jsRuntime.InvokeVoidAsync("Swal.fire", new
+                    {
+                        position = "center",
+                        icon = "success",
+                        title = "Reserva salva com sucesso!",
+                        showConfirmButton = false,
+                        timer = 3500
+                    });
+                }
+                catch (Exception ex)
+                {
+                    // Aqui você pode logar o erro ou exibir uma mensagem alternativa, se desejar
+                    Console.WriteLine($"Erro ao exibir alerta: {ex.Message}");
+                }
                 await jsRuntime.InvokeVoidAsync("open", $"ReservaChurrasqueiraData_ListView", "_self");
             }
         }
+
 
         private void CarregarDatasIndisponiveis()
         {
@@ -123,6 +136,62 @@ namespace ExemploChurrasqueira.Module.Controllers.DetailView
             //    .Select(r => r.DataReserva_Churrasqueira.Date) // Apenas a data
             //    .Distinct()
             //    .ToList();
+        }
+        private void AlterarChurrasqueira()
+        {
+            if(View is DevExpress.ExpressApp.DetailView detailview)
+            {
+                var churrasqueiraalterada = detailview.FindItem("Churrasqueira") as PropertyEditor;
+                churrasqueiraalterada.ControlValueChanged += (sender, evento) =>
+                {
+                    var reserva = View.CurrentObject as ReservaChurrasqueiraData;
+                    churrasqueiraalterada.WriteValue();
+                    reserva.QtdPessoas = 0;
+                };
+            }
+        }
+
+        private void ValorLimiteComportado()
+        {
+            if (View is DevExpress.ExpressApp.DetailView detailView && detailView.ObjectTypeInfo.Type == typeof(ReservaChurrasqueiraData))
+            {
+                var qtdPessoasEditor = detailView.FindItem("QtdPessoas") as PropertyEditor;
+
+                if (qtdPessoasEditor != null)
+                {
+                    qtdPessoasEditor.ControlValueChanged += async (sender, args) =>
+                    {
+                        qtdPessoasEditor.WriteValue();
+                        // Objeto atual da DetailView
+                        var reserva = View.CurrentObject as ReservaChurrasqueiraData;
+
+                        if (reserva?.Churrasqueira != null)
+                        {
+                            var valorDigitado = Convert.ToInt64(qtdPessoasEditor.PropertyValue);
+                            var limiteComportado = reserva.Churrasqueira.QtdComportada;
+
+                            if (valorDigitado > limiteComportado)
+                            {
+                                try
+                                {
+                                    await jsRuntime.InvokeVoidAsync("Swal.fire", new
+                                    {
+                                        title = ($"Valor acima do limite da Churrasqueira:{limiteComportado}\n digite um valor a abaixo deste número."),
+                                        icon = "error",
+                                        timer = 3500
+                                    });
+                                }
+                                catch (Exception ex)
+                                {
+                                    // Aqui você pode logar o erro ou exibir uma mensagem alternativa, se desejar
+                                    Console.WriteLine($"Erro ao exibir alerta: {ex.Message}");
+                                }
+                                reserva.QtdPessoas = reserva.Churrasqueira.QtdComportada;
+                            }
+                        }
+                    };
+                }
+            }
         }
 
         private void AoAlterarData()
@@ -138,9 +207,12 @@ namespace ExemploChurrasqueira.Module.Controllers.DetailView
 
                 date.ControlValueChanged += (sender, evento) =>
                 {
+                    var reserva = View.CurrentObject as ReservaChurrasqueiraData;
                     // Atualiza explicitamente o valor da propriedade no objeto subjacente
                     date.WriteValue();
-
+                    reserva.Churrasqueira = null;
+                    reserva.QtdPessoas = 0;
+                    
                     // Pega o valor atualizado da propriedade DataReserva_Churrasqueira
                     var novaData = date.PropertyValue as DateTime?;
                     if (!novaData.HasValue)

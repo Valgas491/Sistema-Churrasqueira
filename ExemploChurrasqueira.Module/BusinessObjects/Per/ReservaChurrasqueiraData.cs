@@ -14,9 +14,15 @@ using DevExpress.ExpressApp.Security;
 using DevExpress.Persistent.AuditTrail;
 using Microsoft.Extensions.DependencyInjection;
 using ExemploChurrasqueira.Module.BusinessObjects.Logs;
+using ExemploChurrasqueira.Module.Helper;
+using DevExpress.XtraBars.ToastNotifications;
+using DevExpress.Blazor;
+using System.Windows;
+using Microsoft.JSInterop;
 
 namespace ExemploChurrasqueira.Module.BusinessObjects.Per
 {
+    
     [DefaultClassOptions]
     [XafDisplayName("Reservar Churrasqueiras")]
     [ImageName("BO_Scheduler")]
@@ -105,16 +111,9 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
         public long QtdPessoas
         {
             get => qtdPessoas;
-            set
-            {
-                if (Churrasqueira != null && value > Churrasqueira.QtdComportada)
-                {
-                    throw new UserFriendlyException($"A quantidade de pessoas ({value}) não pode ser maior que a capacidade da churrasqueira ({Churrasqueira.QtdComportada}).");
-                }
-                SetPropertyValue(nameof(QtdPessoas), ref qtdPessoas, value);
-            }
+            set => SetPropertyValue(nameof(QtdPessoas), ref qtdPessoas, value);
         }
-
+        
 
         [NonPersistent]
         [Browsable(false)]
@@ -227,6 +226,7 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per
         public override void AfterConstruction()
         {
             base.AfterConstruction();
+            
             // Place your initialization code here (https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112834.aspx).
         }
 

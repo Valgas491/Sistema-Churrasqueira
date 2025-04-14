@@ -60,7 +60,12 @@
         </div>
         <script src="_framework/blazor.server.js"></script>
         <script src="/javascript/site.js"></script>
-        
+        <script>
+            function CustomizarPreLoaderDefault(mensagem){
+
+                document.querySelectorAll('.xaf-loading-content span')[0].textContent = mensagem;
+            }
+        </script>
 
     }
 </body>

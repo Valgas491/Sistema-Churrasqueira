@@ -9,47 +9,48 @@
 
 
 <body class="bg-primary ">
-    <div class="login-content">
-        <div class="d-flex flex-column vh-100 justify-content-center align-items-center ">
-            <div class="col-xl-6 col-xxl-4 mx-auto ">
-                <div class="row align-items-center pe-2 ">
+	<div class="login-content">
+		<div class="d-flex flex-column vh-100 justify-content-center align-items-center ">
+			<div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-6 col-xxl-4 mx-auto">
+				<div class="row align-items-center pe-2 ">
 
-                    <div class="col-6 ">
-                        <img src="/images/brasao-white.png" title="Logo" />
-                    </div>
+					<div class="col-6 ">
+						<img src="/images/brasao-white.png" title="Logo" />
+					</div>
 
-                    <div class="col-6 text-end ">
-                        <img src="/images/logo-white.png" title="Brasão" />
-                    </div>
+					<div class="col-6 text-end ">
+						<img src="/images/selo_90anos_mtc_horizontal-01.png" title="90 anos" style="filter: brightness(0) invert(1)" />
+					</div>
 
-                </div>
-                <div class="cardLogin px-lg-5">
-                    <div class="card-body">
-                        <div class="row">
-                            <SizeModeContainer>
+				</div>
+				<div class="cardLogin px-lg-5">
+					<div class="card-body">
+						<div class="row">
+							<SizeModeContainer>
 
-                                <div>
-                                    <ViewSiteComponent View="@FrameTemplate.View" />
+								<div>
+									<ViewSiteComponent View="@FrameTemplate.View" />
 
-                                </div>
+								</div>
 
-                                <div class="logon-toolbar border-0">
-                                    @FrameTemplate.Toolbar.GetComponentContent()
-                                    @FrameTemplate.AdditionalToolbar.GetComponentContent()
-                                </div>
-                            </SizeModeContainer>
+								<div class="logon-toolbar border-0">
+									@FrameTemplate.Toolbar.GetComponentContent()
+									<div style="margin-top: 3px;"></div>
+									@FrameTemplate.AdditionalToolbar.GetComponentContent()
+								</div>
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+							</SizeModeContainer>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </body>
 
 @code {
-    public static RenderFragment Create(Login logonWindowTemplate) => @<LoginComponent FrameTemplate="@logonWindowTemplate" />;
+	public static RenderFragment Create(Login logonWindowTemplate) => @<LoginComponent FrameTemplate="@logonWindowTemplate" />;
 }
 
 

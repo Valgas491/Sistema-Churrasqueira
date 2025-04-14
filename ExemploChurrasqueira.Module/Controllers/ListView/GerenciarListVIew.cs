@@ -103,51 +103,83 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
                             {
                                 item.Status = GerenciarChurrasqueira.TaskStatus.Completed;
                                 objectSpace.CommitChanges();
-                                await jsRuntime.InvokeVoidAsync("Swal.fire", new
+                                try
                                 {
-                                    title = "Status alterado para concluído antes do prazo!",
-                                    text = "A Churrasqueira será liberada para fazer Reserva",
-                                    icon = "success",
-                                    confirmButtonText = "OK",
-                                    timer = 4000
-                                });
+                                    await jsRuntime.InvokeVoidAsync("Swal.fire", new
+                                    {
+                                        title = "Status alterado para concluído antes do prazo!",
+                                        text = "A Churrasqueira será liberada para fazer Reserva",
+                                        icon = "success",
+                                        confirmButtonText = "OK",
+                                        timer = 4000
+                                    });
+                                }
+                                catch (Exception ex)
+                                {
+                                    // Aqui você pode logar o erro ou exibir uma mensagem alternativa, se desejar
+                                    Console.WriteLine($"Erro ao exibir alerta: {ex.Message}");
+                                }
                                 await jsRuntime.InvokeVoidAsync("open", "/GerenciarChurrasqueira_ListView", "_self");
                                 
                             }
                             else
                             {
-                                await jsRuntime.InvokeVoidAsync("Swal.fire", new
+                                try
                                 {
-                                    title = "Ação Cancelada!",
-                                    icon = "error",
-                                    confirmButtonText = "OK",
-                                    timer = 4000
-                                });
+                                    await jsRuntime.InvokeVoidAsync("Swal.fire", new
+                                    {
+                                        title = "Ação Cancelada!",
+                                        icon = "error",
+                                        confirmButtonText = "OK",
+                                        timer = 4000
+                                    });
+                                }
+                                catch (Exception ex)
+                                {
+                                    // Aqui você pode logar o erro ou exibir uma mensagem alternativa, se desejar
+                                    Console.WriteLine($"Erro ao exibir alerta: {ex.Message}");
+                                }
                             }
                         }
                         else
                         {
                             item.Status = GerenciarChurrasqueira.TaskStatus.Completed;
                             objectSpace.CommitChanges();
-                            await jsRuntime.InvokeVoidAsync("Swal.fire", new
+                            try
                             {
-                                title = "Status alterado para concluído!",
-                                icon = "success",
-                                confirmButtonText = "OK",
-                                timer = 4000
-                            });
+                                await jsRuntime.InvokeVoidAsync("Swal.fire", new
+                                {
+                                    title = "Status alterado para concluído!",
+                                    icon = "success",
+                                    confirmButtonText = "OK",
+                                    timer = 4000
+                                });
+                            }
+                            catch (Exception ex)
+                            {
+                                // Aqui você pode logar o erro ou exibir uma mensagem alternativa, se desejar
+                                Console.WriteLine($"Erro ao exibir alerta: {ex.Message}");
+                            }
                             await jsRuntime.InvokeVoidAsync("open", "/GerenciarChurrasqueira_ListView", "_self");
                         }
                     }
                     else
                     {
-                        await jsRuntime.InvokeVoidAsync("Swal.fire", new
+                        try
                         {
-                            title = "Status já está como Finalizado.",
-                            icon = "error",
-                            confirmButtonText = "OK",
-                            timer = 4000
-                        });
+                            await jsRuntime.InvokeVoidAsync("Swal.fire", new
+                            {
+                                title = "Status já está como Finalizado.",
+                                icon = "error",
+                                confirmButtonText = "OK",
+                                timer = 4000
+                            });
+                        }
+                        catch (Exception ex)
+                        {
+                            // Aqui você pode logar o erro ou exibir uma mensagem alternativa, se desejar
+                            Console.WriteLine($"Erro ao exibir alerta: {ex.Message}");
+                        }
                     }
                 }
             }
@@ -177,13 +209,21 @@ namespace ExemploChurrasqueira.Module.Controllers.ListView
                     objectSpace.CommitChanges();
                 }
                 await Task.Delay(500);
-                await jsRuntime.InvokeVoidAsync("Swal.fire", new
+                try
                 {
-                    title = "Manutenção excluída.",
-                    icon = "success",
-                    confirmButtonText = "OK",
-                    timer = 4000
-                });
+                    await jsRuntime.InvokeVoidAsync("Swal.fire", new
+                    {
+                        title = "Manutenção excluída.",
+                        icon = "success",
+                        confirmButtonText = "OK",
+                        timer = 4000
+                    });
+                }
+                catch (Exception ex)
+                {
+                    // Aqui você pode logar o erro ou exibir uma mensagem alternativa, se desejar
+                    Console.WriteLine($"Erro ao exibir alerta: {ex.Message}");
+                }
             }
         }
         private void MaintanceDelete()

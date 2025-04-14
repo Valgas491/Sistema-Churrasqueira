@@ -53,14 +53,14 @@
         <LayoutGroup Id="Main" IsCollapsibleGroup="True" RelativeSize="100">
           <LayoutGroup Id="SimpleEditors" RelativeSize="100">
             <LayoutGroup Id="ReservaChurrasqueiraData" IsCollapsibleGroup="False" IsGroupCollapsed="False" RelativeSize="100" Caption="ReservaChurrasqueiraData" Direction="Horizontal">
-              <LayoutGroup Id="Autob070ebc1-870f-49c8-bc8d-0243bb8a897f" ShowCaption="False" Caption="Autob070ebc1-870f-49c8-bc8d-0243bb8a897f(4)" Index="0" RelativeSize="48.11715481171548" IsNewNode="True">
-                <LayoutItem Id="Socio" ViewItem="Socio" CaptionWordWrap="Wrap" CaptionHorizontalAlignment="Center" CaptionVerticalAlignment="Center" Index="0" RelativeSize="5.333333333333333" IsNewNode="True" />
-                <LayoutItem Id="QtdPessoas" ViewItem="QtdPessoas" CaptionWordWrap="Wrap" CaptionHorizontalAlignment="Center" CaptionVerticalAlignment="Center" Index="1" RelativeSize="94.66666666666667" IsNewNode="True" />
+              <LayoutGroup Id="Autob070ebc1-870f-49c8-bc8d-0243bb8a897f" ShowCaption="False" Caption="Autob070ebc1-870f-49c8-bc8d-0243bb8a897f(4)" Index="0" RelativeSize="54" Direction="Horizontal" IsNewNode="True">
+                <LayoutItem Id="Socio" ViewItem="Socio" CaptionWordWrap="Wrap" CaptionHorizontalAlignment="Near" CaptionVerticalAlignment="Center" Index="0" RelativeSize="59.01234567901235" CaptionLocation="Left" IsNewNode="True" />
+                <LayoutItem Id="DataReserva_Churrasqueira" ViewItem="DataReserva_Churrasqueira" CaptionWordWrap="Wrap" CaptionHorizontalAlignment="Center" CaptionVerticalAlignment="Center" Index="1" RelativeSize="40.98765432098765" IsNewNode="True" />
               </LayoutGroup>
               <LayoutItem Id="QtdPessoas" CaptionHorizontalAlignment="Center" CaptionVerticalAlignment="Center" CaptionWordWrap="Wrap" RelativeSize="23.84937238493724" Index="0" Removed="True" />
-              <LayoutGroup Id="Auto48a77ec8-425e-485d-a3e9-d4cda4691dac" ShowCaption="False" Caption="Auto48a77ec8-425e-485d-a3e9-d4cda4691dac(7)" Index="1" RelativeSize="51.88284518828452" IsNewNode="True">
-                <LayoutItem Id="DataReserva_Churrasqueira" ViewItem="DataReserva_Churrasqueira" CaptionWordWrap="Wrap" CaptionHorizontalAlignment="Center" CaptionVerticalAlignment="Center" Index="0" RelativeSize="5.333333333333333" IsNewNode="True" />
-                <LayoutItem Id="Churrasqueira" ViewItem="Churrasqueira" CaptionHorizontalAlignment="Center" CaptionVerticalAlignment="Center" Index="1" RelativeSize="94.66666666666667" IsNewNode="True" />
+              <LayoutGroup Id="Auto48a77ec8-425e-485d-a3e9-d4cda4691dac" ShowCaption="False" Caption="Auto48a77ec8-425e-485d-a3e9-d4cda4691dac(7)" Index="1" RelativeSize="46" Direction="Horizontal" IsNewNode="True">
+                <LayoutItem Id="Churrasqueira" ViewItem="Churrasqueira" CaptionHorizontalAlignment="Center" CaptionVerticalAlignment="Center" Index="0" RelativeSize="50.43478260869565" IsNewNode="True" />
+                <LayoutItem Id="QtdPessoas" ViewItem="QtdPessoas" CaptionWordWrap="Wrap" CaptionHorizontalAlignment="Center" CaptionVerticalAlignment="Center" Index="1" RelativeSize="49.56521739130435" IsNewNode="True" />
               </LayoutGroup>
               <LayoutItem Id="Churrasqueira" ViewItem="Churrasqueira" CaptionHorizontalAlignment="Center" CaptionVerticalAlignment="Center" Index="1" RelativeSize="76.15062761506276" Removed="True" />
               <LayoutItem Id="DataReserva_Churrasqueira" CaptionHorizontalAlignment="Center" CaptionVerticalAlignment="Center" CaptionWordWrap="Wrap" RelativeSize="3.9933444259567388" Removed="True" />
@@ -72,8 +72,8 @@
     </DetailView>
     <ListView Id="ReservaChurrasqueiraData_ListView" IsGroupPanelVisible="False">
       <Columns>
-        <ColumnInfo Id="DataReserva_Churrasqueira" PropertyEditorType="DevExpress.ExpressApp.Editors.DetailPropertyEditor" EditMask="" DisplayFormat="" />
         <ColumnInfo Id="Socio" SortOrder="Ascending" Width="400" SortIndex="0" />
+        <ColumnInfo Id="DataReserva_Churrasqueira" PropertyEditorType="DevExpress.ExpressApp.Editors.DetailPropertyEditor" EditMask="dd/MM/yyyy" DisplayFormat="{0:dd/MM/yyyy}" PropertyName="DataReserva_Churrasqueira" />
       </Columns>
     </ListView>
     <ListView Id="ReservaChurrasqueiraData_LookupListView">

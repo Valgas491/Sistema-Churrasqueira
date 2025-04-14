@@ -15,7 +15,6 @@ namespace ExemploChurrasqueira.Blazor.Server.Templates
             Toolbar.AddActionContainer(DialogController.DialogActionContainerName);
 
             AdditionalToolbar = new DxToolbarAdapter(new DxToolbarModel());
-            AdditionalToolbar.ImageSize = 20;
             AdditionalToolbar.ToolbarModel.CssClass = "logon-bottom-toolbar";
             AdditionalToolbar.AddActionContainer("AdditionalLogonActions");
         }

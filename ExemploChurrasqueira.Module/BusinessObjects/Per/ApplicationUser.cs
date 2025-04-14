@@ -38,6 +38,7 @@ namespace ExemploChurrasqueira.Module.BusinessObjects.Per {
 
         string email;
 
+        
         [Association]
         public XPCollection<ReservaChurrasqueiraData> Reserva
         {

@@ -8,7 +8,10 @@
 .dxbs-sort-order-indicator {
     width: fit-content !important
 }
-
+.theme-settings {
+    display: none;
+    visibility:hidden;
+}
 *, ::after, ::before {
     -webkit-box-sizing: border-box;
     box-sizing: border-box

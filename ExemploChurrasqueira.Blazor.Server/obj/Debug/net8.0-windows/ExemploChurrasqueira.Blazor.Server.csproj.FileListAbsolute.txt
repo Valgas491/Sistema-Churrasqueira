@@ -416,7 +416,6 @@ C:\Users\estagio.analise\Documents\ExemploChurrasqueira\ExemploChurrasqueira.Bla
 C:\Users\estagio.analise\Documents\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\obj\Debug\net8.0-windows\ExemploChurrasqueira.Blazor.Server.pdb
 C:\Users\estagio.analise\Documents\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\obj\Debug\net8.0-windows\ExemploChurrasqueira.Blazor.Server.genruntimeconfig.cache
 C:\Users\estagio.analise\Documents\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\obj\Debug\net8.0-windows\ref\ExemploChurrasqueira.Blazor.Server.dll
-C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\ExemploChurrasqueira.Blazor.Server.dll
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\appsettings.Development.json
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\appsettings.json
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\ExemploChurrasqueira.Blazor.Server.staticwebassets.runtime.json
@@ -425,6 +424,8 @@ C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\Model_pt-BR.xafml
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\ExemploChurrasqueira.Blazor.Server.deps.json
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\ExemploChurrasqueira.Blazor.Server.runtimeconfig.json
+C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\ExemploChurrasqueira.Blazor.Server.dll
+C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\ExemploChurrasqueira.Blazor.Server.pdb
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\DevExpress.AspNetCore.Common.v24.1.dll
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\DevExpress.AspNetCore.Core.v24.1.dll
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\DevExpress.AspNetCore.Reporting.v24.1.dll
@@ -629,5 +630,19 @@ C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\obj\Debug\net8.0-windows\refint\ExemploChurrasqueira.Blazor.Server.dll
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\obj\Debug\net8.0-windows\ExemploChurrasqueira.Blazor.Server.pdb
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\obj\Debug\net8.0-windows\ExemploChurrasqueira.Blazor.Server.genruntimeconfig.cache
-C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\ExemploChurrasqueira.Blazor.Server.pdb
 C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\obj\Debug\net8.0-windows\ref\ExemploChurrasqueira.Blazor.Server.dll
+C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\Microsoft.Bcl.Cryptography.dll
+C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\System.Diagnostics.EventLog.dll
+C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\System.DirectoryServices.dll
+C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\System.DirectoryServices.AccountManagement.dll
+C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\System.DirectoryServices.Protocols.dll
+C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\System.Formats.Asn1.dll
+C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\System.Security.Cryptography.ProtectedData.dll
+C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll
+C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.DirectoryServices.dll
+C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.DirectoryServices.AccountManagement.dll
+C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\runtimes\linux\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\runtimes\osx\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\estagio.analise\source\repos\ExemploChurrasqueira\ExemploChurrasqueira.Blazor.Server\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll

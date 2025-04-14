@@ -20,13 +20,14 @@ namespace ExemploChurrasqueira.Module.Controllers.GlobalView {
             jsRuntime = Application.ServiceProvider.GetService(typeof(IJSRuntime)) as IJSRuntime;
             if (View != null)
             {
-                //View.ControlsCreated += View_ControlsCreated;
+                View.ControlsCreated += View_ControlsCreated;
             }
         }
         private void View_ControlsCreated(object sender, System.EventArgs e)
         {
             if (jsRuntime != null)
             {
+                CustomizarPreLoaderDefault();
                 //Escrever();
             }
         }
@@ -34,12 +35,17 @@ namespace ExemploChurrasqueira.Module.Controllers.GlobalView {
         {
             if (View != null)
             {
-                //View.ControlsCreated -= View_ControlsCreated;
+               View.ControlsCreated -= View_ControlsCreated;
+
             }
             // Unsubscribe from previously subscribed events and release other references and resources.
             base.OnDeactivated();
         }
-
+        private async void CustomizarPreLoaderDefault()
+        {
+            await Task.Delay(1000);
+            await jsRuntime.InvokeVoidAsync("CustomizarPreLoaderDefault", "Carregando...");
+        }
         private async void Escrever()
         {
             await Task.Delay(1000);

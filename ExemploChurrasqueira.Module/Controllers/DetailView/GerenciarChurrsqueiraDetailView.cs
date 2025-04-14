@@ -86,7 +86,9 @@ namespace ExemploChurrasqueira.Module.Controllers.DetailView
 
                 date.ControlValueChanged += (sender, evento) =>
                 {
+                    var reserva = View.CurrentObject as GerenciarChurrasqueira;
                     date.WriteValue();
+                    reserva.Churrasqueira = null;
                     var novaData = date.PropertyValue as DateTime?;
                     if (!novaData.HasValue)
                     {
@@ -141,13 +143,21 @@ namespace ExemploChurrasqueira.Module.Controllers.DetailView
 
         public async void ExisteReserva(DateTime dataReservaAtual)
         {
-            await jsRuntime.InvokeVoidAsync("Swal.fire", new
+            try
             {
-                title = $"Na Data: {dataReservaAtual},existe uma reserva de associado.",
-                icon = "success",
-                confirmButtonText = "OK",
-                timer = 4000
-            });
+                await jsRuntime.InvokeVoidAsync("Swal.fire", new
+                {
+                    title = $"Na Data: {dataReservaAtual},existe uma reserva de associado.",
+                    icon = "success",
+                    confirmButtonText = "OK",
+                    timer = 4000
+                });
+            }
+            catch (Exception ex)
+            {
+                // Aqui você pode logar o erro ou exibir uma mensagem alternativa, se desejar
+                Console.WriteLine($"Erro ao exibir alerta: {ex.Message}");
+            }
         }
 
     }

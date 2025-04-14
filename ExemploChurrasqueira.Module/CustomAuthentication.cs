@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using DevExpress.ExpressApp.Security;
 using DevExpress.ExpressApp;
 using ExemploChurrasqueira.Module.BusinessObjects.Per;
+using System.DirectoryServices.AccountManagement;
 
 namespace ExemploChurrasqueira.Module
 {
@@ -32,21 +33,34 @@ namespace ExemploChurrasqueira.Module
 
         public override object Authenticate(IObjectSpace objectSpace)
         {
-            
-            if (string.IsNullOrEmpty(customLogonParameters.UserName))
-                customLogonParameters.UserName = "Admin";
-            ApplicationUser AppUser = objectSpace.FirstOrDefault<ApplicationUser>(e => e.UserName == customLogonParameters.UserName);
 
-            if (AppUser == null)
-                throw new AuthenticationException(
-                    customLogonParameters.UserName, "Usuário não encontrado.");
+            if (string.IsNullOrEmpty(customLogonParameters.UserName) || string.IsNullOrEmpty(customLogonParameters.Password))
+                throw new AuthenticationException("Usuário ou senha inválidos.");
 
-            if (!AppUser.ComparePassword(customLogonParameters.Password))
-                throw new AuthenticationException(
-                    AppUser.UserName, "Senha incorreta.");
+            Parametros parametro = objectSpace.GetObjects<Parametros>().FirstOrDefault();
+
+            if (parametro is null)
+                throw new UserFriendlyException("Configurações de parâmetros inválidas.");
+
+            using (var context = new PrincipalContext(ContextType.Domain, parametro.Dominio))
+            {
+                bool usuarioAutenticado = context.ValidateCredentials(customLogonParameters.UserName, customLogonParameters.Password);
+
+                if (!usuarioAutenticado)
+                    throw new AuthenticationException("Usuário ou senha inválidos.");
+            }
+
+            ApplicationUser appUser = objectSpace.FirstOrDefault<ApplicationUser>(e => e.UserName == customLogonParameters.UserName);
+
+            if (appUser is null)
+            {
+                appUser = objectSpace.CreateObject<ApplicationUser>();
+                appUser.UserName = customLogonParameters.UserName;
+                appUser.SetPassword(customLogonParameters.Password);
+            }
 
             objectSpace.CommitChanges();
-            return AppUser;
+            return appUser;
         }
         public override void SetLogonParameters(object logonParameters)
         {

@@ -124,6 +124,10 @@
               "target": "Package",
               "version": "[112.1.0, )"
             },
+            "System.DirectoryServices.AccountManagement": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[6.34.0, )"
